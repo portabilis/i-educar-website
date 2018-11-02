@@ -79,7 +79,7 @@ const siteConfig = {
   cname: 'ieducar.org',
 
   // Used for publishing and more
-  projectName: 'i-educar',
+  projectName: 'i-educar-website',
   organizationName: 'portabilis',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
