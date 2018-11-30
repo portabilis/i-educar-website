@@ -33,7 +33,7 @@ Preparamos um roadmap de coisas que vão acontecer entre o fim do ano e o começ
 * Guia de desenvolvimento do i-Educar
 * Versão preliminar da visão de produto das soluções
 
-#### **Roadmap de documentações***
+#### **Roadmap de documentações**
 * Documentação com instruções para configuração inicial da solução
 * Documentação de processos do i-Educar
 
