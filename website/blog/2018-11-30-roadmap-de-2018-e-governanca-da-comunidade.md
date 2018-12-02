@@ -4,14 +4,12 @@ authorURL: https://www.linkedin.com/in/giustin
 title: Roadmap de 2018 e governança da Comunidade
 ---
 
-
 ![roadmap-2018](https://user-images.githubusercontent.com/1082624/49318741-e19fd480-f4e0-11e8-9efb-10551de7f84f.png)
-###### Imagem do roadmap de 2018 e governança da Comunidade. Fonte: Scorum
-
+###### Fonte da imagem: Scorum
 
 O que ainda vai acontecer na comunidade esse ano? Quem é que governa essa comunidade? Quem são os atores envolvidos?
 
-Calma, eu sei que você tem muitas perguntas, todos querem saber para onde a comunidade está caminhando, e eu vim aqui, hoje, esclarecer tudo isso.
+Calma, eu sei que você tem muitas perguntas, todos querem saber para onde a comunidade está caminhando, e eu vim aqui, hoje, esclarecer tudo isso.<!--truncate-->
 
 Então, vamos por partes...
 
@@ -81,7 +79,7 @@ Divulgue o máximo que você conseguir este post e todas as novidades, para que 
 
 ### Gostou das novidades?
 
-Mais detalhes dos avanços e roadmaps, você pode acompanhar no próprio repositório do projeto que mantemos atualizado.
+Mais detalhes dos avanços e roadmaps, você pode acompanhar no próprio [repositório do projeto](https://github.com/portabilis/i-educar/projects) que mantemos atualizado.
 
 Enquanto isso, nos acompanhe no [Fórum](http://forum.ieducar.org), [Telegram](https://t.me/ieducar), [Twitter](http://twitter.com/portabilis) e [Facebook](http://facebook.com/ieducar) e saiba mais sobre todos os próximos lançamentos e movimentos da Comunidade i-Educar! ❤️
 
