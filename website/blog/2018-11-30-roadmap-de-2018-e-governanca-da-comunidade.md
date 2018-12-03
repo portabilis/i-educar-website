@@ -81,7 +81,7 @@ Divulgue o máximo que você conseguir este post e todas as novidades, para que 
 
 Mais detalhes dos avanços e roadmaps, você pode acompanhar no próprio [repositório do projeto](https://github.com/portabilis/i-educar/projects) que mantemos atualizado.
 
-Enquanto isso, nos acompanhe no [Fórum](http://forum.ieducar.org), [Telegram](https://t.me/ieducar), [Twitter](http://twitter.com/portabilis) e [Facebook](http://facebook.com/ieducar) e saiba mais sobre todos os próximos lançamentos e movimentos da Comunidade i-Educar! ❤️
+Enquanto isso, nos acompanhe no [Fórum](http://forum.ieducar.org), [Telegram](https://t.me/ieducar), [Twitter](https://twitter.com/ieducar) e [Facebook](http://facebook.com/ieducar) e saiba mais sobre todos os próximos lançamentos e movimentos da Comunidade i-Educar! ❤️
 
 #### Eu sou Tiago Giusti, CEO da Portabilis e Coordenador da Comunidade i-Educar.
 
