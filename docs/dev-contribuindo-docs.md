@@ -4,6 +4,8 @@ title: Contribuindo com a documentação do i-Educar
 sidebar_label: Contribuindo com a documentação
 ---
 
+Veja como você pode contribuir com a documentação do projeto.
+
 ## Documentações
 
 O software tem em seu ecosistema três *perfis de usuários*, sendo **Administrador**, **Usuário** e **Desenvolvedor**. Para cada *perfil de usuário* será criado uma documentação específica.
