@@ -4,28 +4,74 @@
     "next": "Next",
     "previous": "Previous",
     "tagline": "O i-Educar é um software livre e público totalmente on-line que torna mais fácil e prática a gestão dos processos das escolas, matrículas e dados de alunos, apoiando os profissionais da rede de ensino e gestores.",
-    "admin-intro": "Documentação para Administradores",
-    "Sobre o i-Educar": "Sobre o i-Educar",
-    "dev-comecando-contribuir-docs": "Começando a contribuir com a documentação",
-    "dev-contribuindo-docs": "Contribuindo com a documentação do i-Educar",
-    "Contribuindo com a documentação": "Contribuindo com a documentação",
-    "dev-intro": "Documentação para Desenvolvedores",
-    "dev-padroes-docs": "Padrões de documentação",
-    "faq": "faq",
-    "user-ano-letivo-escolar-matriculas": "Ano Letivo Escolar e Matrículas",
-    "user-cadastros-sistema-educacional": "Cadastros do Sistema Educacional",
-    "user-configuracoes": "Configurações",
-    "user-conhecendo-sistema": "Conhecendo o sistema",
-    "user-intro": "Documentação para Usuários",
-    "user-modulo-enderecamento-pessoas": "Módulo Endereçamento e Pessoas",
-    "user-regras-avaliacao-notas": "Regras de Avaliação e Notas",
-    "user-servidores-e-professores": "Servidores e Professores",
-    "Home": "Home",
-    "Quem Usa?": "Quem Usa?",
-    "Blog": "Blog",
-    "Fórum": "Fórum",
-    "Documentação": "Documentação",
-    "i-Educar": "i-Educar"
+    "docs": {
+      "admin-importar-censo": {
+        "title": "Como importar dados do Censo Escolar para carga inicial no i-Educar",
+        "sidebar_label": "Importar Censo Escolar"
+      },
+      "admin-intro": {
+        "title": "Documentação para Administradores",
+        "sidebar_label": "Home"
+      },
+      "admin-setup-inicial": {
+        "title": "Setup inicial",
+        "sidebar_label": "Setup inicial"
+      },
+      "dev-comecando-contribuir-docs": {
+        "title": "Começando a contribuir com a documentação"
+      },
+      "dev-contribuindo-docs": {
+        "title": "Contribuindo com a documentação do i-Educar",
+        "sidebar_label": "Contribuindo com a documentação"
+      },
+      "dev-intro": {
+        "title": "Documentação para Desenvolvedores",
+        "sidebar_label": "Home"
+      },
+      "dev-padroes-docs": {
+        "title": "Padrões de documentação"
+      },
+      "faq": {
+        "title": "faq"
+      },
+      "user-ano-letivo-escolar-matriculas": {
+        "title": "Ano Letivo Escolar e Matrículas"
+      },
+      "user-cadastros-sistema-educacional": {
+        "title": "Cadastros do Sistema Educacional"
+      },
+      "user-configuracoes": {
+        "title": "Configurações"
+      },
+      "user-conhecendo-sistema": {
+        "title": "Conhecendo o sistema"
+      },
+      "user-intro": {
+        "title": "Documentação para Usuários",
+        "sidebar_label": "Home"
+      },
+      "user-modulo-enderecamento-pessoas": {
+        "title": "Módulo Endereçamento e Pessoas"
+      },
+      "user-regras-avaliacao-notas": {
+        "title": "Regras de Avaliação e Notas"
+      },
+      "user-servidores-e-professores": {
+        "title": "Servidores e Professores"
+      }
+    },
+    "links": {
+      "Home": "Home",
+      "Quem Usa?": "Quem Usa?",
+      "Blog": "Blog",
+      "Fórum": "Fórum",
+      "Documentação": "Documentação"
+    },
+    "categories": {
+      "Documentação para Administradores": "Documentação para Administradores",
+      "Documentação para Desenvolvedores": "Documentação para Desenvolvedores",
+      "Documentação para Usuários": "Documentação para Usuários"
+    }
   },
   "pages-strings": {
     "Help Translate|recruit community translators for your project": "Help Translate",

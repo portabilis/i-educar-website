@@ -3,8 +3,6 @@ id: dev-padroes-docs
 title: Padrões de documentação
 ---
 
-# Documentação
-
 Foram definidos alguns padrões para que a documentação possa evoluir colaborativamente.
 
 ## Padrões definidos

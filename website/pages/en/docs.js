@@ -103,14 +103,14 @@ class Docs extends React.Component {
             content: 'Um guia para tornar a gestão do i-Educar mais fácil e intuitiva.',
             image: imgUrl('funcionalidades/book.svg'),
             imageAlign: 'top',
-            title: 'Administradores [Em Breve]',
+            title: 'Administradores',
             link: docUrl("admin-intro"),
           },
           {
             content: ' Faça parte da comunidade do maior software aberto de gestão escolar do Brasil e ajude na democratização da tecnologia para a educação pública. Saiba como adotar, customizar e contribuir com o desenvolvimento do i-Educar.',
             image: imgUrl('funcionalidades/book.svg'),
             imageAlign: 'top',
-            title: 'Desenvolvedores [Em Breve]',
+            title: 'Desenvolvedores',
             link: docUrl("dev-intro"),
           }
         ]}

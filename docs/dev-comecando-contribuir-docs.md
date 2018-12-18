@@ -3,6 +3,8 @@ id: dev-comecando-contribuir-docs
 title: Começando a contribuir com a documentação
 ---
 
+Para começar a contribuir é necessário entender o funcionamento da aplicação que gera a documentação do i-Educar.
+
 ## Compreendendo o Docusaurus
 
 [Docusaurus](https://docusaurus.io/) é uma aplicação instalada localmente em cada computador, que facilita o processo de documentação. Ao iniciar o Docusaurus localmente, ele abre um servidor local com porta padrão 3000.
@@ -23,8 +25,8 @@ Ao iniciar o servidor local, o Docusaurus compila os arquivos Markdown, para con
     - Instalação do **Node.js**: https://nodejs.org/en/download/
     - Instalação do **Yarn**: https://yarnpkg.com/en/docs/install
 - Faça o **fork** do projeto no seu usuário do GitHub
-- Clone o projeto: `git clone https://github.com/[SEU-USUARIO]/i-educar`
-- Acesse o diretório *website* do projeto: `cd i-educar/website`
+- Clone o projeto: `git clone https://github.com/[SEU-USUARIO]/i-educar-website`
+- Acesse o diretório *website* do projeto: `cd i-educar-website/website`
 - Adicione o *Docusaurus* ao projeto: `yarn add docusaurus --latest`
 - Inicie o serviço do Docusaurus na sua máquina: `yarn start`
 
@@ -36,7 +38,7 @@ Para que a documentação seja criada, é preciso compreender como o Docusaurus 
 
 #### Criando uma nova página de documentação
 
-- Navegue até o diretório *docs* do projeto: `cd i-educar/docs`
+- Navegue até o diretório *docs* do projeto: `cd i-educar-website/docs`
 - Crie um arquivo com a extensão `.md`
     - Veja o padrão de nomeação do arquivo ao criá-lo: [Padrões de documentação - Padrões definidos](dev-padroes-docs.md#padrões-definidos)
 - Insira o cabeçalho no arquivo para que seja processado pelo Docusaurus
@@ -49,9 +51,9 @@ sidebar_label: Nome que será exibido no menu lateral esquerdo
 ```
 > *sidebar_label* é um informação opcional. Se for omitida, assumirá o valor de *title*.
 
-- Edite o arquivo **i-educar/website/sidebars.json** e inclua o **id** definido no cabeçalho do arquivo
+- Edite o arquivo **i-educar-website/website/sidebars.json** e inclua o **id** definido no cabeçalho do arquivo
 - Inicie o Docusaurus:
-    - `cd i-educar/website`
+    - `cd i-educar-website/website`
     - `yarn start`
 
 ### <a class="anchor" aria-hidden="true" id="mesa-ferramentas"></a> Mesa de ferramentas (guias)
@@ -64,7 +66,7 @@ Dependẽncias para executar este procedimento:
 1. Docusaurus instalado e funcional
 1. Permissão de commit na branch **gh-pages** do repositório desejado
 
-- Acesse o diretório *website* do projeto: `cd i-educar/website`
+- Acesse o diretório *website* do projeto: `cd i-educar-website/website`
 - Realize o build e publique na branch **gh-pages**: `GIT_USER=[SEU-USUARIO] CURRENT_BRANCH=[BRANCH-ORIGEM] yarn run publish-gh-pages`
 
 > As instruções **GIT_USER** e **CURRENT_BRANCH** são variáveis de ambiente utilizadas pelo Docusaurus para realizar a publicação no GitHub Pages.
