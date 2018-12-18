@@ -103,7 +103,7 @@ class Docs extends React.Component {
             content: 'Um guia para tornar a gestão do i-Educar mais fácil e intuitiva.',
             image: imgUrl('funcionalidades/book.svg'),
             imageAlign: 'top',
-            title: 'Administradores [Em Breve]',
+            title: 'Administradores',
             link: docUrl("admin-intro"),
           },
           {
