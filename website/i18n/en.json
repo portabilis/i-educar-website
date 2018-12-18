@@ -11,7 +11,7 @@
       },
       "admin-intro": {
         "title": "Documentação para Administradores",
-        "sidebar_label": "Documentação para Administradores"
+        "sidebar_label": "Home"
       },
       "admin-setup-inicial": {
         "title": "Setup inicial",
@@ -26,7 +26,7 @@
       },
       "dev-intro": {
         "title": "Documentação para Desenvolvedores",
-        "sidebar_label": "Sobre o i-Educar"
+        "sidebar_label": "Home"
       },
       "dev-padroes-docs": {
         "title": "Padrões de documentação"
@@ -48,7 +48,7 @@
       },
       "user-intro": {
         "title": "Documentação para Usuários",
-        "sidebar_label": "Documentação para Usuários"
+        "sidebar_label": "Home"
       },
       "user-modulo-enderecamento-pessoas": {
         "title": "Módulo Endereçamento e Pessoas"
@@ -68,8 +68,9 @@
       "Documentação": "Documentação"
     },
     "categories": {
-      "i-Educar": "i-Educar",
-      "Documentação": "Documentação"
+      "Documentação para Administradores": "Documentação para Administradores",
+      "Documentação para Desenvolvedores": "Documentação para Desenvolvedores",
+      "Documentação para Usuários": "Documentação para Usuários"
     }
   },
   "pages-strings": {

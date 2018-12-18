@@ -1,21 +1,21 @@
 {
   "admin": {
-    "i-Educar": [
+    "Documentação para Administradores": [
       "admin-intro",
       "admin-setup-inicial",
       "admin-importar-censo"
     ]
   },
   "dev": {
-    "i-Educar": ["dev-intro"],
-    "Documentação" : [
-        "dev-contribuindo-docs",
-        "dev-padroes-docs",
-        "dev-comecando-contribuir-docs"
+    "Documentação para Desenvolvedores" : [
+      "dev-intro",
+      "dev-contribuindo-docs",
+      "dev-padroes-docs",
+      "dev-comecando-contribuir-docs"
     ]
   },
   "user": {
-    "i-Educar": [
+    "Documentação para Usuários": [
       "user-intro",
       "user-conhecendo-sistema",
       "user-modulo-enderecamento-pessoas",
