@@ -1,0 +1,402 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Setup inicial · i-Educar</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;Serão descritos os passos necessários para fazer o setup inicial do i-Educar de&lt;/p&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Setup inicial · i-Educar"/><meta property="og:type" content="website"/><meta property="og:url" content="http://ieducar.org/index.html"/><meta property="og:description" content="&lt;p&gt;Serão descritos os passos necessários para fazer o setup inicial do i-Educar de&lt;/p&gt;
+"/><meta property="og:image" content="http://ieducar.org/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="http://ieducar.org/img/docusaurus.png"/><link rel="shortcut icon" href="/img/favicon/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="http://ieducar.org/blog/atom.xml" title="i-Educar Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="http://ieducar.org/blog/feed.xml" title="i-Educar Blog RSS Feed"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-122039826-1"></script><script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments); }
+              gtag('js', new Date());
+              gtag('config', 'UA-122039826-1');
+            </script><script type="text/javascript" src="js/mailchimp.js"></script><script type="text/javascript" src="js/map.js"></script><script type="text/javascript" src="js/conversao.js"></script><script type="text/javascript" src="js/loadFonts.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/logo_horizontal.svg" alt="i-Educar"/></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/index.html" target="_self">Home</a></li><li class=""><a href="index.html#quemusa" target="_self">Quem Usa?</a></li><li class=""><a href="/blog/" target="_self">Blog</a></li><li class=""><a href="https://forum.ieducar.org" target="_self">Fórum</a></li><li class=""><a href="/docs.html" target="_self">Documentação</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Documentação para Administradores</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Documentação para Administradores</h3><ul><li class="navListItem"><a class="navItem" href="/docs/admin-intro.html">Home</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/admin-setup-inicial.html">Setup inicial</a></li><li class="navListItem"><a class="navItem" href="/docs/admin-importar-censo.html">Importar Censo Escolar</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Setup inicial</h1></header><article><div><span><p>Serão descritos os passos necessários para fazer o setup inicial do i-Educar de
+forma que todos os seus recursos possam ser aproveitados.</p>
+<h2><a class="anchor" aria-hidden="true" id="configurar-a-instituicão"></a><a href="#configurar-a-instituicão" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configurar a instituição</h2>
+<p>Nesta seção apresentaremos como configurar os dados da instituição responsável
+pelas escolas da rede de ensino, que é a primeira configuração a ser realizada
+assim que a rede de ensino iniciar a utilização do i-Educar.</p>
+<blockquote>
+<p><strong>Localização:</strong> Módulo Escola &gt; Cadastros &gt; Instituição</p>
+</blockquote>
+<p>Nesse cadastro é possível configurar os dados do município como: nome, endereço,
+CEP, telefone e principalmente o campo Nome do Responsável, pois nesse campo é
+armazenado o nome da Secretaria de Educação que será exibido nos relatórios.</p>
+<p>Também é nesse cadastro que estão alguns parâmetros, tanto para controle de
+datas quanto de funcionalidades, que devem ser marcados ou não de acordo com as
+regras da rede de ensino.</p>
+<p>No cadastro de instituições ainda é possível definir uma série de documentações
+padrões, que permitirão ao município inserir documentos próprios e que não são
+contemplados pelos relatórios/documentos que o sistema dispõe. Para acessar a
+funcionalidade, basta selecionar uma instituição na listagem e clicar no botão
+<strong>Documentação padrão</strong>.</p>
+<p>Na nova tela, você deverá definir um título para o respectivo documento e
+anexá-lo por meio do botão <strong>Escolha um arquivo</strong>, por fim, o sistema irá
+carregar o documento e apresentá-lo abaixo com as opções de exclusão e
+visualização, conforme exemplo abaixo.</p>
+<p><img src="../img/admin/admin-figura-3.png" alt=""></p>
+<p>Para que o usuário possa emitir estes documentos, basta ele acessar o <strong>Módulo
+Escola &gt; Documentos &gt; Documentação padrão</strong>.</p>
+<blockquote>
+<p><strong>Dica:</strong> É importante anexar arquivos que apresentem uma boa qualidade.
+Lembrando que serão aceitos somente arquivos no formato <strong>pdf</strong> com até <strong>2MB</strong>
+quanto ao tamanho.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="como-cadastrar-um-novo-usuario"></a><a href="#como-cadastrar-um-novo-usuario" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Como cadastrar um novo usuário</h2>
+<p>Nesta seção apresentaremos como são configurados os usuários que podem acessar o
+sistema e como podem ser atribuídas suas permissões, bloqueios e demais
+configurações de segurança.</p>
+<h3><a class="anchor" aria-hidden="true" id="permissões-tipos-de-usuario-usuarios"></a><a href="#permissões-tipos-de-usuario-usuarios" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Permissões (tipos de usuário/usuários)</h3>
+<p>O cadastro de <strong>Tipo de usuários</strong> define as categorias de usuários existentes
+atualmente, as quais garantem um nível hierárquico de acesso a determinadas
+funcionalidades do sistema.</p>
+<blockquote>
+<p><strong>Localização:</strong> Módulo Configurações &gt; Permissões &gt; Tipos de usuários</p>
+</blockquote>
+<p>Estas categorias de usuários são descritas a seguir:</p>
+<table>
+<thead>
+<tr><th>Categoria</th><th>Como funciona?</th></tr>
+</thead>
+<tbody>
+<tr><td>Poli-institucional</td><td>O nível 1, Poli-institucional, tem acesso a qualquer funcionalidade dos módulos Escola e Biblioteca para todas as instituições (prefeituras) cadastradas no sistema.</td></tr>
+<tr><td>Institucional</td><td>O nível 2, Institucional, tem acesso às mesmas funcionalidades do nível Poli-institucional, exceto o cadastro e exclusão do tipo de usuário e o cadastro e exclusão de instituição.</td></tr>
+<tr><td>Escola</td><td>O nível 3, Escola, tem acesso restrito as funcionalidades da(s) escola(s) a qual o usuário for vinculado, respeitando também as permissões definidas no cadastro de funcionários do módulo Configurações.</td></tr>
+<tr><td>Biblioteca</td><td>O nível 4, Biblioteca, tem acesso restrito as funcionalidades da(s) biblioteca(s) da(s) escola(s) a qual o usuário for vinculado, respeitando também as permissões definidas no cadastro de funcionários do módulo Configurações.</td></tr>
+</tbody>
+</table>
+<p>O cadastro de <strong>Usuários</strong>, propriamente dito, permite o cadastro dos usuários que acessarão o sistema, respeitando o seu tipo e as demais atribuições de acesso para a instituição, escola ou biblioteca que será vinculado.</p>
+<blockquote>
+<p><strong>Localização:</strong> Módulo Configurações &gt; Permissões &gt; Usuários</p>
+</blockquote>
+<p><img src="../img/admin/admin-figura-4.png" alt=""></p>
+<h2><a class="anchor" aria-hidden="true" id="como-configurar-cursos"></a><a href="#como-configurar-cursos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Como configurar cursos</h2>
+<p>Nesta seção apresentaremos como configurar os dados dos cursos oferecidos pelas
+escolas da rede de ensino.</p>
+<p>Neste cadastro você poderá cadastrar os cursos oferecidos pela instituição de
+ensino. Entretanto, antes de iniciar o cadastramento dos cursos, é importante
+cadastrar os <strong>Tipo de regime</strong>, <strong>de nível de ensino</strong>, <strong>do próprio ensino</strong> e
+as <strong>habilitações</strong> (Módulo Escola &gt; Cadastros &gt; Tipos &gt; Cursos), sendo que
+estas informações são preenchidas ao cadastrar um curso.</p>
+<blockquote>
+<p><strong>Localização:</strong> Módulo Escola &gt; Cadastros &gt; Cursos</p>
+</blockquote>
+<p><img src="../img/admin/admin-figura-5.png" alt=""></p>
+<p>As principais opções do cadastro de cursos são detalhadas a seguir:</p>
+<table>
+<thead>
+<tr><th>Opção</th><th>Como funciona?</th></tr>
+</thead>
+<tbody>
+<tr><td>Quantidade Etapas</td><td>Esta informação define a quantidade de anos escolares do curso. No exemplo, é um curso de Educação Infantil.</td></tr>
+<tr><td>Hora/Falta</td><td>Nesta opção deve ser informado um valor decimal equivalente a 01 (uma) hora falta. Ex: se as aulas são de 50 minutos, neste campo deverá ser informado o valor 0,83.</td></tr>
+<tr><td>Carga Horária</td><td>Nesta opção deve ser informada a quantidade de horas total do curso para todas as etapas informadas.</td></tr>
+<tr><td>Padrão Ano Escolar</td><td>Caso esta opção seja marcada, a quantidade de módulos de uma etapa (série ou ano) do curso será definida pelo ano letivo da escola, caso contrário, os módulos terão de ser informados individualmente por turma. O primeiro caso é o mais comum.</td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="como-configurar-etapas"></a><a href="#como-configurar-etapas" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Como configurar etapas</h2>
+<p>Nesta seção será apresentado como são gerenciados os anos letivos escolares das
+escolas.</p>
+<h3><a class="anchor" aria-hidden="true" id="etapas"></a><a href="#etapas" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Etapas</h3>
+<p>Neste cadastro você poderá informar quais os etapas existentes na instituição de
+ensino. Estas etapas definem o período de semanas e meses das etapas de uma
+série/ano.</p>
+<blockquote>
+<p><strong>Localização:</strong> Módulo Escola &gt; Cadastros &gt; Tipos &gt; Escolas &gt; Tipos de Etapas</p>
+</blockquote>
+<p><img src="../img/admin/admin-figura-6.png" alt=""></p>
+<p>Pode ser visualizada na imagem acima a listagem das três etapas mais comuns:
+Bimestral, Trimestral e Semestral.</p>
+<h3><a class="anchor" aria-hidden="true" id="ano-letivo-escolar"></a><a href="#ano-letivo-escolar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ano letivo escolar</h3>
+<p>Neste cadastro é possível gerenciar os anos letivos das escolas. Ao abrir o
+cadastro de uma escola, na parte inferior serão exibidos todos os anos
+finalizados, em andamento e ainda não iniciados. Caso o ano escolar que se
+deseja gerenciar não conste na listagem, pode ser utilizado o botão <strong>Definir
+ano letivo</strong> para cadastrar um novo ano.</p>
+<blockquote>
+<p><strong>Localização:</strong> Módulo Escola &gt; Cadastros &gt; Escola &gt; Selecionar escola</p>
+</blockquote>
+<p><img src="../img/admin/admin-figura-7.png" alt=""></p>
+<p>Ao pressionar o botão <strong>Editar ano letivo</strong>, uma nova página será apresentada
+conforme ilustrado na figura abaixo.</p>
+<p><img src="../img/admin/admin-figura-8.png" alt=""></p>
+<p>No exemplo, foram informados dois módulos semestrais e suas datas de início e
+fim. Para adicionar as etapas, basta selecionar o módulo desejado na opção
+<strong>Módulo</strong>, informar os períodos nas opções <strong>Data inicial</strong> e <strong>Data final</strong>,
+e a quantidade de Dias Letivos se o usuário desejar, e pressionar o botão
+<strong>+ Adicionar novo</strong> para inserir as outras etapas. Para concluir a operação, o
+usuário deve pressionar o botão <strong>Salvar</strong>.</p>
+<blockquote>
+<p><strong>Nota:</strong> A quantidade de módulos informada em um ano letivo escolar é igual à
+quantidade de notas que um aluno precisa obter nesse ano letivo. Desta forma, no
+exemplo, o aluno precisaria obter 2 (duas) notas no ano letivo em questão.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="como-configurar-escolas"></a><a href="#como-configurar-escolas" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Como configurar escolas</h2>
+<p>Nesta seção será apresentado como são gerenciadas as escolas da rede de ensino.</p>
+<h3><a class="anchor" aria-hidden="true" id="escolas"></a><a href="#escolas" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Escolas</h3>
+<p>Neste cadastro você poderá cadastrar todas as escolas da rede municipal de
+ensino. Entretanto, antes de iniciar o cadastramento das escolas, é importante
+cadastrar o <strong>Tipo de localização</strong> e o <strong>Tipo de rede de ensino</strong> (Módulo
+Escola &gt; Cadastros &gt; Tipos &gt; Escolas), sendo que estas informações são
+preenchidas ao cadastrar uma escola.</p>
+<blockquote>
+<p><strong>Localização:</strong> Módulo Escola &gt; Cadastros &gt; Escolas</p>
+</blockquote>
+<p><img src="../img/admin/admin-figura-9.png" alt=""></p>
+<p>As principais opções e/ou componentes do cadastro de escolas são detalhadas a
+seguir:</p>
+<table>
+<thead>
+<tr><th>Componente</th><th>Descrição</th><th>Como funciona?</th></tr>
+</thead>
+<tbody>
+<tr><td><img src="../img/admin/admin-componente-iniciar-ano-letivo.png" alt=""></td><td>Iniciar ano letivo</td><td>Ao pressionar este botão, o ano letivo da escola será iniciado.</td></tr>
+<tr><td><img src="../img/admin/admin-componente-editar-ano-letivo.png" alt=""></td><td>Editar ano letivo</td><td>Ao pressionar este botão, será aberto outro cadastro para serem informados os módulos do ano letivo.</td></tr>
+<tr><td><img src="../img/admin/admin-componente-finalizar-ano-letivo.png" alt=""></td><td>Finalizar ano letivo</td><td>Ao pressionar este botão, o ano letivo da escola será finalizado. Deve-se notar que é permitido finalizar um ano letivo desde que não exista mais nenhuma matrícula em andamento no ano.</td></tr>
+<tr><td><img src="../img/admin/admin-componente-reabrir-ano-letivo.png" alt=""></td><td>Reabrir ano letivo</td><td>Ao pressionar este botão, o ano letivo já encerrado será reaberto, possibilitando editar e criar novos dados no mesmo.</td></tr>
+<tr><td>--- Ano Finalizado ---</td><td>Ano Finalizado</td><td>Esta informação é exibida após ter sido pressionar o botão <strong>Finalizar Ano Letivo</strong>.</td></tr>
+</tbody>
+</table>
+<p>Quando um ano letivo é iniciado, o sistema realiza uma cópia das turmas que
+foram cadastradas para o ano letivo que será iniciado. Sendo assim, as turmas
+serão duplicadas no cadastro de turmas, sendo necessário renomear as turmas que
+farão parte do novo ano letivo.</p>
+<h2><a class="anchor" aria-hidden="true" id="como-configurar-regras-de-avaliacão-da-rede"></a><a href="#como-configurar-regras-de-avaliacão-da-rede" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Como configurar regras de avaliação da rede</h2>
+<p>Nesta seção apresentaremos as formas como sistema efetua a avaliação dos alunos,
+quais os tipos e regras de avaliações possíveis e as formas de se configurar
+estas regras. Todos os cadastros das regras de avaliação necessitam de permissão
+de administrador, pois são configuradas em nível de instituição (prefeitura), ou
+seja, as regras se aplicam a todas as escolas da rede de ensino.</p>
+<h3><a class="anchor" aria-hidden="true" id="tabelas-de-arredondamento"></a><a href="#tabelas-de-arredondamento" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Tabelas de arredondamento</h3>
+<p>O cadastro de <strong>Tabelas de arredondamento</strong> serve para informar como será
+efetuado o lançamento das notas para os alunos, podendo ser do tipo <strong>Nota
+numérica</strong> ou <strong>conceitual</strong>. Para as numéricas, no campos da <strong>Casa decimal</strong>,
+virá preenchido com os valores de 0 a 9, para que na <strong>Ação</strong> possa ser definido
+se será arredondado para uma casa decimal superior, inferior ou exata, ou ainda
+se não será efetuado arredondamento para a casa específica. O campo <strong>Casa
+decimal exata</strong>, será habilitado somente no caso de a Ação ser de arredondamento
+específico.</p>
+<p>Para as notas do tipo conceitual, no <strong>Rótulo da nota</strong> deverá ser informado um
+valor alfanumérico o qual será correspondente a uma faixa mínima e máxima, a ser
+informada nos campos <strong>Valor mínimo</strong> e <strong>Valor máximo</strong> da linha tabela.</p>
+<blockquote>
+<p><strong>Localização:</strong> Módulo Escola &gt; Cadastros &gt; Tipos &gt; Regras de avaliação &gt;
+Tabelas de arredondamento</p>
+</blockquote>
+<p>Um exemplo de configuração de notas do tipo numéricas pode ser visualizado na
+figura abaixo.</p>
+<p><img src="../img/admin/admin-figura-10.png" alt=""></p>
+<blockquote>
+<p><strong>Nota:</strong> Caso o <strong>Tipo da nota</strong> seja <strong>Nota conceitual</strong>, na tabela será
+exibido um campo chamado Descrição, o qual deve ser preenchido com uma
+informação relacionada ao rótulo da nota. Ex: Rótulo: <em>CP</em>. Descrição:
+<em>Completou</em>.</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="formulas-de-calculo-de-media"></a><a href="#formulas-de-calculo-de-media" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Fórmulas de cálculo de média</h3>
+<p>No cadastro de <strong>Fórmulas de cálculo de média</strong>, o usuário poderá configurar as
+fórmulas que serão usadas para calcular a média aritmética final e de
+recuperação do aluno. Este cadastro prevê uma forma simples de criar fórmulas
+reutilizáveis para diferentes regras de avaliação. A definição das fórmulas de
+cálculo de média são configuradas pela instituição (prefeitura), e portanto os
+usuários que não possuem permissão de administrador não poderão editar tal
+fórmula.</p>
+<blockquote>
+<p><strong>Localização:</strong> Módulo Escola &gt; Cadastros &gt; Tipos &gt; Regras de avaliação &gt;
+Fórmulas de cálculo da média</p>
+</blockquote>
+<p>Para criar uma fórmula, as seguintes variáveis e símbolos aritméticos devem ser
+utilizados:</p>
+<table>
+<thead>
+<tr><th>Variável</th><th>Descrição</th></tr>
+</thead>
+<tbody>
+<tr><td>En</td><td>Trata-se da etapa (bimestre, trimestre) do ano letivo, onde n representa o número da etapa. Exemplo: E1 (Etapa 1, 1º Bimestre, etc).</td></tr>
+<tr><td>Se</td><td>Refere-se à soma das notas em todas as etapas.</td></tr>
+<tr><td>Et</td><td>Refere-se à quantidade de etapas.</td></tr>
+<tr><td>Rc</td><td>Nota de recuperação. Obs.: apenas para fórmulas do tipo <strong>Média para recuperação</strong>.</td></tr>
+<tr><td>RSPN</td><td>Nota de recuperação específica (com valor de 1 a 10).</td></tr>
+<tr><td>RSPSN</td><td>Soma das etapas ou recuperação específica (utiliza a maior nota) com valor de 1 a 10.</td></tr>
+<tr><td>RSPMN</td><td>Média das etapas ou média das etapas com recuperação específica (utiliza a maior nota) com valor de 1 a 10.</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th>Símbolo</th><th>Descrição</th></tr>
+</thead>
+<tbody>
+<tr><td>( )</td><td>Trata-se do caractere parênteses e pode ser utilizado para circundar um cálculo prioritário.</td></tr>
+<tr><td>* ou x</td><td>Trata do caractere alfanumérico asterisco e da letra x, que são utilizados para a operação de multiplicação.</td></tr>
+<tr><td>/</td><td>Trata-se do caractere barra e é utilizado para a operação de divisão.</td></tr>
+<tr><td>+</td><td>Trata-se do caractere da operação de adição.</td></tr>
+<tr><td>&lt; ou &gt;</td><td>Trata-se do caractere utilizado para distinguir, respectivamente o sinal de menor (&lt;) ou maior (&gt;).</td></tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Fórmula de média aritmética simples:</strong> Se / Et</p>
+<ul>
+<li>executa a soma das notas de todas as etapas divididos pela quantidade de
+etapas.</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>Fórmula de recuperação ponderada:</strong> (Se / Et * 0.6) + (Rc * 0.4)</p>
+<ul>
+<li>executa a soma das notas das etapas divididos pela quantidade de etapas
+multiplicado por 0.6, e soma isto a média de recuperação obtida multiplicada por
+0.4.</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>Substitui menor nota por recuperação:</strong></p>
+<ul>
+<li>Substitui menor nota (En) por nota de recuperação (Rc), em ordem
+decrescente. Somente substitui quando Rc é maior que En. Ex: E1 = 2, E2 = 3, E3
+= 2, Rc = 5. Na fórmula será considerado: E1 = 2, E2 = 3, E3 = 5, Rc = 5.</li>
+</ul>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="regras-de-avaliacão"></a><a href="#regras-de-avaliacão" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Regras de avaliação</h3>
+<p>O cadastro de <strong>Regras de avaliação</strong> permite a configuração de parâmetros com
+os quais o aluno será avaliado, como o tipo de nota, a fórmula de cálculo de
+média, entre outros. Como pré-requisitos, uma regra de avaliação precisa de uma
+tabela de arredondamento cadastrada (para o tipo de nota desejada) e uma fórmula
+de cálculo de média, já vistos anteriormente.</p>
+<blockquote>
+<p><strong>Localização:</strong> Módulo Escola &gt; Cadastros &gt; Regras de avaliação</p>
+</blockquote>
+<p>Uma regra de avaliação possui diversas opções e o resultado da avaliação e
+promoção do aluno baseado nas notas e faltas depende da combinação dessas
+opções. Na figura abaixo é demonstrado o cadastro de uma regra de avaliação por
+média e presença, e tipo de falta por componente curricular (disciplinas).</p>
+<p><img src="../img/admin/admin-figura-11.png" alt=""></p>
+<p>No quadro a seguir consta o detalhamento de cada opção do cadastro de regras de
+avaliação:</p>
+<table>
+<thead>
+<tr><th>Opção</th><th>Como funciona?</th></tr>
+</thead>
+<tbody>
+<tr><td>Sistema de nota</td><td>Define que tipo de nota (e que tipo de tabela de arredondamento) será utilizado para lançar notas nos componentes curriculares cursados pelo aluno.</td></tr>
+<tr><td>Tabela de arredondamento de nota</td><td>Tabela que define faixas de arredondamento para o qual uma nota lançada no boletim do aluno será arredondada.</td></tr>
+<tr><td>Progressão</td><td>Define o comportamento utilizado para promover ou reter (reprovar) o aluno. As opções são: <ul><li style="margin: 20px"><strong>Continuada:</strong> promove o aluno independentemente de ter sido aprovado em cada componente curricular cursado ou de ter a presença mínima necessária;</li><li style="margin: 20px"><strong>Não-continuada: média e presença:</strong> promove o aluno somente quando este é aprovado em cada componente curricular com uma média igual ou superior a especificada em Média final para promoção e com uma porcentagem de presença igual ou superior a especificada em Porcentagem de presença;</li><li style="margin: 20px"><strong>Não-continuada: somente média:</strong> promove o aluno somente quando este é aprovado em cada componente curricular com uma média igual ou superior a especificada em Média final para promoção;</li><li style="margin: 20px"><strong>Não-continuada manual:</strong> promove o aluno somente por confirmação manual (após todas as notas e faltas terem sido lançadas no boletim).</li></ul></td></tr>
+<tr><td>Média final para promoção</td><td>Define a média necessária para um aluno ser aprovado em cada componente curricular (disciplina) cursado.</td></tr>
+<tr><td>Média exame final para promoção</td><td>Define a média necessária para um aluno ser aprovado em cada componente curricular (disciplina) cursado após realização do exame final.</td></tr>
+<tr><td>Fórmula de cálculo de média</td><td>Define a fórmula de cálculo de média final.</td></tr>
+<tr><td>Fórmula de cálculo de recuperação</td><td>Define a fórmula de cálculo de média após a recuperação. Caso não seja definida uma fórmula, a regra não possibilitará que seja lançada uma nota de exame final (recuperação).</td></tr>
+<tr><td>Porcentagem de presença</td><td>Define a porcentagem de presença mínima ao qual o aluno deve ter durante o período letivo.</td></tr>
+<tr><td>Parecer descritivo</td><td>Define a regularidade e forma com o qual será informado o parecer descritivo.</td></tr>
+<tr><td>Apuração de presença</td><td>Define se a presença (faltas) será lançada por componente curricular ou no geral (por etapa).</td></tr>
+<tr><td>Nota máxima/mínima geral</td><td>Definem qual o valor de nota máxima e mínima permitidas no sistema.</td></tr>
+<tr><td>Nota máxima exame final</td><td>Define qual o valor da nota máxima permitida no sistema para o exame final.</td></tr>
+<tr><td>Qtd. Máxima de casas decimais</td><td>Define a quantidade máxima de casas decimais permitidas no sistema (ex.: 2 casas decimais, ou seja, 7.<strong>45</strong>)</td></tr>
+<tr><td>Qtd. de disciplinas/matrículas de dependência</td><td>Estes dois campos definem qual a quantidade máxima de disciplinas de dependência em uma única matrícula; e quantas matrículas de dependência para um mesmo aluno são permitidas.</td></tr>
+<tr><td>Reprovação automática</td><td>Marcando este parâmetro o sistema não apresentará campo de nota de exame para os alunos que não poderão alcançar a média necessária, reprovando os mesmos de forma automática.</td></tr>
+<tr><td>Utilizar uma nota geral por etapa</td><td>Parâmetro responsável pela regra de média geral, já citada no processamento de históricos, e que define que a reprovação/aprovação do aluno depende de uma única média (englobando todos os componentes).</td></tr>
+<tr><td>Permitir definir componentes em etapas específicas</td><td>Marcando este parâmetro, as telas de Séries da escola e Turmas, permitem que o usuário definida componentes curriculares específicos por etapa.</td></tr>
+<tr><td>Aprovar alunos pela média das disciplinas</td><td>Marcando este parâmetro, alunos que deveriam ser reprovados, poderão ser aprovados caso a média de todas as médias dos componentes curriculares, for superior a nota de aprovação de exame final.</td></tr>
+<tr><td>Permitir recuperação paralela</td><td>Define se haverá ou não recuperação paralela por etapa nos componentes curriculares em que a média final não foi atingida, permitindo ainda ser recuperação paralela de todas as etapas ou etapas específicas. Quando está opção for utilizada deverá ser informada a média necessária para realizar a recuperação no campo <em>Média da recuperação paralela</em>.</td></tr>
+</tbody>
+</table>
+<p>A regra de avaliação usa outros valores especificados nos cadastros de Cursos e
+na Matrícula. Para o cálculo de porcentagem de presença, por exemplo, é
+necessário que a opção Hora/falta seja especificada no cadastro de Cursos. Esse
+campo é um valor decimal e representa o quanto uma falta unitária representa em
+horas. Para especificar uma hora/falta de 40 minutos, por exemplo, é necessário
+informar o valor 0,80 nesse campo.</p>
+<p>A quantidade de faltas e notas a serem lançadas depende da quantidade de módulos
+cadastrados na escola ou na turma. Caso um Curso seja do tipo <strong>Padrão ano
+escolar</strong>, será possível lançar notas e faltas para a quantidade de módulos
+especificadas no Ano letivo da Escola, caso contrário, usa a quantidade de
+módulos especificados para a Turma ao qual o aluno está enturmado.</p>
+<h2><a class="anchor" aria-hidden="true" id="como-configurar-as-series"></a><a href="#como-configurar-as-series" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Como configurar as séries</h2>
+<p>No cadastro <strong>Séries</strong> você poderá cadastrar todas as séries – ou anos escolares
+– de cada curso da instituição. As séries/anos específicas das escolas serão
+vistas em seguida, no cadastro <strong>Séries da escola</strong>.</p>
+<blockquote>
+<p><strong>Localização:</strong> Módulo Escola &gt; Cadastros &gt; Séries</p>
+</blockquote>
+<p><img src="../img/admin/admin-figura-12.png" alt=""></p>
+<p>As principais opções do cadastro de séries/anos são detalhadas a seguir:</p>
+<table>
+<thead>
+<tr><th>Opção</th><th>Como funciona?</th></tr>
+</thead>
+<tbody>
+<tr><td>Etapa curso</td><td>Nesta opção deve ser informada a etapa do curso correspondente a série/ano que se está cadastrando.</td></tr>
+<tr><td>Regra avaliação</td><td>Nesta opção deve ser informada a regra de avaliação que será utilizada para esta série/ano. O assunto regras de avaliação será visto nos próximos capítulos.</td></tr>
+<tr><td>Regra de avaliação diferenciada</td><td>Esta informação será preenchida somente quando o parâmetro '<em>Utilizar regra de avaliação diferenciada</em>' estiver marcado no cadastro das escolas, e neste caso irá utilizar uma regra diferente da geral.</td></tr>
+<tr><td>Carga horária</td><td>Nesta opção deve ser informada a carga horária total da série/ano, informação que posteriormente é utilizada para verificar a frequência do aluno.</td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="como-configurar-os-componentes-curriculares"></a><a href="#como-configurar-os-componentes-curriculares" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Como configurar os Componentes Curriculares</h2>
+<p>Neste cadastro você poderá cadastrar as disciplinas que poderão ser lecionadas
+na rede de ensino. Antes de iniciar o cadastramento dos componentes
+curriculares, é importante cadastrar as <strong>Áreas de conhecimento</strong> e os <strong>Tipos
+de dispensa de disciplina</strong>, sendo que os cadastros das áreas de conhecimento
+serão informados ao cadastrar as disciplinas e os tipos de dispensa na matrícula
+do aluno. O processo de matrícula de alunos será visto nos próximos capítulos.</p>
+<blockquote>
+<p><strong>Localização:</strong> Módulo Escola &gt; Cadastros &gt; Componentes curriculares</p>
+</blockquote>
+<p><img src="../img/admin/admin-figura-13.png" alt=""></p>
+<h2><a class="anchor" aria-hidden="true" id="como-configurar-as-series-da-escola"></a><a href="#como-configurar-as-series-da-escola" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Como configurar as séries da escola</h2>
+<p>No cadastro de <strong>Séries da escola</strong> você poderá cadastrar todas as séries de uma
+escola, a qual herda as informações do cadastro de séries/anos padrões da
+instituição, mas podendo também definir configurações específicas da escola.</p>
+<blockquote>
+<p><strong>Localização:</strong> Módulo Escola &gt; Cadastros &gt; Séries da escola</p>
+</blockquote>
+<p><img src="../img/admin/admin-figura-14.png" alt=""></p>
+<p>As principais opções encontradas no cadastro de Séries da escola estão
+detalhadas a seguir:</p>
+<table>
+<thead>
+<tr><th>Opção</th><th>Como funciona?</th></tr>
+</thead>
+<tbody>
+<tr><td>Nome</td><td>Nesta opção serão listadas todas as disciplinas padrão para a série/ano da instituição, sendo que é possível definir quais estarão disponíveis para a série/ano da escola.</td></tr>
+<tr><td>Carga horária</td><td>Nesta opção poderá ser informada uma carga horária para a escola diferente do padrão da série/ano da instituição.</td></tr>
+<tr><td>Usa padrão do componente</td><td>Esta opção sempre estará marcada, e informa ao sistema que a série/ano da escola utiliza a carga horária padrão da instituição. Caso algum valor tenha sido informado no campo Carga horária, esta opção deve ser desmarcada.</td></tr>
+<tr><td>Bloquear enturmação após atingir limite de vagas</td><td>Ao marcar esta opção, quando atingir o limite de vagas que é definido na turma, não será mais possível fazer enturmações.</td></tr>
+<tr><td>Bloquear cadastro de novas turmas antes de atingir limite de vagas (no mesmo turno)</td><td>Ao marcar esta opção, não será possível cadastrar novas turmas até que o limite de vagas da turma for atingido. Neste caso, em uma turma matutina que suporta 25 alunos, não será possível criar outra turma matutina até que as 25 vagas estejam preenchidas.</td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="como-configurar-a-sequencia-de-enturmacão"></a><a href="#como-configurar-a-sequencia-de-enturmacão" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Como configurar a sequência de enturmação</h2>
+<p>No cadastro de Sequência de Enturmação você poderá configurar como os alunos
+irão progredir de uma série/ano para outra. Segue abaixo um exemplo de como deve
+ser informado:</p>
+<blockquote>
+<p><strong>Localização:</strong> Módulo Escola &gt; Cadastros &gt; Tipos &gt; Séries &gt; Sequência de
+Enturmação</p>
+</blockquote>
+<p>Curso Origem: Ensino Fund. 9 Anos Iniciais  → Curso Destino: Ensino Fund. – 9
+Anos Iniciais
+Série Origem: 1º Ano → Série Destino: 2º Ano
+Curso Origem: Ensino Fund. 9 Anos Iniciais  → Curso Destino: Ensino Fund. – 9
+Anos Iniciais
+Série Origem: 2º Ano → Série Destino: 3º Ano</p>
+<p>Continua assim por diante. Somente é alterado o curso destino quando, neste
+exemplo, é passado do 5º Ano para o 6º, que pertence ao curso Anos finais.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/admin-intro.html"><span class="arrow-prev">← </span><span>Home</span></a><a class="docs-next button" href="/docs/admin-importar-censo.html"><span>Importar Censo Escolar</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#configurar-a-instituicão">Configurar a instituição</a></li><li><a href="#como-cadastrar-um-novo-usuario">Como cadastrar um novo usuário</a><ul class="toc-headings"><li><a href="#permissões-tipos-de-usuario-usuarios">Permissões (tipos de usuário/usuários)</a></li></ul></li><li><a href="#como-configurar-cursos">Como configurar cursos</a></li><li><a href="#como-configurar-etapas">Como configurar etapas</a><ul class="toc-headings"><li><a href="#etapas">Etapas</a></li><li><a href="#ano-letivo-escolar">Ano letivo escolar</a></li></ul></li><li><a href="#como-configurar-escolas">Como configurar escolas</a><ul class="toc-headings"><li><a href="#escolas">Escolas</a></li></ul></li><li><a href="#como-configurar-regras-de-avaliacão-da-rede">Como configurar regras de avaliação da rede</a><ul class="toc-headings"><li><a href="#tabelas-de-arredondamento">Tabelas de arredondamento</a></li><li><a href="#formulas-de-calculo-de-media">Fórmulas de cálculo de média</a></li><li><a href="#regras-de-avaliacão">Regras de avaliação</a></li></ul></li><li><a href="#como-configurar-as-series">Como configurar as séries</a></li><li><a href="#como-configurar-os-componentes-curriculares">Como configurar os Componentes Curriculares</a></li><li><a href="#como-configurar-as-series-da-escola">Como configurar as séries da escola</a></li><li><a href="#como-configurar-a-sequencia-de-enturmacão">Como configurar a sequência de enturmação</a></li></ul></nav></div><footer id="footer" class="nav-footer"><section class="sitemap"><a href="/" class="nav-home"><img class="footerLogo" src="/img/logo_ieducar_horizontal_footer.svg" alt="i-Educar" width="108"/></a><div class="footerNav"><nav><ul><li><a href="index">Home</a></li><li><a href="index.html#quemusa">Quem Usa?</a></li><li><a href="/blog">Blog</a></li><li><a href="https://forum.ieducar.org">Fórum</a></li><li><a href="docs">Documentação</a></li><li><a href="https://github.com/portabilis/i-educar">Github</a></li></ul></nav></div></section><section class="subfooter"><div class="subfooteritens"><div class="footerDescription"><p>Mantido pela <img src="/img/logo-portabilis.svg"/> e Comunidade i-Educar para educação do Brasil <img src="/img/coracao.svg"/> </p></div><div class="footerVersion"><p>v. i-Educar</p></div></div></section></footer></div></body></html>
