@@ -1,6 +1,10 @@
 {
   "admin": {
-    "i-Educar": ["admin-intro"]
+    "i-Educar": [
+      "admin-intro",
+      "admin-setup-inicial",
+      "admin-importar-censo"
+    ]
   },
   "dev": {
     "i-Educar": ["dev-intro"],
