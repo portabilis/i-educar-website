@@ -1,7 +1,7 @@
 ---
 id: admin-intro
 title: Documentação para Administradores
-sidebar_label: Documentação para Administradores
+sidebar_label: Home
 ---
 
 Esta documentação tem o intuito de instruir o(s) administrador(es) do i-Educar 

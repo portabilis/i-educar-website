@@ -1,7 +1,7 @@
 ---
 id: user-intro
 title: Documentação para Usuários
-sidebar_label: Documentação para Usuários
+sidebar_label: Home
 ---
 
 Dividimos a documentação para usuários nos seguintes tópicos:
