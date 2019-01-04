@@ -4,8 +4,6 @@ authorURL: https://www.linkedin.com/in/giustin
 title: Retrospectiva 2018: A ascensão da Comunidade i-Educar
 ---
 
-# Retrospectiva 2018: A ascensão da Comunidade i-Educar
-
 ![](https://lh5.googleusercontent.com/_G5ZkskR2l8ge5Nb4HfyutUxrQj-QjyMxmSX42aBY0vktU1pMKDfQzglgDQliSV8AiYxZKK-H-TNfSzTUSsnZ5GMxeYwjq5b9eIGq1WBEAmzPdG4UZJov5ujKRuIhswyJxxZnUv1)
 
 
@@ -21,7 +19,7 @@ Em 2018, esse sonho tem se tornado realidade. Cada vez mais redes no país tem a
 
 Neste post de retrospectiva, você vai ficar por dentro dos resultados que conseguimos alcançar neste ano de ascensão da Comunidade, conhecer quem estava envolvido e ficar por dentro dos nossos próximos passos.
 
-## Vamos relembrar?
+# Vamos relembrar?
 ![](https://lh4.googleusercontent.com/9mQfdBaeAbNBFcewMvtNTO9FlRqNhv-eIg76FtwfmRfOzi233yi9KAWDvzhyJwyrhGzjtLxGojhByFXFJcHrrxNn3YyHW2REgdeEIrnLA07hvJraE0uSLoIqkzlDllJJ8fVEQFbb)
 
 
@@ -29,7 +27,7 @@ Antes de 2018, a Comunidade estava limitada somente ao Portal do Software Públi
 
 Mas, hoje, essa realidade é bem diferente:
 
-## Novo e moderno ecossistema
+# Novo e moderno ecossistema
 
 ## Site oficial
 
@@ -82,17 +80,14 @@ Quer se cadastrar na newsletter da Comunidade? No fim da home do [ieducar.org](h
 
 ![](https://lh6.googleusercontent.com/NZGfCOoStMYb_qeCVc30Xn-NJC6S6fhAung14MjymD1oqjlaK_4NbetFDUh04sp_EOJKC73wF_j3OcY2_DDaEqr6dBAxNMoDBwOTf9rSdKCTTnU68kX2GVL4XKCYN_7phPLB4d1G)
 
-
-
-## Uma nova marca para um novo momento
+# Uma nova marca para um novo momento
 
 Todo esse novo momento, em conjunto com o novo movimento pedia uma “nova cara” pra Comunidade i-Educar, algo que a representasse de fato, e que fosse mais atraente. Por isso, convidamos várias pessoas que no passado já contribuíram com a comunidade para participar do processo de rebranding do i-Educar, e acreditamos que o resultado atendeu às expectativas.
 
 ![](https://lh4.googleusercontent.com/s54LWLcEJO8F3yfZkP5PCSe17IZRBYcnZ6q1E01ZK7T8RuyOk7eSWF4baXOLQkChOcQpKJwfe1oR_NIqtQ9zHHsCicbTh2dM-zYBaQkVPT1lSysVmfl3zm5hhH_1dLIbwROLqUcr)
 
 
-
-## Agora, também por todos os professores do Brasil
+# Agora, também por todos os professores do Brasil
 
 Acreditando neste movimento de comunidade, e na importância disso para a melhora na qualidade de ensino em todas as redes públicas do país, eu e a Portabilis decidimos que era a hora de liberar um produto que realmente pudesse impactar as salas de aulas do país.
 Por mais que o i-Educar contribua positivamente com a gestão escolar, sentíamos que faltavam ferramentas para apoiar o trabalho dos professores que se entregam de corpo e alma todos os dias para o aprendizado dos alunos. 
@@ -101,6 +96,7 @@ Por mais que o i-Educar contribua positivamente com a gestão escolar, sentíamo
 
 
 Segundo uma pesquisa feita pelo Banco Mundial em 2011, 34% do tempo das aulas no Brasil é perdido com burocracia, e isso nos fez agir. 
+
 **Lançamento do i-Diário**
 
 Foi pensando nessa dor que a Portabilis criou o i-Diário, uma ferramenta que permite que o professor consulte o plano de ensino da rede, monte e prepare planos de aula de suas turmas, registre os conteúdos que ministrou em sala de aula e controle a frequência mesmo estando off-line.
@@ -112,7 +108,7 @@ Foi pensando nessa dor que a Portabilis criou o i-Diário, uma ferramenta que pe
 O projeto, que tem integração total com o i-Educar, está disponível para toda a comunidade e você pode conhecer mais [aqui](https://github.com/portabilis/i-diario).
 
 
-## Nossos números atuais
+# Nossos números atuais
 
 Todo esse movimento fez com que crescêssemos ainda mais. Hoje, com o projeto todo atualizado, com as movimentações nas redes sociais, com uma comunicação mais ativa da comunidade, trazemos cada vez mais pessoas para esse movimento livre em prol da educação pública brasileira que a cada dia se torna mais forte.
 
@@ -124,7 +120,7 @@ Todo esse movimento fez com que crescêssemos ainda mais. Hoje, com o projeto to
 
 ![](https://lh5.googleusercontent.com/3_n0u8dUh_EH4IM1QSsAbucBcHwrRsKKzKvMrymteePMrD__s1nxOWsxbyG0aTr4Gms45UgI2VgC1Dj9SNGzZp0ejC0txF4yqOmR1_68tlXZD-zQ7z-u7_wSDK0ewbatz1m3-aVE)
 
-## Começando as implantações por todo o Brasil
+# Começando as implantações por todo o Brasil
 
 Graças ao nosso trabalho em comunidade, com os contribuidores esclarecendo dúvidas, ajudando na instalação, resolvendo issues, e tudo mais, um bom número de redes já tem projetos de implantações, sejam elas ainda em fase de testes, implantação, ou preparação para o início do ano letivo.
 
@@ -143,7 +139,7 @@ Graças ao nosso trabalho em comunidade, com os contribuidores esclarecendo dúv
 Inclusive, caso você tenha um caso de implantação bem sucedido, ou em fase de testes, conte pra gente [neste post](https://forum.ieducar.org/t/casos-de-sucesso-compartilhe-suas-experiencias-de-adocao-do-i-educar-pelo-brasil/282) do fórum!
 
 
-## Somos notícia
+# Somos notícia
 
 Nós conhecemos e entendemos a importância que todo esse movimento tem para a educação pública, e neste ano, graças à todos esses grandes feitos, a mídia também se interessou, e uma parte do país passou a conhecer também:
 
@@ -156,7 +152,7 @@ Nós conhecemos e entendemos a importância que todo esse movimento tem para a e
 - Portabilis projeta modernização do software livre i-Educar — **Jornal Gazeta** (impresso)
 
 
-## E quem fez tudo isso acontecer?
+# E quem fez tudo isso acontecer?
 
 Para que esse movimento pudesse se concretizar, neste ano vimos diversas instituições agindo com o mesmo objetivo. Por isso, não posso de deixar de citar as que mais fizeram a diferença para a ascensão da nossa Comunidade.
 
@@ -191,7 +187,7 @@ Coordenadora oficial da Comunidade i-Educar e principal mantenedora do software,
 
 
 
-## Por que estamos fazendo isso e porquê você deveria se juntar a nós?
+# Por que estamos fazendo isso e porquê você deveria se juntar a nós?
 
 Educação é a chave. As transformações sociais que sonhamos para o nosso País só se materializarão quando, de fato, definirmos que essa bandeira é prioridade de todos nós. Não podemos esperar que o Estado, sozinho, vá garantir toda a agenda de mudanças e investimentos na educação. **Então, o que fazer e por onde começar?**
 
@@ -214,7 +210,7 @@ Eu e a Portabilis vamos continuar trabalhando em prol do i-Educar, porque optar 
 
 O ano de 2018 foi um grande ano para Comunidade i-Educar, mas 2019 promete ser ainda maior. Temos objetivos mais desafiadores e ainda [muita coisa](https://ieducar.org/blog/2018/11/30/roadmap-de-2018-e-governanca-da-comunidade.html) para atingir, mas com a sua contribuição, nós sabemos que tudo é possível. 
 
-## Gostou das novidades?
+# Gostou das novidades?
 
 Este ano está só começando, e para não perder as novidades, nos acompanhe no [Fórum](http://forum.ieducar.org/), [Telegram](https://t.me/ieducar), [Twitter](https://twitter.com/ieducar) e [Facebook](http://facebook.com/ieducar) e saiba mais sobre todos os próximos lançamentos e movimentos da Comunidade i-Educar! ❤️
 
