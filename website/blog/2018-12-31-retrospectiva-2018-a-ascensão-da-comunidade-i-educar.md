@@ -7,9 +7,9 @@ title: Retrospectiva 2018: A ascensão da Comunidade i-Educar
 ![](https://lh5.googleusercontent.com/_G5ZkskR2l8ge5Nb4HfyutUxrQj-QjyMxmSX42aBY0vktU1pMKDfQzglgDQliSV8AiYxZKK-H-TNfSzTUSsnZ5GMxeYwjq5b9eIGq1WBEAmzPdG4UZJov5ujKRuIhswyJxxZnUv1)
 
 
-Um ano atrás, eu me dirigi à vocês, [num post](https://ieducar.org/blog/2017/12/28/em-2018-queremos-o-i-educar-por-todo-o-brasil.html), com um compromisso, com uma vontade, e com um sonho. <!--truncate-->
+Um ano atrás, eu me dirigi à vocês, [num post](https://ieducar.org/blog/2017/12/28/em-2018-queremos-o-i-educar-por-todo-o-brasil.html), com um compromisso, com uma vontade, e com um sonho. 
 
-Com o compromisso de evolução e melhorias significativas do i-Educar e crescimento da sua Comunidade, com uma vontade de levar o i-Educar por todas as escolas do Brasil, e com um sonho de diminuir o número de 80% dos municípios sem software de gestão escolar no país. 
+Com o compromisso de evolução e melhorias significativas do i-Educar e crescimento da sua Comunidade, com uma vontade de levar o i-Educar por todas as escolas do Brasil, e com um sonho de diminuir o número de 80% dos municípios sem software de gestão escolar no país. <!--truncate-->
 
 Em 2018, eu e a Portabilis fizemos jus a esse compromisso. Hoje, o novo ecossistema da Comunidade, com site, fórum, e código atualizado, funciona de forma que possamos trabalhar de forma colaborativa, todos juntos pela educação do nosso país.
 
@@ -98,7 +98,6 @@ Por mais que o i-Educar contribua positivamente com a gestão escolar, sentíamo
 ![](https://lh5.googleusercontent.com/Gd0ecW1KMjbtVsImNsuFl4xUm2-zwjktoS-egvHYbhT9PgoCzKIkF9f7Cz1Jt4-Q2uEQsyNHBXkyrB2mY5L0Z40_Av19ZUMCw-XMzSUGvz94eRLJdRb-zln01qXiVDPXdR-JtwoY)
 
 
-
 Segundo uma pesquisa feita pelo Banco Mundial em 2011, 34% do tempo das aulas no Brasil é perdido com burocracia, e isso nos fez agir. 
 
 ## Lançamento do i-Diário
@@ -118,10 +117,7 @@ O projeto, que tem integração total com o i-Educar, está disponível para tod
 Todo esse movimento fez com que crescêssemos ainda mais. Hoje, com o projeto todo atualizado, com as movimentações nas redes sociais, com uma comunicação mais ativa da comunidade, trazemos cada vez mais pessoas para esse movimento livre em prol da educação pública brasileira que a cada dia se torna mais forte.
 
 ![](https://lh6.googleusercontent.com/qNmQcQxxIp8LraxkXgz47Qq-H3nV_B8z3p0_MRYD_cUOY10uveaByW6niQP6t40CAAvK24zAzbK3KNSrZiuIRzpqAW3pNN_AfdZjYxVKqgue09zfTUZ1Ydz9b4mV5qQFdTXND9Aq)
-
-
 ![](https://lh4.googleusercontent.com/7sMiR-s-n2qozDFPCZmkUWiJjOLdcgyS7zut7qYwlsNw8-MpmA_3YHyjUaQ5ejm7RUSyDoBbLvW9zTNH0-t_fOV6oJdtF-ZdUxv_nA3J3FrOoKGb4N4inFEx0r2LhUgPi6_Pjx9d)
-
 ![](https://lh5.googleusercontent.com/3_n0u8dUh_EH4IM1QSsAbucBcHwrRsKKzKvMrymteePMrD__s1nxOWsxbyG0aTr4Gms45UgI2VgC1Dj9SNGzZp0ejC0txF4yqOmR1_68tlXZD-zQ7z-u7_wSDK0ewbatz1m3-aVE)
 
 # Começando as implantações por todo o Brasil
@@ -147,9 +143,9 @@ Inclusive, caso você tenha um caso de implantação bem sucedido, ou em fase de
 
 Nós conhecemos e entendemos a importância que todo esse movimento tem para a educação pública, e neste ano, graças à todos esses grandes feitos, a mídia também se interessou, e uma parte do país passou a conhecer também:
 
-- [Por meio da tecnologia, a Portabilis, de Içara, quer mudar a gestão escolar pública no Brasil](https://www.google.com.br/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwib9IzJl9TfAhXDhpAKHQW3D1AQFjAAegQICRAB&url=http%3A%2F%2Fscinova.com.br%2Fpor-meio-da-tecnologia-portabilis-de-icara-quer-mudar-gestao-escolar-publica-no-brasil%2F&usg=AOvVaw21wKB2ymtjT-1TOa0P8IRA) ****— **SC Inova**
+- [Por meio da tecnologia, a Portabilis, de Içara, quer mudar a gestão escolar pública no Brasil](https://www.google.com.br/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwib9IzJl9TfAhXDhpAKHQW3D1AQFjAAegQICRAB&url=http%3A%2F%2Fscinova.com.br%2Fpor-meio-da-tecnologia-portabilis-de-icara-quer-mudar-gestao-escolar-publica-no-brasil%2F&usg=AOvVaw21wKB2ymtjT-1TOa0P8IRA) — **SC Inova**
 - [Portabilis e Fundação Lemann unem-se por maior software livre educacional do país](https://www.google.com.br/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwixh8mWl9TfAhXFHZAKHUd2AfUQFjAAegQIBRAB&url=https%3A%2F%2Fwww.canalicara.com%2Feconomia%2Fportabilis-e-fundacao-lemann-unem-se-por-maior-software-livre-educacional-do-pais-38893.html&usg=AOvVaw1V0nwgzEXso3pOwJEqUjUo) — **Canal Içara**
-- [Portabilis recebe visita de membros da Fundação Lemann para firmar parceria](https://www.google.com.br/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjj1_eol9TfAhXEiJAKHV2eC7IQFjAAegQIBxAB&url=http%3A%2F%2Fwww.engeplus.com.br%2Fnoticia%2Ftecnologia%2F2018%2F118614-portabilis-recebe-visita-de-membros-da-fundacao-lemann-para-firmar-parcer&usg=AOvVaw1-KjWOFDAX_AesqjD3Oa5v&cshid=1546606825794001) **— Engeplus**
+- [Portabilis recebe visita de membros da Fundação Lemann para firmar parceria](https://www.google.com.br/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjj1_eol9TfAhXEiJAKHV2eC7IQFjAAegQIBxAB&url=http%3A%2F%2Fwww.engeplus.com.br%2Fnoticia%2Ftecnologia%2F2018%2F118614-portabilis-recebe-visita-de-membros-da-fundacao-lemann-para-firmar-parcer&usg=AOvVaw1-KjWOFDAX_AesqjD3Oa5v&cshid=1546606825794001) — **Engeplus**
 - [Iniciativas para acelerar transformação digital no setor público são organizadas no FISL 18](http://fisl18.softwarelivre.org/index.php/2018/07/14/iniciativas-para-acelerar-transformacao-digital-no-setor-publico-sao-organizadas-no-fisl-18/) — **FISL**
 - PME catarinense lança nova versão do i-Educar — **Diário Catarinense** (impresso)
 - Portabilis e Fundação Lemann lideram movimento pelo maior software livre educacional do Brasil — **A Tribuna** (impresso)
@@ -165,9 +161,7 @@ Para que esse movimento pudesse se concretizar, neste ano vimos diversas institu
 
 Com a intenção de disponibilizar um software livre e acessível para as redes de ensino do país, a Fundação de Jorge Paulo Lemann ajudou a financiar o projeto da criação no novo ecossistema da Comunidade, bem como a preparação para a liberação de melhorias do software e lançamentos de novos produtos para a Comunidade.
 
-![](https://lh4.googleusercontent.com/8FKi4Hi96-1vNeRSx-Z1U5Z9qZtCxIi0HvZjPwLZ2_UL89VR3TV47vp3FVQnj2V9wnXneF7Fc4lmAJQeJaonH5a09eyZIPzw1fYvqo28ydNHggURLnmSm6KQQBcg_ctUl3WdiKtT)
-
-
+![image](https://user-images.githubusercontent.com/1082624/50715054-778bc980-1062-11e9-895e-251b0bcad138.png)
 
 ## Instituto Federal do Mato Grosso do Sul
 
@@ -187,8 +181,7 @@ Além dos alunos da UFRJ terem a possibilidade de utilizar o i-Educar como objet
 
 Coordenadora oficial da Comunidade i-Educar e principal mantenedora do software, desenvolveu todas as evoluções mais recentes do i-Educar e abriu o código do projeto i-Diário para potencializar o i-Educar. O trabalho atual consiste em patches com atualizações frequentes dos projetos e direcionamento do futuro dos softwares junto à comunidade.
 
-![](https://lh6.googleusercontent.com/hlipOAZcff155ai7A5koPead8OqMFdYhBsp9NUfB6iNv09oIZb9QY7AVzTx3Bi-kWE1EPJ0VyeVLXucaGouaukIwUKCPWvOYWZDGKNRhQ_UNtab0VGy4pJeF8jRf1b9tKp3GS6eG)
-
+![image](https://user-images.githubusercontent.com/1082624/50715104-c174af80-1062-11e9-8d26-6e67c40d5d5d.png)
 
 
 # Por que estamos fazendo isso e porquê você deveria se juntar a nós?
