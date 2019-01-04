@@ -4,7 +4,7 @@
         <title>i-Educar Blog</title>
         <link>http://ieducar.org/blog</link>
         <description>The best place to stay up-to-date with the latest i-Educar news and events.</description>
-        <lastBuildDate>Fri, 30 Nov 2018 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 31 Dec 2018 06:00:00 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -12,7 +12,16 @@
             <url>http://ieducar.org/img/logo_horizontal.svg</url>
             <link>http://ieducar.org/blog</link>
         </image>
-        <copyright>Copyright © 2018 Your Name or Your Company Name</copyright>
+        <copyright>Copyright © 2019 Your Name or Your Company Name</copyright>
+        <item>
+            <title><![CDATA[Retrospectiva 2018: A ascensão da Comunidade i-Educar]]></title>
+            <link>http://ieducar.org/blog/2018/12/31/retrospectiva-2018-a-ascensão-da-comunidade-i-educar.html</link>
+            <guid>http://ieducar.org/blog/2018/12/31/retrospectiva-2018-a-ascensão-da-comunidade-i-educar.html</guid>
+            <pubDate>Mon, 31 Dec 2018 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="https://lh5.googleusercontent.com/_G5ZkskR2l8ge5Nb4HfyutUxrQj-QjyMxmSX42aBY0vktU1pMKDfQzglgDQliSV8AiYxZKK-H-TNfSzTUSsnZ5GMxeYwjq5b9eIGq1WBEAmzPdG4UZJov5ujKRuIhswyJxxZnUv1" alt=""></p>
+<p>Um ano atrás, eu me dirigi à vocês, <a href="https://ieducar.org/blog/2017/12/28/em-2018-queremos-o-i-educar-por-todo-o-brasil.html">num post</a>, com um compromisso, com uma vontade, e com um sonho.</p>
+]]></description>
+        </item>
         <item>
             <title><![CDATA[Roadmap de 2018 e governança da Comunidade]]></title>
             <link>http://ieducar.org/blog/2018/11/30/roadmap-de-2018-e-governanca-da-comunidade.html</link>

@@ -2,12 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://ieducar.org/blog</id>
     <title>i-Educar Blog</title>
-    <updated>2018-11-30T06:00:00Z</updated>
+    <updated>2018-12-31T06:00:00Z</updated>
     <generator>Feed for Node.js</generator>
     <link rel="alternate" href="http://ieducar.org/blog"/>
     <subtitle>The best place to stay up-to-date with the latest i-Educar news and events.</subtitle>
     <logo>http://ieducar.org/img/logo_horizontal.svg</logo>
-    <rights>Copyright © 2018 Your Name or Your Company Name</rights>
+    <rights>Copyright © 2019 Your Name or Your Company Name</rights>
+    <entry>
+        <title type="html"><![CDATA[Retrospectiva 2018: A ascensão da Comunidade i-Educar]]></title>
+        <id>http://ieducar.org/blog/2018/12/31/retrospectiva-2018-a-ascensão-da-comunidade-i-educar.html</id>
+        <link href="http://ieducar.org/blog/2018/12/31/retrospectiva-2018-a-ascensão-da-comunidade-i-educar.html">
+        </link>
+        <updated>2018-12-31T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p><img src="https://lh5.googleusercontent.com/_G5ZkskR2l8ge5Nb4HfyutUxrQj-QjyMxmSX42aBY0vktU1pMKDfQzglgDQliSV8AiYxZKK-H-TNfSzTUSsnZ5GMxeYwjq5b9eIGq1WBEAmzPdG4UZJov5ujKRuIhswyJxxZnUv1" alt=""></p>
+<p>Um ano atrás, eu me dirigi à vocês, <a href="https://ieducar.org/blog/2017/12/28/em-2018-queremos-o-i-educar-por-todo-o-brasil.html">num post</a>, com um compromisso, com uma vontade, e com um sonho.</p>
+]]></summary>
+        <author>
+            <name>Tiago de Faveri Giusti</name>
+            <uri>https://www.linkedin.com/in/giustin</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Roadmap de 2018 e governança da Comunidade]]></title>
         <id>http://ieducar.org/blog/2018/11/30/roadmap-de-2018-e-governanca-da-comunidade.html</id>
