@@ -98,7 +98,6 @@ Por mais que o i-Educar contribua positivamente com a gestão escolar, sentíamo
 ![](https://lh5.googleusercontent.com/Gd0ecW1KMjbtVsImNsuFl4xUm2-zwjktoS-egvHYbhT9PgoCzKIkF9f7Cz1Jt4-Q2uEQsyNHBXkyrB2mY5L0Z40_Av19ZUMCw-XMzSUGvz94eRLJdRb-zln01qXiVDPXdR-JtwoY)
 
 
-
 Segundo uma pesquisa feita pelo Banco Mundial em 2011, 34% do tempo das aulas no Brasil é perdido com burocracia, e isso nos fez agir. 
 
 ## Lançamento do i-Diário
@@ -118,10 +117,7 @@ O projeto, que tem integração total com o i-Educar, está disponível para tod
 Todo esse movimento fez com que crescêssemos ainda mais. Hoje, com o projeto todo atualizado, com as movimentações nas redes sociais, com uma comunicação mais ativa da comunidade, trazemos cada vez mais pessoas para esse movimento livre em prol da educação pública brasileira que a cada dia se torna mais forte.
 
 ![](https://lh6.googleusercontent.com/qNmQcQxxIp8LraxkXgz47Qq-H3nV_B8z3p0_MRYD_cUOY10uveaByW6niQP6t40CAAvK24zAzbK3KNSrZiuIRzpqAW3pNN_AfdZjYxVKqgue09zfTUZ1Ydz9b4mV5qQFdTXND9Aq)
-
-
 ![](https://lh4.googleusercontent.com/7sMiR-s-n2qozDFPCZmkUWiJjOLdcgyS7zut7qYwlsNw8-MpmA_3YHyjUaQ5ejm7RUSyDoBbLvW9zTNH0-t_fOV6oJdtF-ZdUxv_nA3J3FrOoKGb4N4inFEx0r2LhUgPi6_Pjx9d)
-
 ![](https://lh5.googleusercontent.com/3_n0u8dUh_EH4IM1QSsAbucBcHwrRsKKzKvMrymteePMrD__s1nxOWsxbyG0aTr4Gms45UgI2VgC1Dj9SNGzZp0ejC0txF4yqOmR1_68tlXZD-zQ7z-u7_wSDK0ewbatz1m3-aVE)
 
 # Começando as implantações por todo o Brasil
