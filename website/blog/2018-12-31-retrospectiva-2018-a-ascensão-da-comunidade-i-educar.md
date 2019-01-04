@@ -7,7 +7,7 @@ title: Retrospectiva 2018: A ascensão da Comunidade i-Educar
 ![](https://lh5.googleusercontent.com/_G5ZkskR2l8ge5Nb4HfyutUxrQj-QjyMxmSX42aBY0vktU1pMKDfQzglgDQliSV8AiYxZKK-H-TNfSzTUSsnZ5GMxeYwjq5b9eIGq1WBEAmzPdG4UZJov5ujKRuIhswyJxxZnUv1)
 
 
-Um ano atrás, eu me dirigi à vocês, [num post](https://ieducar.org/blog/2017/12/28/em-2018-queremos-o-i-educar-por-todo-o-brasil.html), com um compromisso, com uma vontade, e com um sonho. 
+Um ano atrás, eu me dirigi à vocês, [num post](https://ieducar.org/blog/2017/12/28/em-2018-queremos-o-i-educar-por-todo-o-brasil.html), com um compromisso, com uma vontade, e com um sonho. <!--truncate-->
 
 Com o compromisso de evolução e melhorias significativas do i-Educar e crescimento da sua Comunidade, com uma vontade de levar o i-Educar por todas as escolas do Brasil, e com um sonho de diminuir o número de 80% dos municípios sem software de gestão escolar no país. 
 
@@ -21,6 +21,7 @@ Neste post de retrospectiva, você vai ficar por dentro dos resultados que conse
 
 # Vamos relembrar?
 ![](https://lh4.googleusercontent.com/9mQfdBaeAbNBFcewMvtNTO9FlRqNhv-eIg76FtwfmRfOzi233yi9KAWDvzhyJwyrhGzjtLxGojhByFXFJcHrrxNn3YyHW2REgdeEIrnLA07hvJraE0uSLoIqkzlDllJJ8fVEQFbb)
+###### Página da Comunidade i-Educar no Portal do SPB
 
 
 Antes de 2018, a Comunidade estava limitada somente ao Portal do Software Público Brasileiro ([https://softwarepublico.gov.br](https://softwarepublico.gov.br)), que não conseguia atender todas as necessidades que a comunidade tinha. O Portal do SPB nasceu em abril de 2007 e abriga dezenas de softwares públicos que já impactaram muitas pessoas e organizações ao longo deste tempo. Entretanto, a plataforma acabou ficando defasada e instável, dificultando o acesso, uso e impedindo a horizontalidade da comunicação entre os contribuidores e os adotantes.
@@ -35,6 +36,7 @@ O novo [site oficial](https://ieducar.org/) é o lugar principal da Comunidade i
 
 
 ![](https://lh5.googleusercontent.com/B6z2AP4c_BxTARPCeYBTLHS-fwkJ6VFJrQ9kAHseZe0TH7Kwu6COl-2Fv5i4TTB_SNIXmqwmTZFmpVFXAkre5lqCn6gw6XeZJvFb42i_ejB1aCbhRJFlEt6OSzrCg_K44s22uk74)
+###### Site oficial da Comunidade i-Educar: ieducar.org
 
 
 
@@ -85,6 +87,7 @@ Quer se cadastrar na newsletter da Comunidade? No fim da home do [ieducar.org](h
 Todo esse novo momento, em conjunto com o novo movimento pedia uma “nova cara” pra Comunidade i-Educar, algo que a representasse de fato, e que fosse mais atraente. Por isso, convidamos várias pessoas que no passado já contribuíram com a comunidade para participar do processo de rebranding do i-Educar, e acreditamos que o resultado atendeu às expectativas.
 
 ![](https://lh4.googleusercontent.com/s54LWLcEJO8F3yfZkP5PCSe17IZRBYcnZ6q1E01ZK7T8RuyOk7eSWF4baXOLQkChOcQpKJwfe1oR_NIqtQ9zHHsCicbTh2dM-zYBaQkVPT1lSysVmfl3zm5hhH_1dLIbwROLqUcr)
+###### Antes e depois do processo de rebranding da marca i-Educar
 
 
 # Agora, também por todos os professores do Brasil
@@ -95,14 +98,16 @@ Por mais que o i-Educar contribua positivamente com a gestão escolar, sentíamo
 ![](https://lh5.googleusercontent.com/Gd0ecW1KMjbtVsImNsuFl4xUm2-zwjktoS-egvHYbhT9PgoCzKIkF9f7Cz1Jt4-Q2uEQsyNHBXkyrB2mY5L0Z40_Av19ZUMCw-XMzSUGvz94eRLJdRb-zln01qXiVDPXdR-JtwoY)
 
 
+
 Segundo uma pesquisa feita pelo Banco Mundial em 2011, 34% do tempo das aulas no Brasil é perdido com burocracia, e isso nos fez agir. 
 
-**Lançamento do i-Diário**
+## Lançamento do i-Diário
 
 Foi pensando nessa dor que a Portabilis criou o i-Diário, uma ferramenta que permite que o professor consulte o plano de ensino da rede, monte e prepare planos de aula de suas turmas, registre os conteúdos que ministrou em sala de aula e controle a frequência mesmo estando off-line.
         
 
 ![](https://lh6.googleusercontent.com/wJ1IRx0IWpwMnHsETnLJmnoaP3f24h0QvYU1xyCvSwsyCSS2aFDW3EXARTiWyf2LdKSMBufUQiL-y5GLTM7LGQJF-eSlkkTBlA1qUohSvtMZAHTF3mMWRzs8O8GtibOgGyHc_s1v)
+###### Ilustração das telas principais do i-Diário App
 
 
 O projeto, que tem integração total com o i-Educar, está disponível para toda a comunidade e você pode conhecer mais [aqui](https://github.com/portabilis/i-diario).
@@ -113,7 +118,6 @@ O projeto, que tem integração total com o i-Educar, está disponível para tod
 Todo esse movimento fez com que crescêssemos ainda mais. Hoje, com o projeto todo atualizado, com as movimentações nas redes sociais, com uma comunicação mais ativa da comunidade, trazemos cada vez mais pessoas para esse movimento livre em prol da educação pública brasileira que a cada dia se torna mais forte.
 
 ![](https://lh6.googleusercontent.com/qNmQcQxxIp8LraxkXgz47Qq-H3nV_B8z3p0_MRYD_cUOY10uveaByW6niQP6t40CAAvK24zAzbK3KNSrZiuIRzpqAW3pNN_AfdZjYxVKqgue09zfTUZ1Ydz9b4mV5qQFdTXND9Aq)
-
 
 
 ![](https://lh4.googleusercontent.com/7sMiR-s-n2qozDFPCZmkUWiJjOLdcgyS7zut7qYwlsNw8-MpmA_3YHyjUaQ5ejm7RUSyDoBbLvW9zTNH0-t_fOV6oJdtF-ZdUxv_nA3J3FrOoKGb4N4inFEx0r2LhUgPi6_Pjx9d)
