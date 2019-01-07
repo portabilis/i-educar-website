@@ -167,15 +167,13 @@ Com a intenção de disponibilizar um software livre e acessível para as redes 
 
 O IFMS que, dentre vários projetos que já desenvolve em parceria com o Ministério da Ciência, Tecnologia, Inovações e Comunicações (MCTIC), se aliou ao movimento do maior software livre do Brasil por meio de uma aproximação propiciada pela aliança da Portabilis, Fundação Lemann, onde alguns alunos do Instituto contribuem, sob a coordenação dos professores, na implementação do i-Educar em algumas cidades piloto e apoio com o desenvolvimento do site e alguns aspectos da documentação. Além disso, representantes do IFMS fazem parte do comitê de governança da Comunidade junto com a Portabilis.
 
-![](https://lh5.googleusercontent.com/Tx6oiuQFRO8VhGhNBKXXRSybfmCfywONw7KUZdq2fJfqW3uMFcY5Nptm0h9i7MYz2_sBjmu9VEk1wdYNfC8IRaWeF9d0PlU3vx6ZxXp8Dm9z59JSpNuGAE-ofSztvKjgwvbPI63A)
-
-
+![ifms](https://user-images.githubusercontent.com/1082624/50790436-17856500-12a6-11e9-898f-bf8588b5aa03.png)
 
 ## Universidade Federal do Rio de Janeiro
 
 Além dos alunos da UFRJ terem a possibilidade de utilizar o i-Educar como objeto de estudo, eles também desenvolveram um experimento de gerador de relatórios e contribuem com adoções locais do software, com o caso de Duque de Caxias, no Rio de Janeiro.
 
-![](https://lh4.googleusercontent.com/V6Cn6-tPYl0S2tXNyVqLsPeijWACEweD3phdhoCCLPD05xKn-VC9bM0bjtukxHS8P-AYqvJ2okC-dU9EBtlxEzBcjCctW9BUfd3XwWPECVqB5ds0Vvbi8a3b7OQtuzmm0XKmLyfN)
+![ufrj](https://user-images.githubusercontent.com/1082624/50790486-3552ca00-12a6-11e9-8020-620ab3d5bc19.png)
 
 ## Portabilis
 
@@ -184,7 +182,7 @@ Coordenadora oficial da Comunidade i-Educar e principal mantenedora do software,
 ![image](https://user-images.githubusercontent.com/1082624/50715104-c174af80-1062-11e9-8d26-6e67c40d5d5d.png)
 
 
-# Por que estamos fazendo isso e porquê você deveria se juntar a nós?
+# Por que estamos fazendo isso e por que você deveria se juntar a nós?
 
 Educação é a chave. As transformações sociais que sonhamos para o nosso País só se materializarão quando, de fato, definirmos que essa bandeira é prioridade de todos nós. Não podemos esperar que o Estado, sozinho, vá garantir toda a agenda de mudanças e investimentos na educação. **Então, o que fazer e por onde começar?**
 
