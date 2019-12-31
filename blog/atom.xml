@@ -2,48 +2,62 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://ieducar.org/blog</id>
     <title>i-Educar Blog</title>
-    <updated>2019-09-03T06:00:00Z</updated>
-    <generator>Feed for Node.js</generator>
+    <updated>2019-12-31T06:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://ieducar.org/blog"/>
     <subtitle>The best place to stay up-to-date with the latest i-Educar news and events.</subtitle>
     <logo>http://ieducar.org/img/logo_horizontal.svg</logo>
     <rights>Copyright © 2019 Your Name or Your Company Name</rights>
     <entry>
+        <title type="html"><![CDATA[Retrospectiva 2019: Comunidade ganha força e se prepara para o futuro]]></title>
+        <id>http://ieducar.org/blog/2019/12/31/retrospectiva-2019-comunidade-ganha-força-e-se-prepara-para-o-futuro.html</id>
+        <link href="http://ieducar.org/blog/2019/12/31/retrospectiva-2019-comunidade-ganha-força-e-se-prepara-para-o-futuro.html"/>
+        <updated>2019-12-31T06:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p><img src="https://user-images.githubusercontent.com/1082624/71634226-06d9a780-2bf9-11ea-8b68-70c49c54657b.png" alt=""></p>
+<p>Na retrospectiva do ano passado, eu disse que 2019 seria um ano ainda melhor. E por mais que não pareça tão evidente, com grandes entregas e grandes feitos como foi ano passado, podemos ver tudo o que construímos juntos em 2018 crescer, se desenvolver e tomar sua própria forma.</p>
+<p>Se 2018 foi um ano de mudanças, 2019 foi um ano de ganhar força.</p>
+]]></summary>
+        <author>
+            <name>Tiago de Faveri Giusti</name>
+            <email/>
+            <uri>https://www.linkedin.com/in/giustin</uri>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[i-Educar 2.2]]></title>
         <id>http://ieducar.org/blog/2019/09/03/i-educar-2-2.html</id>
-        <link href="http://ieducar.org/blog/2019/09/03/i-educar-2-2.html">
-        </link>
-        <updated>2019-09-03T06:00:00Z</updated>
+        <link href="http://ieducar.org/blog/2019/09/03/i-educar-2-2.html"/>
+        <updated>2019-09-03T06:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>Se algum software brasileiro tem história a ser contada, é o i-Educar. Com mais de uma década de existência, o i-Educar
 continua firme e forte como maior software de gestão escolar em mais de 100 municípios do Brasil.</p>
 <p>Mas como todo software maduro, existe um preço para manter sua permanência no mercado, a <strong>evolução tecnológica</strong>.</p>
 ]]></summary>
         <author>
             <name>Eder Soares</name>
+            <email/>
             <uri>https://www.linkedin.com/in/edersoares</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[Retrospectiva 2018: A ascensão da Comunidade i-Educar]]></title>
         <id>http://ieducar.org/blog/2018/12/31/retrospectiva-2018-a-ascensão-da-comunidade-i-educar.html</id>
-        <link href="http://ieducar.org/blog/2018/12/31/retrospectiva-2018-a-ascensão-da-comunidade-i-educar.html">
-        </link>
-        <updated>2018-12-31T06:00:00Z</updated>
+        <link href="http://ieducar.org/blog/2018/12/31/retrospectiva-2018-a-ascensão-da-comunidade-i-educar.html"/>
+        <updated>2018-12-31T06:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p><img src="https://lh5.googleusercontent.com/_G5ZkskR2l8ge5Nb4HfyutUxrQj-QjyMxmSX42aBY0vktU1pMKDfQzglgDQliSV8AiYxZKK-H-TNfSzTUSsnZ5GMxeYwjq5b9eIGq1WBEAmzPdG4UZJov5ujKRuIhswyJxxZnUv1" alt=""></p>
 <p>Um ano atrás, eu me dirigi à vocês, <a href="https://ieducar.org/blog/2017/12/28/em-2018-queremos-o-i-educar-por-todo-o-brasil.html">num post</a>, com um compromisso, com uma vontade, e com um sonho.</p>
 <p>Com o compromisso de evolução e melhorias significativas do i-Educar e crescimento da sua Comunidade, com uma vontade de levar o i-Educar por todas as escolas do Brasil, e com um sonho de diminuir o número de 80% dos municípios sem software de gestão escolar no país.</p>
 ]]></summary>
         <author>
             <name>Tiago de Faveri Giusti</name>
+            <email/>
             <uri>https://www.linkedin.com/in/giustin</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[Roadmap de 2018 e governança da Comunidade]]></title>
         <id>http://ieducar.org/blog/2018/11/30/roadmap-de-2018-e-governanca-da-comunidade.html</id>
-        <link href="http://ieducar.org/blog/2018/11/30/roadmap-de-2018-e-governanca-da-comunidade.html">
-        </link>
-        <updated>2018-11-30T06:00:00Z</updated>
+        <link href="http://ieducar.org/blog/2018/11/30/roadmap-de-2018-e-governanca-da-comunidade.html"/>
+        <updated>2018-11-30T06:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p><img src="https://user-images.githubusercontent.com/1082624/49318741-e19fd480-f4e0-11e8-9efb-10551de7f84f.png" alt="roadmap-2018"></p>
 <h6><a class="anchor" aria-hidden="true" id="fonte-da-imagem-scorum"></a><a href="#fonte-da-imagem-scorum" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Fonte da imagem: Scorum</h6>
 <p>O que ainda vai acontecer na comunidade esse ano? Quem é que governa essa comunidade? Quem são os atores envolvidos?</p>
@@ -51,63 +65,64 @@ continua firme e forte como maior software de gestão escolar em mais de 100 mun
 ]]></summary>
         <author>
             <name>Tiago de Faveri Giusti</name>
+            <email/>
             <uri>https://www.linkedin.com/in/giustin</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[Lançamento de pacote de relatórios na Comunidade i-Educar]]></title>
         <id>http://ieducar.org/blog/2018/10/05/lancamento-de-pacote-de-relatorios-para-comunidade.html</id>
-        <link href="http://ieducar.org/blog/2018/10/05/lancamento-de-pacote-de-relatorios-para-comunidade.html">
-        </link>
-        <updated>2018-10-05T06:00:00Z</updated>
+        <link href="http://ieducar.org/blog/2018/10/05/lancamento-de-pacote-de-relatorios-para-comunidade.html"/>
+        <updated>2018-10-05T06:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p><img src="https://user-images.githubusercontent.com/42675992/46549245-b5cced80-c8a7-11e8-9ca1-205c90f251ce.jpg" alt="pelicula-live-comunidade"></p>
-<h6><a class="anchor" aria-hidden="true" id="imagem-do-lancamento-de-pacote-de-relatorios-para-a-comunidade-i-educar"></a><a href="#imagem-do-lancamento-de-pacote-de-relatorios-para-a-comunidade-i-educar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Imagem do lançamento de pacote de relatórios para a Comunidade i-Educar</h6>
+<h6><a class="anchor" aria-hidden="true" id="imagem-do-lançamento-de-pacote-de-relatórios-para-a-comunidade-i-educar"></a><a href="#imagem-do-lançamento-de-pacote-de-relatórios-para-a-comunidade-i-educar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Imagem do lançamento de pacote de relatórios para a Comunidade i-Educar</h6>
 <p>Vamos ajudar a educação a decolar com os melhores relatórios para a Comunidade?</p>
 <p>A <a href="http://portabilis.com.br">Portabilis</a> fez o lançamento oficial de um pacote com seus melhores relatórios para a Comunidade i-Educar</p>
 ]]></summary>
         <author>
             <name>Tiago de Faveri Giusti</name>
+            <email/>
             <uri>https://www.linkedin.com/in/giustin</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[7 coisas que você precisa saber sobre o i-Educar no FISL 18]]></title>
         <id>http://ieducar.org/blog/2018/07/18/7-coisas-que-voce-precisa-saber-sobre-o-i-educar-no-fisl18.html</id>
-        <link href="http://ieducar.org/blog/2018/07/18/7-coisas-que-voce-precisa-saber-sobre-o-i-educar-no-fisl18.html">
-        </link>
-        <updated>2018-07-18T06:00:00Z</updated>
+        <link href="http://ieducar.org/blog/2018/07/18/7-coisas-que-voce-precisa-saber-sobre-o-i-educar-no-fisl18.html"/>
+        <updated>2018-07-18T06:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>O Fórum Internacional Software Livre é um evento que acontece em Porto Alegre/RS
 e discute e promove o uso de tecnologias livres para o desenvolvimento humano e
 tecnológico.</p>
 ]]></summary>
         <author>
             <name>Tiago de Faveri Giusti</name>
+            <email/>
             <uri>https://www.linkedin.com/in/giustin</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[i-Educar por todo o Brasil: Portabilis e Fundação Lemann]]></title>
         <id>http://ieducar.org/blog/2018/01/31/i-educar-por-todo-o-brasil-portabilis-e-fundacao-lemann.html</id>
-        <link href="http://ieducar.org/blog/2018/01/31/i-educar-por-todo-o-brasil-portabilis-e-fundacao-lemann.html">
-        </link>
-        <updated>2018-01-31T06:00:00Z</updated>
+        <link href="http://ieducar.org/blog/2018/01/31/i-educar-por-todo-o-brasil-portabilis-e-fundacao-lemann.html"/>
+        <updated>2018-01-31T06:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>Tenho muitas novidades para contar. Mas, por hora, vou comunicar o mais relevante</p>
 ]]></summary>
         <author>
             <name>Tiago de Faveri Giusti</name>
+            <email/>
             <uri>https://www.linkedin.com/in/giustin</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[Em 2018, queremos o i-Educar por todo o Brasil]]></title>
         <id>http://ieducar.org/blog/2017/12/28/em-2018-queremos-o-i-educar-por-todo-o-brasil.html</id>
-        <link href="http://ieducar.org/blog/2017/12/28/em-2018-queremos-o-i-educar-por-todo-o-brasil.html">
-        </link>
-        <updated>2017-12-28T06:00:00Z</updated>
+        <link href="http://ieducar.org/blog/2017/12/28/em-2018-queremos-o-i-educar-por-todo-o-brasil.html"/>
+        <updated>2017-12-28T06:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>Esta mensagem é diferente das de <a href="https://softwarepublico.gov.br/social/i-educar/blog/retrospectiva-i-educar-2016-o-que-conseguimos-realizar">retrospectiva</a> dos anos anteriores.</p>
 ]]></summary>
         <author>
             <name>Tiago de Faveri Giusti</name>
+            <email/>
             <uri>https://www.linkedin.com/in/giustin</uri>
         </author>
     </entry>
