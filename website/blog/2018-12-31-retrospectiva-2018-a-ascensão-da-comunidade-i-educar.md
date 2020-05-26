@@ -4,7 +4,7 @@ authorURL: https://www.linkedin.com/in/giustin
 title: Retrospectiva 2018: A ascensão da Comunidade i-Educar
 ---
 
-![](https://lh5.googleusercontent.com/_G5ZkskR2l8ge5Nb4HfyutUxrQj-QjyMxmSX42aBY0vktU1pMKDfQzglgDQliSV8AiYxZKK-H-TNfSzTUSsnZ5GMxeYwjq5b9eIGq1WBEAmzPdG4UZJov5ujKRuIhswyJxxZnUv1)
+![](https://miro.medium.com/max/2560/1*9shde1Rs6TEQNTd-q5-2Tg.png)
 
 
 Um ano atrás, eu me dirigi à vocês, [num post](https://ieducar.org/blog/2017/12/28/em-2018-queremos-o-i-educar-por-todo-o-brasil.html), com um compromisso, com uma vontade, e com um sonho. 
@@ -20,7 +20,7 @@ Em 2018, esse sonho tem se tornado realidade. Cada vez mais redes no país tem a
 Neste post de retrospectiva, você vai ficar por dentro dos resultados que conseguimos alcançar neste ano de ascensão da Comunidade, conhecer quem estava envolvido e ficar por dentro dos nossos próximos passos.
 
 # Vamos relembrar?
-![](https://lh4.googleusercontent.com/9mQfdBaeAbNBFcewMvtNTO9FlRqNhv-eIg76FtwfmRfOzi233yi9KAWDvzhyJwyrhGzjtLxGojhByFXFJcHrrxNn3YyHW2REgdeEIrnLA07hvJraE0uSLoIqkzlDllJJ8fVEQFbb)
+![](https://miro.medium.com/max/3200/0*f4Ue3-Mru6JVri3s)
 ###### Página da Comunidade i-Educar no Portal do SPB
 
 
@@ -35,7 +35,7 @@ Mas, hoje, essa realidade é bem diferente:
 O novo [site oficial](https://ieducar.org/) é o lugar principal da Comunidade i-Educar, pois é através dele que os municípios podem conhecer o software, seus benefícios, ler toda a documentação e descobrir quem já usa o i-Educar. Ou seja, é super importante para que possamos incentivar a adoção do software.
 
 
-![](https://lh5.googleusercontent.com/B6z2AP4c_BxTARPCeYBTLHS-fwkJ6VFJrQ9kAHseZe0TH7Kwu6COl-2Fv5i4TTB_SNIXmqwmTZFmpVFXAkre5lqCn6gw6XeZJvFb42i_ejB1aCbhRJFlEt6OSzrCg_K44s22uk74)
+![](https://miro.medium.com/max/3200/0*8kSVBGkl1CcOK3aF)
 ###### Site oficial da Comunidade i-Educar: ieducar.org
 
 
@@ -80,13 +80,13 @@ Como o fórum é para discussões mais profundas, precisávamos de um canal para
 Fizemos a contratação de uma ferramenta de automação de marketing para nos comunicar com os membros da comunidade, enviando novidades, posts no blog, novos patches, dentre outros. O e-mail é um meio de comunicação que não é necessário que a pessoa esteja acompanhando um canal o tempo todo, por isso é super importante.
 Quer se cadastrar na newsletter da Comunidade? No fim da home do [ieducar.org](https://ieducar.org) tem um lugar onde você pode se inscrever.
 
-![](https://lh6.googleusercontent.com/NZGfCOoStMYb_qeCVc30Xn-NJC6S6fhAung14MjymD1oqjlaK_4NbetFDUh04sp_EOJKC73wF_j3OcY2_DDaEqr6dBAxNMoDBwOTf9rSdKCTTnU68kX2GVL4XKCYN_7phPLB4d1G)
+![](https://miro.medium.com/max/2804/0*E1yAzA9Em0-MgWCb)
 
 # Uma nova marca para um novo momento
 
 Todo esse novo momento, em conjunto com o novo movimento pedia uma “nova cara” pra Comunidade i-Educar, algo que a representasse de fato, e que fosse mais atraente. Por isso, convidamos várias pessoas que no passado já contribuíram com a comunidade para participar do processo de rebranding do i-Educar, e acreditamos que o resultado atendeu às expectativas.
 
-![](https://lh4.googleusercontent.com/s54LWLcEJO8F3yfZkP5PCSe17IZRBYcnZ6q1E01ZK7T8RuyOk7eSWF4baXOLQkChOcQpKJwfe1oR_NIqtQ9zHHsCicbTh2dM-zYBaQkVPT1lSysVmfl3zm5hhH_1dLIbwROLqUcr)
+![](https://miro.medium.com/max/3200/0*8dsLF2gUs18zkl4h)
 ###### Antes e depois do processo de rebranding da marca i-Educar
 
 
@@ -95,7 +95,7 @@ Todo esse novo momento, em conjunto com o novo movimento pedia uma “nova cara�
 Acreditando neste movimento de comunidade, e na importância disso para a melhora na qualidade de ensino em todas as redes públicas do país, eu e a Portabilis decidimos que era a hora de liberar um produto que realmente pudesse impactar as salas de aulas do país.
 Por mais que o i-Educar contribua positivamente com a gestão escolar, sentíamos que faltavam ferramentas para apoiar o trabalho dos professores que se entregam de corpo e alma todos os dias para o aprendizado dos alunos. 
 
-![](https://lh5.googleusercontent.com/Gd0ecW1KMjbtVsImNsuFl4xUm2-zwjktoS-egvHYbhT9PgoCzKIkF9f7Cz1Jt4-Q2uEQsyNHBXkyrB2mY5L0Z40_Av19ZUMCw-XMzSUGvz94eRLJdRb-zln01qXiVDPXdR-JtwoY)
+![](https://miro.medium.com/max/3200/0*Ejjmd8smDRsfpEp_)
 
 
 Segundo uma pesquisa feita pelo Banco Mundial em 2011, 34% do tempo das aulas no Brasil é perdido com burocracia, e isso nos fez agir. 
@@ -105,7 +105,7 @@ Segundo uma pesquisa feita pelo Banco Mundial em 2011, 34% do tempo das aulas no
 Foi pensando nessa dor que a Portabilis criou o i-Diário, uma ferramenta que permite que o professor consulte o plano de ensino da rede, monte e prepare planos de aula de suas turmas, registre os conteúdos que ministrou em sala de aula e controle a frequência mesmo estando off-line.
         
 
-![](https://lh6.googleusercontent.com/wJ1IRx0IWpwMnHsETnLJmnoaP3f24h0QvYU1xyCvSwsyCSS2aFDW3EXARTiWyf2LdKSMBufUQiL-y5GLTM7LGQJF-eSlkkTBlA1qUohSvtMZAHTF3mMWRzs8O8GtibOgGyHc_s1v)
+![](https://miro.medium.com/max/3200/0*ACKniLrhxxPFJI6W)
 ###### Ilustração das telas principais do i-Diário App
 
 
@@ -116,9 +116,9 @@ O projeto, que tem integração total com o i-Educar, está disponível para tod
 
 Todo esse movimento fez com que crescêssemos ainda mais. Hoje, com o projeto todo atualizado, com as movimentações nas redes sociais, com uma comunicação mais ativa da comunidade, trazemos cada vez mais pessoas para esse movimento livre em prol da educação pública brasileira que a cada dia se torna mais forte.
 
-![](https://lh6.googleusercontent.com/qNmQcQxxIp8LraxkXgz47Qq-H3nV_B8z3p0_MRYD_cUOY10uveaByW6niQP6t40CAAvK24zAzbK3KNSrZiuIRzpqAW3pNN_AfdZjYxVKqgue09zfTUZ1Ydz9b4mV5qQFdTXND9Aq)
-![](https://lh4.googleusercontent.com/7sMiR-s-n2qozDFPCZmkUWiJjOLdcgyS7zut7qYwlsNw8-MpmA_3YHyjUaQ5ejm7RUSyDoBbLvW9zTNH0-t_fOV6oJdtF-ZdUxv_nA3J3FrOoKGb4N4inFEx0r2LhUgPi6_Pjx9d)
-![](https://lh5.googleusercontent.com/3_n0u8dUh_EH4IM1QSsAbucBcHwrRsKKzKvMrymteePMrD__s1nxOWsxbyG0aTr4Gms45UgI2VgC1Dj9SNGzZp0ejC0txF4yqOmR1_68tlXZD-zQ7z-u7_wSDK0ewbatz1m3-aVE)
+![](https://miro.medium.com/max/3200/0*CrbNLJ0ZhL6DH7Rz)
+![](https://miro.medium.com/max/3200/0*53g9h5jSjKhfbxKh)
+![](https://miro.medium.com/max/3200/0*d5hAOngYcPNNM2rO)
 
 # Começando as implantações por todo o Brasil
 
