@@ -3,14 +3,14 @@ matrix:
     - language: node_js
       node_js:
         - '8'
-      if: branch = master
+      if: branch = main
       branches:
         only:
-          - master
+          - main
       cache:
         yarn: true
       script:
-        - if [[ $TRAVIS_BRANCH == "master" ]] && [[ $TRAVIS_PULL_REQUEST == "false" ]]; then
+        - if [[ $TRAVIS_BRANCH == "main" ]] && [[ $TRAVIS_PULL_REQUEST == "false" ]]; then
             git config --global user.name "${GH_NAME}";
             git config --global user.email "${GH_EMAIL}";
             echo "machine github.com login ${GH_NAME} password ${GH_TOKEN}" > ~/.netrc;
