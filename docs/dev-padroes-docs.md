@@ -13,6 +13,7 @@ As definições tiveram como base a evolução do projeto, evitando obstáculos 
     - Administrador (**admin**-*funcionalidade*.md)
     - Usuário (**user**-*funcionalidade*.md)
     - Desenvolvedor (**dev**-*funcionalidade*.md)
+    - Infraestrutura (**infra**-**[dev|prod|patch]**-*funcionalidade*.md)
 - **Commits** e **Pull Requests** serão realizados em **Português** (PT-BR)
 
 ## Ferramenta para documentação

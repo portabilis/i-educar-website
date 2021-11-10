@@ -25,5 +25,13 @@
       "user-ano-letivo-escolar-matriculas",
       "user-regras-avaliacao-notas"
     ]
+  },
+  "infra": {
+    "Documentação para Infraestrutura" : [
+      "infra-intro",
+      "infra-dev-manual-instalacao-all-in-one-ieducar-postgresql-desenvolvimento",
+      "infra-dev-manual-instalacao-only-instance-postgresql-desenvolvimento",
+      "infra-dev-manual-instalacao-only-instance-ieducar-desenvolvimento"
+    ]
   }
 }

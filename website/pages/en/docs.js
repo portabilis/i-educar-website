@@ -84,23 +84,23 @@ class Docs extends React.Component {
         <BlockHeader class="docsContainerHeader" classNameGrid="docsGridHeader">
         {[
           {
-            title: 'Manual',
+            title: 'Documentação',
             content: 'Guias com foco no usuário final. É preciso criar um corpo organizado de documentos para consulta de professores, secretários de escola e administradores do i-educar. Importante ter guias distintos para cada tipo de usuário. Conteúdo dos guias pode conter webcasts.',
             textAlign: 'left',
           }
         ]}
         </BlockHeader>
-        <Block layout='threeColumn' className='docsContainer' classNameGrid='docsGrid'>
+        <Block layout='fourColumn' className='docsContainer' classNameGrid='docsGrid'>
         {[
           {
-            content: 'É professor ou secretário de escola? Consulte o manual do i-Educar e saiba, passo a passo, como utilizar todas suas funções, aproveitando-o ao máximo.',
+            content: 'É professor(a) ou secretário(a) escolar? Consulte o manual do i-Educar e saiba, passo a passo, como utilizar todas suas funções, aproveitando-o ao máximo.',
             image: imgUrl('funcionalidades/book.svg'),
             imageAlign: 'top',
-            title: 'Usuário',
+            title: 'Usuários',
             link: docUrl("user-intro"),
           },
           {
-            content: 'Um guia para tornar a gestão do i-Educar mais fácil e intuitiva.',
+            content: 'É administrador(a) ou faz parte da secretaria de educação? Consulte o manual de gestão do i-Educar e saiba, passo a passo, como utilizar todas suas funções, aproveitando-o ao máximo.',
             image: imgUrl('funcionalidades/book.svg'),
             imageAlign: 'top',
             title: 'Administradores',
@@ -112,6 +112,13 @@ class Docs extends React.Component {
             imageAlign: 'top',
             title: 'Desenvolvedores',
             link: docUrl("dev-intro"),
+          },
+          {
+            content: ' Faça parte da comunidade do maior software aberto de gestão escolar do Brasil e ajude na democratização da tecnologia para a educação pública. Saiba como adotar, customizar e contribuir com o desenvolvimento do i-Educar.',
+            image: imgUrl('funcionalidades/book.svg'),
+            imageAlign: 'top',
+            title: 'Infraestrutura',
+            link: docUrl("infra-intro"),
           }
         ]}
         </Block>
