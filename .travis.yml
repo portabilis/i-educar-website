@@ -2,7 +2,7 @@ matrix:
   include:
     - language: node_js
       node_js:
-        - '8'
+        - '16'
       if: branch = main
       branches:
         only:
