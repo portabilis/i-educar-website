@@ -1,0 +1,215 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>DEV - Manual de Instalação - Only Instance - Postgres do i-Educar · i-Educar</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Esse manual aborda a instalação do banco de dados PostgreSQL utilizado pelo i-Educar no modo desenvolvimento em uma única instância de máquina."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="DEV - Manual de Instalação - Only Instance - Postgres do i-Educar · i-Educar"/><meta property="og:type" content="website"/><meta property="og:url" content="http://ieducar.org/index.html"/><meta property="og:description" content="Esse manual aborda a instalação do banco de dados PostgreSQL utilizado pelo i-Educar no modo desenvolvimento em uma única instância de máquina."/><meta property="og:image" content="http://ieducar.org/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="http://ieducar.org/img/docusaurus.png"/><link rel="shortcut icon" href="/img/favicon/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="http://ieducar.org/blog/atom.xml" title="i-Educar Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="http://ieducar.org/blog/feed.xml" title="i-Educar Blog RSS Feed"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-122039826-1"></script><script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments); }
+              gtag('js', new Date());
+              gtag('config', 'UA-122039826-1');
+            </script><script type="text/javascript" src="js/mailchimp.js"></script><script type="text/javascript" src="js/map.js"></script><script type="text/javascript" src="js/conversao.js"></script><script type="text/javascript" src="js/loadFonts.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/logo_horizontal.svg" alt="i-Educar"/></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/index.html" target="_self">Home</a></li><li class=""><a href="index.html#quemusa" target="_self">Quem Usa?</a></li><li class=""><a href="/blog/" target="_self">Blog</a></li><li class=""><a href="https://forum.ieducar.org" target="_self">Fórum</a></li><li class=""><a href="/docs.html" target="_self">Documentação</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Documentação para Infraestrutura</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Documentação para Infraestrutura</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/infra-intro.html">Home</a></li><li class="navListItem"><a class="navItem" href="/docs/infra-dev-manual-instalacao-all-in-one-ieducar-postgresql-desenvolvimento.html">DEV - Manual de Instalação - All In One - i-Educar e PostgreSQL</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/infra-dev-manual-instalacao-only-instance-postgresql-desenvolvimento.html">DEV - Manual de Instalação - Only Instance - Postgres do i-Educar</a></li><li class="navListItem"><a class="navItem" href="/docs/infra-dev-manual-instalacao-only-instance-ieducar-desenvolvimento.html">DEV - Manual de Instalação - Only Instance - i-Educar</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">DEV - Manual de Instalação - Only Instance - Postgres do i-Educar</h1></header><article><div><span><p>Esse manual aborda a instalação do banco de dados PostgreSQL utilizado pelo i-Educar no modo desenvolvimento em uma única instância de máquina.</p>
+<blockquote>
+<p>APENAS O <a href="#passo-04---definir-variáveis-utilizadas-no-processo-de-instalação">PASSO 04</a> É NECESSÁRIO ALTERAR ALGUM VALOR, OS DEMAIS É NECESSÁRIO SOMENTE COPIAR E COLAR!</p>
+</blockquote>
+<blockquote>
+<p>O <a href="#passo-12---configurar-o-postgresql">PASSO 12</a> É O ÚNICO QUE NÃO É UM COMANDO, NELE HAVERÁ A NECESSIDADE DA EDIÇÃO DOS ARQUIVOS PELO USUÁRIO, AJUSTANDO VALORES CONFORME NECESSIDADE.</p>
+</blockquote>
+<h4><a class="anchor" aria-hidden="true" id="pré-requisítos"></a><a href="#pré-requisítos" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PRÉ-REQUISÍTOS</h4>
+<ul>
+<li>Sistema Operacional Ubuntu na 18.04 ou 20.04</li>
+<li>2GB de Memória RAM (Adicionais são recomendados)</li>
+<li>2vCPU Core (Adicionais são recomendados)</li>
+<li>Usuário linux para gerenciamento da aplicação.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="passo-01---atualizar-libs-base-do-sistema-operacional"></a><a href="#passo-01---atualizar-libs-base-do-sistema-operacional" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 01 - ATUALIZAR LIBS BASE DO SISTEMA OPERACIONAL</h4>
+<pre><code class="hljs css language-sh">sudo apt update -y &amp;&amp; sudo apt upgrade -y
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="passo-02---instalar-libs-base-do-sistema-operacional"></a><a href="#passo-02---instalar-libs-base-do-sistema-operacional" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 02 - INSTALAR LIBS BASE DO SISTEMA OPERACIONAL</h4>
+<pre><code class="hljs css language-sh">sudo apt install -y git wget curl zip sudo unzip openssl net-tools software-properties-common bash-completion
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="passo-03---ajustar-locale-do-servidor"></a><a href="#passo-03---ajustar-locale-do-servidor" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 03 - AJUSTAR LOCALE DO SERVIDOR</h4>
+<pre><code class="hljs css language-sh">sudo locale-gen pt_BR.UTF-8
+sudo dpkg-reconfigure --frontend=noninteractive locales
+sudo update-locale LANG=pt_BR.UTF-8
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="passo-04---definir-variáveis-utilizadas-no-processo-de-instalação"></a><a href="#passo-04---definir-variáveis-utilizadas-no-processo-de-instalação" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 04 - DEFINIR VARIÁVEIS UTILIZADAS NO PROCESSO DE INSTALAÇÃO</h4>
+<p>Obs. Não é necessário copiar os comentários. Comentários são as linhas iniciadas com o caractere <code>#</code></p>
+<pre><code class="hljs css language-sh"><span class="hljs-comment"># Aqui é obrigatório informar o IP da instância de máquina.</span>
+<span class="hljs-comment"># Por padrão ele obtem automaticamente, porém em alguns casos a instância de máquina pode conter duas ou mais interfaces de rede, </span>
+<span class="hljs-comment"># nesses casos será necessário informar manualmente qual IP deseja usar para acessar a aplicação após instalada.</span>
+<span class="hljs-built_in">export</span> IP=$(hostname -I | awk <span class="hljs-string">'{print $1}'</span>)
+
+<span class="hljs-comment"># Aqui é obrigatório informar a versão do PostgreSQL</span>
+<span class="hljs-built_in">export</span> POSTGRES_VERSAO=13
+
+<span class="hljs-comment"># Aqui a variável DB_HOST obtem o valor do IP do banco de dados da variável $IP informada anteriormente.</span>
+<span class="hljs-built_in">export</span> DB_HOST=<span class="hljs-variable">$IP</span>
+
+<span class="hljs-comment"># Aqui deve ser informado a porta de acesso ao banco de dados.</span>
+<span class="hljs-comment"># Default: 5432</span>
+<span class="hljs-built_in">export</span> DB_PORTA=5432
+
+<span class="hljs-comment"># Aqui é obrigatório informar o nome do banco de dados de conexão com o banco de dados a ser criado na instância do PostgreSQL.</span>
+<span class="hljs-comment"># Default: ieducar</span>
+<span class="hljs-built_in">export</span> DB_DATABASE_IEDUCAR=ieducar
+
+<span class="hljs-comment"># Aqui é obrigatório informar o usuário de conexão com o banco de dados a ser criado na instância do PostgreSQL.</span>
+<span class="hljs-comment"># Default: ieducar</span>
+<span class="hljs-built_in">export</span> DB_USUARIO_IEDUCAR=ieducar
+
+<span class="hljs-comment"># Aqui pode ser informado uma senha de sua escolha, caso contrário,</span>
+<span class="hljs-comment"># o script irá gerar uma senha e apresentar no final da instalação.</span>
+<span class="hljs-built_in">export</span> DB_PASSWORD_IEDUCAR=$(openssl passwd -crypt <span class="hljs-variable">$DB_USUARIO_IEDUCAR</span>)
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="passo-05---baixar-e-adicionar-a-chave-do-repositório-postgresql"></a><a href="#passo-05---baixar-e-adicionar-a-chave-do-repositório-postgresql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 05 - BAIXAR E ADICIONAR A CHAVE DO REPOSITÓRIO POSTGRESQL</h4>
+<pre><code class="hljs css language-sh">sudo wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="passo-06---adicionar-o-endereço-do-source-list-do-repositório-postgresql"></a><a href="#passo-06---adicionar-o-endereço-do-source-list-do-repositório-postgresql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 06 - ADICIONAR O ENDEREÇO DO SOURCE LIST DO REPOSITÓRIO POSTGRESQL</h4>
+<pre><code class="hljs css language-sh">sudo <span class="hljs-built_in">echo</span> <span class="hljs-string">"deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main"</span> | sudo tee  /etc/apt/sources.list.d/pgdg.list
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="passo-07---atualizar-source-list-para-obter-o-repositório-do-postgresql"></a><a href="#passo-07---atualizar-source-list-para-obter-o-repositório-do-postgresql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 07 - ATUALIZAR SOURCE LIST PARA OBTER O REPOSITÓRIO DO POSTGRESQL</h4>
+<pre><code class="hljs css language-sh">sudo apt update -y
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="passo-08---instalar-o-postgresql"></a><a href="#passo-08---instalar-o-postgresql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 08 - INSTALAR O POSTGRESQL</h4>
+<pre><code class="hljs css language-sh">sudo apt install -y postgresql-<span class="hljs-variable">$POSTGRES_VERSAO</span> postgresql-client-<span class="hljs-variable">$POSTGRES_VERSAO</span>
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="passo-09---remover-o-cluster-default-do-postgresql"></a><a href="#passo-09---remover-o-cluster-default-do-postgresql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 09 - REMOVER O CLUSTER DEFAULT DO POSTGRESQL</h4>
+<pre><code class="hljs css language-sh">sudo pg_dropcluster --stop <span class="hljs-variable">$POSTGRES_VERSAO</span> main
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="passo-10---criar-o-cluster-default-do-postgresql"></a><a href="#passo-10---criar-o-cluster-default-do-postgresql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 10 - CRIAR O CLUSTER DEFAULT DO POSTGRESQL</h4>
+<pre><code class="hljs css language-sh">sudo pg_createcluster -u postgres -g postgres <span class="hljs-string">"<span class="hljs-variable">$POSTGRES_VERSAO</span>"</span> -e UTF8 --locale=<span class="hljs-string">"pt_BR.UTF-8"</span> --lc-collate=<span class="hljs-string">"pt_BR.UTF-8"</span> main
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="passo-11---desabilitar-autenticação-no-postgresql-será-ajustado-no-final-do-processo"></a><a href="#passo-11---desabilitar-autenticação-no-postgresql-será-ajustado-no-final-do-processo" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 11 - DESABILITAR AUTENTICAÇÃO NO POSTGRESQL (SERÁ AJUSTADO NO FINAL DO PROCESSO)</h4>
+<blockquote>
+<p>A desabilitação é necessários para executar comandos SQL sem a necessidade de informar a senha.</p>
+</blockquote>
+<blockquote>
+<p>No final do processo será habilitado a autenticação.</p>
+</blockquote>
+<pre><code class="hljs css language-sh">sudo cat &lt;&lt; PG_HBA &gt; /etc/postgresql/<span class="hljs-variable">$POSTGRES_VERSAO</span>/main/pg_hba.conf
+<span class="hljs-comment"># TYPE  DATABASE        USER            CIDR-ADDRESS            METHOD</span>
+<span class="hljs-built_in">local</span>   all             postgres                                trust
+<span class="hljs-built_in">local</span>   all             all                                     trust
+host    all             all             all                     trust
+host    all             all             ::1/128                 trust
+
+<span class="hljs-built_in">local</span>   replication     all                                     trust
+host    replication     all             127.0.0.1/32            trust
+host    replication     all             ::1/128                 trust
+PG_HBA
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="passo-12---configurar-o-postgresql"></a><a href="#passo-12---configurar-o-postgresql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 12 - CONFIGURAR O POSTGRESQL</h4>
+<blockquote>
+<p>Para configurar o PostgreSQL, deve ser ajustado alguns valores para <code>postgresql.conf</code></p>
+</blockquote>
+<blockquote>
+<p>Caso algumas das propriedades abaixo esteja comentadas, será necessário descomentar.</p>
+</blockquote>
+<ul>
+<li>/etc/postgresql/$POSTGRES_VERSAO/main/postgresql.conf
+<ul>
+<li>listen_addresses = '*'</li>
+</ul></li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="passo-13---reiniciar-o-postgresql"></a><a href="#passo-13---reiniciar-o-postgresql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 13 - REINICIAR O POSTGRESQL</h4>
+<pre><code class="hljs css language-sh">sudo systemctl restart postgresql
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="passo-14---definir-senha-para-o-usuário-postgres"></a><a href="#passo-14---definir-senha-para-o-usuário-postgres" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 14 - DEFINIR SENHA PARA O USUÁRIO <code>postgres</code></h4>
+<pre><code class="hljs css language-sh">DB_PASSWORD_POSTGRES=$(openssl passwd -crypt postgres)
+psql -U postgres -c <span class="hljs-string">"ALTER USER postgres WITH PASSWORD '<span class="hljs-variable">$DB_PASSWORD_POSTGRES</span>';"</span>
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="passo-15---criar-database-do-i-educar"></a><a href="#passo-15---criar-database-do-i-educar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 15 - CRIAR DATABASE DO i-Educar</h4>
+<pre><code class="hljs css language-sh">psql -U postgres -c <span class="hljs-string">"CREATE ROLE <span class="hljs-variable">$DB_USUARIO_IEDUCAR</span> WITH LOGIN PASSWORD '<span class="hljs-variable">$DB_PASSWORD_IEDUCAR</span>';"</span>
+psql -U postgres -c <span class="hljs-string">"CREATE DATABASE <span class="hljs-variable">$DB_DATABASE_IEDUCAR</span> OWNER <span class="hljs-variable">$DB_USUARIO_IEDUCAR</span>"</span>
+psql -U postgres -c <span class="hljs-string">"ALTER USER <span class="hljs-variable">$DB_USUARIO_IEDUCAR</span> WITH SUPERUSER;"</span>
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="passo-16---habilitar-autenticação-no-postgresql"></a><a href="#passo-16---habilitar-autenticação-no-postgresql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 16 - HABILITAR AUTENTICAÇÃO NO POSTGRESQL</h4>
+<pre><code class="hljs css language-sh">sudo cat &lt;&lt; PG_HBA &gt; /etc/postgresql/<span class="hljs-variable">$POSTGRES_VERSAO</span>/main/pg_hba.conf
+<span class="hljs-comment"># TYPE  DATABASE        USER            CIDR-ADDRESS            METHOD</span>
+<span class="hljs-built_in">local</span>   all             postgres                                peer
+<span class="hljs-built_in">local</span>   all             all                                     peer
+host    all             all             all                     md5
+host    all             all             ::1/128                 md5
+
+<span class="hljs-built_in">local</span>   replication     all                                     peer
+host    replication     all             127.0.0.1/32            md5
+host    replication     all             ::1/128                 md5
+PG_HBA
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="passo-17---reiniciar-o-postgres"></a><a href="#passo-17---reiniciar-o-postgres" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 17 - REINICIAR O POSTGRES</h4>
+<pre><code class="hljs css language-sh">sudo systemctl restart postgresql
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="passo-18---consultar-valores-de-variáreis-utilizadas-durante-o-processo-de-instalação"></a><a href="#passo-18---consultar-valores-de-variáreis-utilizadas-durante-o-processo-de-instalação" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 18 - CONSULTAR VALORES DE VARIÁREIS UTILIZADAS DURANTE O PROCESSO DE INSTALAÇÃO</h4>
+<blockquote>
+<p>OBS. GUARDE OS VALORES APRESENTADOS POR ESSE COMANDO!</p>
+</blockquote>
+<pre><code class="hljs css language-sh">sudo cat &lt;&lt; INFO &gt; /tmp/info.sh
+<span class="hljs-built_in">echo</span> <span class="hljs-string">""</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"INFORMACOES DE ACESSO AO BANCO DE DADOS"</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">""</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"    SENHA MESTRE POSTGRES: "</span> `<span class="hljs-built_in">echo</span> <span class="hljs-variable">$DB_PASSWORD_POSTGRES</span>`
+<span class="hljs-built_in">echo</span> <span class="hljs-string">""</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"    HOST: "</span> `<span class="hljs-built_in">echo</span> <span class="hljs-variable">$DB_HOST</span>`
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"    PORTA: "</span> `<span class="hljs-built_in">echo</span> <span class="hljs-variable">$DB_PORTA</span>`
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"    DB_DATABASE_IEDUCAR: "</span> `<span class="hljs-built_in">echo</span> <span class="hljs-variable">$DB_DATABASE_IEDUCAR</span>`
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"    DB_USUARIO_IEDUCAR: "</span> `<span class="hljs-built_in">echo</span> <span class="hljs-variable">$DB_USUARIO_IEDUCAR</span>`
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"    DB_PASSWORD_IEDUCAR: "</span> `<span class="hljs-built_in">echo</span> <span class="hljs-variable">$DB_PASSWORD_IEDUCAR</span>`
+<span class="hljs-built_in">echo</span> <span class="hljs-string">""</span>
+INFO
+clear &amp;&amp; sudo chmod +x /tmp/info.sh
+
+sudo sh /tmp/info.sh &amp;&amp; sudo rm -f /tmp/info.sh
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/infra-dev-manual-instalacao-all-in-one-ieducar-postgresql-desenvolvimento.html"><span class="arrow-prev">← </span><span class="function-name-prevnext">DEV - Manual de Instalação - All In One - i-Educar e PostgreSQL</span></a><a class="docs-next button" href="/docs/infra-dev-manual-instalacao-only-instance-ieducar-desenvolvimento.html"><span>DEV - Manual de Instalação - Only Instance - i-Educar</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer id="footer" class="nav-footer"><section class="sitemap"><a href="/" class="nav-home"><img class="footerLogo" src="/img/logo_ieducar_horizontal_footer.svg" alt="i-Educar" width="108"/></a><div class="footerNav"><nav><ul><li><a href="index">Home</a></li><li><a href="index.html#quemusa">Quem Usa?</a></li><li><a href="/blog">Blog</a></li><li><a href="https://forum.ieducar.org">Fórum</a></li><li><a href="docs">Documentação</a></li><li><a href="https://github.com/portabilis/i-educar">Github</a></li></ul></nav></div></section><section class="subfooter"><div class="subfooteritens"><div class="footerDescription"><p>Mantido pela <img src="/img/logo-portabilis.svg"/> e Comunidade i-Educar para educação do Brasil <img src="/img/coracao.svg"/> </p></div><div class="footerVersion"><p>v. i-Educar</p></div></div></section></footer></div></body></html>
