@@ -1,10 +1,16 @@
-![](https://uploaddeimagens.com.br/imagens/aQpPOs8)
+---
+author: Sara Pires
+authorURL: https://www.linkedin.com/in/sara-pires-siqueira/
+title: i-Educar: Software fortalece a gestão escolar
+---
 
-# i-Educar: Software fortalece a gestão escolar
+![](https://uploaddeimagens.com.br/images/004/727/119/original/banner_blog.png?1706637398)
 
 A administração escolar tem foco na organização e no direcionamento de recursos, mas a gestão escolar vai mais além e requer soluções efetivas.
 
 A boa gestão está ligada na visão estratégica que visa garantir às instituições de ensino as condições necessárias para cumprir seu papel principal, que é o ensino de qualidade e a formação de cidadãos com as competências e habilidades necessárias para sua vida pessoal e profissional.
+
+<!--truncate-->
 
 A gestão escolar busca atender as exigências de todos os setores envolvidos. É uma tarefa muito difícil de ser realizada a contento sem o apoio de um sistema informatizado. Ela envolve gerenciar os funcionários, a estrutura física do prédio, o contato com os pais e alunos e o ambiente educacional. Para que se tenha um ambiente saudável financeira e socialmente, cada peça deste conjunto interdependente deve ser tratada com igual relevância.
 
