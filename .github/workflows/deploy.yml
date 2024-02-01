@@ -1,0 +1,24 @@
+name: Deploy
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+      
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: git config --global user.name "${GH_NAME}" && git config --global user.email "${GH_EMAIL}" && echo "machine github.com login ${GH_NAME} password ${GH_TOKEN}" > ~/.netrc;
+    - run: cd website && yarn install && GIT_USER="${GH_NAME}" yarn run publish-gh-pages;
