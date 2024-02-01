@@ -4,7 +4,7 @@ authorURL: https://www.linkedin.com/in/sara-pires-siqueira/
 title: i-Educar: Software fortalece a gestão escolar
 ---
 
-![](https://uploaddeimagens.com.br/images/004/727/119/original/banner_blog.png?1706637398)
+![](https://raw.githubusercontent.com/portabilis/i-educar-website/main/images/banner_blog.png)
 
 A administração escolar tem foco na organização e no direcionamento de recursos, mas a gestão escolar vai mais além e requer soluções efetivas.
 
