@@ -39,10 +39,6 @@ Por meio dele é possível efetuar diversas ações em tempo real, como cadastro
 
 A centralização dos dados e a geração de relatórios facilita as tomadas de decisões para os gestores na unidade escolar e na secretaria municipal. É possível detectar e solucionar um problema em qualquer ponto da rede de ensino e, se for o caso, dar-lhe o tratamento devido.
 
-O i-Educar é também um importante canal de comunicação entre a escola e os pais. O módulo Pais e Alunos funciona em conjunto com o i-Educar e permite que pais ou responsáveis consultem via web informações da vida escolar do aluno em toda a rede de ensino.
-
-Os pais e os alunos também contam com funções essenciais, como a matrícula online e o acompanhamento de notas e frequência. Com a realização de um cadastro, também feito online, é possível emitir boletins escolares, consultar ocorrências, acessar o quadro de avisos e enviar mensagens e e-mails para a escola, professores e demais profissionais.
-
 #### Solução para escolas que ainda não ingressaram no mundo digital
 
 A gestão mais eficiente dos recursos é um desafio para milhares de escolas públicas e privadas, que ainda não digitalizaram seus processos. Em muitas regiões do país a maior parte das redes de ensino ainda não utilizam nenhum software de gestão escolar. Como esses profissionais vão cuidar da aprendizagem dos alunos quando ainda estão atolados na papelada?
@@ -68,3 +64,6 @@ As licenças são abertas. O gestor pode pagar para obter suporte especializado,
 
 Também não há custo para trocar de sistema. Ao vencer um contrato, se desejar, o gestor pode trocar a empresa que presta serviço e não o software, e isso evita custos enormes e conhecidos com trocas de sistema, migrações e novos treinamentos.
 Sobre as licenças, é importante dizer também que além de livre, o i-Educar é também público. E é assim por duas razões: (i) foi desenvolvido para resolver um problema do setor público e (ii) foi originado na plataforma do Software Público Brasileiro do Governo Federal.
+
+
+Fonte: Materia da ArteCult.
