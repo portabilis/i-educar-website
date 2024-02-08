@@ -4,7 +4,7 @@
         <title>i-Educar Blog</title>
         <link>http://ieducar.org/blog</link>
         <description>The best place to stay up-to-date with the latest i-Educar news and events.</description>
-        <lastBuildDate>Mon, 29 Jan 2024 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 07 Feb 2024 06:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -13,6 +13,13 @@
             <link>http://ieducar.org/blog</link>
         </image>
         <copyright>Copyright © 2024 Your Name or Your Company Name</copyright>
+        <item>
+            <title><![CDATA[i-Educar: Comunidades i-Educar e Amadeus se aproximam]]></title>
+            <link>http://ieducar.org/blog/2024/02/07/i-educar-comunidades-i-educar-e-amadeus-se-aproximam.html</link>
+            <guid>http://ieducar.org/blog/2024/02/07/i-educar-comunidades-i-educar-e-amadeus-se-aproximam.html</guid>
+            <pubDate>Wed, 07 Feb 2024 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="https://raw.githubusercontent.com/portabilis/i-educar-website/main/images/Amadeus-e-i-Educar-FEED.png" alt></p> <p>Pela primeira vez na história do modelo do Software Público duas comunidades vão realizar uma aproximação para construir uma pauta conjunta. Na reunião da Comunidade i-educar realizada no final do mês de novembro, os participantes do encontro aprova...</p>]]></description>
+        </item>
         <item>
             <title><![CDATA[i-Educar: Software fortalece a gestão escolar]]></title>
             <link>http://ieducar.org/blog/2024/01/29/i-educar-software-fortalece-a-gestao-escolar.html</link>
