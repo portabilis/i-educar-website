@@ -8,8 +8,6 @@ Dividimos os manuais nos seguintes tópicos:
 
 ### DESENVOLVIMENTO
 - [DEV - Manual de Instalação - All In One - i-Educar e PostgreSQL](infra-dev-manual-instalacao-all-in-one-ieducar-postgresql-desenvolvimento.md)
-- [DEV - Manual de Instalação - Only Instance - Postgres do i-Educar](infra-dev-manual-instalacao-only-instance-postgresql-desenvolvimento.md)
-- [DEV - Manual de Instalação - Only Instance - i-Educar](infra-dev-manual-instalacao-only-instance-ieducar-desenvolvimento.md)
 
 ### PRODUÇÃO
 > NÃO DISPONÍVEL NO MOMENTO
