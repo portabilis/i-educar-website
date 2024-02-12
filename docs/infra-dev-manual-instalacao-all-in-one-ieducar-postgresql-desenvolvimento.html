@@ -3,7 +3,7 @@
               function gtag(){dataLayer.push(arguments); }
               gtag('js', new Date());
               gtag('config', 'UA-122039826-1');
-            </script><script type="text/javascript" src="js/mailchimp.js"></script><script type="text/javascript" src="js/map.js"></script><script type="text/javascript" src="js/conversao.js"></script><script type="text/javascript" src="js/loadFonts.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/logo_horizontal.svg" alt="i-Educar"/></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/index.html" target="_self">Home</a></li><li class=""><a href="index.html#quemusa" target="_self">Quem Usa?</a></li><li class=""><a href="/blog/" target="_self">Blog</a></li><li class=""><a href="https://forum.ieducar.org" target="_self">Fórum</a></li><li class=""><a href="/docs.html" target="_self">Documentação</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Documentação para Infraestrutura</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Documentação para Infraestrutura</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/infra-intro.html">Home</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/infra-dev-manual-instalacao-all-in-one-ieducar-postgresql-desenvolvimento.html">DEV - Manual de Instalação - All In One - i-Educar e PostgreSQL</a></li><li class="navListItem"><a class="navItem" href="/docs/infra-dev-manual-instalacao-only-instance-postgresql-desenvolvimento.html">DEV - Manual de Instalação - Only Instance - Postgres do i-Educar</a></li><li class="navListItem"><a class="navItem" href="/docs/infra-dev-manual-instalacao-only-instance-ieducar-desenvolvimento.html">DEV - Manual de Instalação - Only Instance - i-Educar</a></li></ul></div></div></section></div><script>
+            </script><script type="text/javascript" src="js/mailchimp.js"></script><script type="text/javascript" src="js/map.js"></script><script type="text/javascript" src="js/conversao.js"></script><script type="text/javascript" src="js/loadFonts.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/logo_horizontal.svg" alt="i-Educar"/></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/index.html" target="_self">Home</a></li><li class=""><a href="index.html#quemusa" target="_self">Quem Usa?</a></li><li class=""><a href="/blog/" target="_self">Blog</a></li><li class=""><a href="https://forum.ieducar.org" target="_self">Fórum</a></li><li class=""><a href="/docs.html" target="_self">Documentação</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Documentação para Infraestrutura</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Documentação para Infraestrutura</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/infra-intro.html">Home</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/infra-dev-manual-instalacao-all-in-one-ieducar-postgresql-desenvolvimento.html">DEV - Manual de Instalação - All In One - i-Educar e PostgreSQL</a></li></ul></div></div></section></div><script>
             var coll = document.getElementsByClassName('collapsible');
             var checkActiveCategory = true;
             for (var i = 0; i < coll.length; i++) {
@@ -74,10 +74,10 @@
 <li>Usuário linux para gerenciamento da aplicação.</li>
 </ul>
 <h4><a class="anchor" aria-hidden="true" id="passo-01---atualizar-libs-base-do-sistema-operacional"></a><a href="#passo-01---atualizar-libs-base-do-sistema-operacional" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 01 - ATUALIZAR LIBS BASE DO SISTEMA OPERACIONAL</h4>
-<pre><code class="hljs css language-sh">sudo apt update -y &amp;&amp; sudo apt upgrade -y
+<pre><code class="hljs css language-sh">sudo find /var/lib/apt/lists -<span class="hljs-built_in">type</span> f -<span class="hljs-built_in">exec</span> rm -f {} \; &amp;&amp; sudo apt update -y &amp;&amp; sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y
 </code></pre>
 <h4><a class="anchor" aria-hidden="true" id="passo-02---instalar-libs-base-do-sistema-operacional-e-libs-base-utilizadas-pelo-i-educar"></a><a href="#passo-02---instalar-libs-base-do-sistema-operacional-e-libs-base-utilizadas-pelo-i-educar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 02 - INSTALAR LIBS BASE DO SISTEMA OPERACIONAL E LIBS BASE UTILIZADAS PELO i-Educar</h4>
-<pre><code class="hljs css language-sh">sudo apt install -y git wget curl zip npm sudo unzip openssl net-tools software-properties-common bash-completion openjdk-8-jre
+<pre><code class="hljs css language-sh">sudo DEBIAN_FRONTEND=noninteractive apt install -y jq git wget curl zip unzip net-tools software-properties-common bash-completion openjdk-8-jre libpq-dev redis-server nodejs
 </code></pre>
 <h4><a class="anchor" aria-hidden="true" id="passo-03---ajustar-locale-do-servidor"></a><a href="#passo-03---ajustar-locale-do-servidor" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 03 - AJUSTAR LOCALE DO SERVIDOR</h4>
 <pre><code class="hljs css language-sh">sudo locale-gen pt_BR.UTF-8
@@ -92,10 +92,19 @@ sudo update-locale LANG=pt_BR.UTF-8
 <span class="hljs-built_in">export</span> IP=$(hostname -I | awk <span class="hljs-string">'{print $1}'</span>)
 
 <span class="hljs-comment"># Aqui é obrigatório informar a versão do PostgreSQL</span>
-<span class="hljs-built_in">export</span> POSTGRES_VERSAO=13
+<span class="hljs-built_in">export</span> POSTGRES_VERSAO=14
+
+<span class="hljs-comment"># Aqui é obrigatório informar a versão do PHP</span>
+<span class="hljs-built_in">export</span> PHP_VERSAO=8.2
+
+<span class="hljs-comment"># Aqui é obrigatório informar a versão do Composer</span>
+<span class="hljs-built_in">export</span> VERSAO_COMPOSER=2.3.5
 
 <span class="hljs-comment"># Aqui é obrigatório informar a versão do i-Educar.</span>
-<span class="hljs-built_in">export</span> VERSAO_IEDUCAR=2.6.5
+<span class="hljs-built_in">export</span> VERSAO_IEDUCAR=2.8
+
+<span class="hljs-comment"># Aqui deve ser informado a versão do Pacote de Relatórios do i-Educar.</span>
+<span class="hljs-built_in">export</span> VERSAO_IEDUCAR_REPORTS_PACKAGE=2.8
 
 <span class="hljs-comment"># Aqui a variável DB_HOST obtem o valor do IP do banco de dados da variável $IP informada anteriormente.</span>
 <span class="hljs-built_in">export</span> DB_HOST=<span class="hljs-variable">$IP</span>
@@ -126,7 +135,7 @@ sudo update-locale LANG=pt_BR.UTF-8
 <pre><code class="hljs css language-sh">sudo apt update -y
 </code></pre>
 <h4><a class="anchor" aria-hidden="true" id="passo-08---instalar-o-postgresql"></a><a href="#passo-08---instalar-o-postgresql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 08 - INSTALAR O POSTGRESQL</h4>
-<pre><code class="hljs css language-sh">sudo apt install -y postgresql-<span class="hljs-variable">$POSTGRES_VERSAO</span> postgresql-client-<span class="hljs-variable">$POSTGRES_VERSAO</span>
+<pre><code class="hljs css language-sh">sudo DEBIAN_FRONTEND=noninteractive apt install -y postgresql-<span class="hljs-variable">$POSTGRES_VERSAO</span> postgresql-client-<span class="hljs-variable">$POSTGRES_VERSAO</span>
 </code></pre>
 <h4><a class="anchor" aria-hidden="true" id="passo-09---remover-o-cluster-default-do-postgresql"></a><a href="#passo-09---remover-o-cluster-default-do-postgresql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 09 - REMOVER O CLUSTER DEFAULT DO POSTGRESQL</h4>
 <pre><code class="hljs css language-sh">sudo pg_dropcluster --stop <span class="hljs-variable">$POSTGRES_VERSAO</span> main
@@ -134,55 +143,27 @@ sudo update-locale LANG=pt_BR.UTF-8
 <h4><a class="anchor" aria-hidden="true" id="passo-10---criar-o-cluster-default-do-postgresql"></a><a href="#passo-10---criar-o-cluster-default-do-postgresql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 10 - CRIAR O CLUSTER DEFAULT DO POSTGRESQL</h4>
 <pre><code class="hljs css language-sh">sudo pg_createcluster -u postgres -g postgres <span class="hljs-string">"<span class="hljs-variable">$POSTGRES_VERSAO</span>"</span> -e UTF8 --locale=<span class="hljs-string">"pt_BR.UTF-8"</span> --lc-collate=<span class="hljs-string">"pt_BR.UTF-8"</span> main
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-11---desabilitar-autenticação-no-postgresql-será-ajustado-no-final-do-processo"></a><a href="#passo-11---desabilitar-autenticação-no-postgresql-será-ajustado-no-final-do-processo" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 11 - DESABILITAR AUTENTICAÇÃO NO POSTGRESQL (SERÁ AJUSTADO NO FINAL DO PROCESSO)</h4>
+<h4><a class="anchor" aria-hidden="true" id="passo-11---configurar-o-postgresql"></a><a href="#passo-11---configurar-o-postgresql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 11 - CONFIGURAR O POSTGRESQL</h4>
 <blockquote>
-<p>A desabilitação é necessários para executar comandos SQL sem a necessidade de informar a senha.</p>
+<p>Para configurar o PostgreSQL, deve ser ajustado alguns valores para PostgreSQL</p>
 </blockquote>
-<blockquote>
-<p>No final do processo será habilitado a autenticação.</p>
-</blockquote>
-<pre><code class="hljs css language-sh">sudo cat &lt;&lt; PG_HBA &gt; /etc/postgresql/<span class="hljs-variable">$POSTGRES_VERSAO</span>/main/pg_hba.conf
-<span class="hljs-comment"># TYPE  DATABASE        USER            CIDR-ADDRESS            METHOD</span>
-<span class="hljs-built_in">local</span>   all             postgres                                trust
-<span class="hljs-built_in">local</span>   all             all                                     trust
-host    all             all             all                     trust
-host    all             all             ::1/128                 trust
-
-<span class="hljs-built_in">local</span>   replication     all                                     trust
-host    replication     all             127.0.0.1/32            trust
-host    replication     all             ::1/128                 trust
-PG_HBA
+<pre><code class="hljs css language-sh">sudo cat &lt;&lt; PG_CONFIG &gt; /etc/postgresql/<span class="hljs-variable">$POSTGRES_VERSAO</span>/main/conf.d/postgresql.conf
+listen_addresses = <span class="hljs-string">'*'</span>
+PG_CONFIG
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-12---configurar-o-postgresql"></a><a href="#passo-12---configurar-o-postgresql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 12 - CONFIGURAR O POSTGRESQL</h4>
-<blockquote>
-<p>Para configurar o PostgreSQL, deve ser ajustado alguns valores para <code>postgresql.conf</code></p>
-</blockquote>
-<blockquote>
-<p>Caso algumas das propriedades abaixo esteja comentadas, será necessário descomentar.</p>
-</blockquote>
-<ul>
-<li>/etc/postgresql/$POSTGRES_VERSAO/main/postgresql.conf
-<ul>
-<li>listen_addresses = '*'</li>
-</ul></li>
-</ul>
-<h4><a class="anchor" aria-hidden="true" id="passo-13---reiniciar-o-postgresql"></a><a href="#passo-13---reiniciar-o-postgresql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 13 - REINICIAR O POSTGRESQL</h4>
+<h4><a class="anchor" aria-hidden="true" id="passo-12---reiniciar-o-postgresql"></a><a href="#passo-12---reiniciar-o-postgresql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 12 - REINICIAR O POSTGRESQL</h4>
 <pre><code class="hljs css language-sh">sudo systemctl restart postgresql
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-14---definir-senha-para-o-usuário-postgres"></a><a href="#passo-14---definir-senha-para-o-usuário-postgres" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 14 - DEFINIR SENHA PARA O USUÁRIO <code>postgres</code></h4>
-<pre><code class="hljs css language-sh">DB_PASSWORD_POSTGRES=$(openssl passwd -crypt postgres)
-psql -U postgres -c <span class="hljs-string">"ALTER USER postgres WITH PASSWORD '<span class="hljs-variable">$DB_PASSWORD_POSTGRES</span>';"</span>
+<h4><a class="anchor" aria-hidden="true" id="passo-13---instalar-nginx"></a><a href="#passo-13---instalar-nginx" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 13 - INSTALAR NGINX</h4>
+<pre><code class="hljs css language-sh">sudo DEBIAN_FRONTEND=noninteractive apt install -y nginx
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-15---instalar-nginx"></a><a href="#passo-15---instalar-nginx" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 15 - INSTALAR NGINX</h4>
-<pre><code class="hljs css language-sh">sudo apt install -y nginx
-</code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-16---remover-site-default-do-nginx"></a><a href="#passo-16---remover-site-default-do-nginx" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 16 - REMOVER SITE DEFAULT DO NGINX</h4>
+<h4><a class="anchor" aria-hidden="true" id="passo-14---remover-site-default-do-nginx"></a><a href="#passo-14---remover-site-default-do-nginx" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 14 - REMOVER SITE DEFAULT DO NGINX</h4>
 <pre><code class="hljs css language-sh">sudo rm -v /etc/nginx/sites-enabled/default
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-17---fazer-backup-do-arquivo-de-configuração-do-nginx"></a><a href="#passo-17---fazer-backup-do-arquivo-de-configuração-do-nginx" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 17 - FAZER BACKUP DO ARQUIVO DE CONFIGURAÇÃO DO NGINX</h4>
-<pre><code class="hljs css language-sh">sudo mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.ori
+<h4><a class="anchor" aria-hidden="true" id="passo-15---fazer-backup-do-arquivo-de-configuração-do-nginx"></a><a href="#passo-15---fazer-backup-do-arquivo-de-configuração-do-nginx" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 15 - FAZER BACKUP DO ARQUIVO DE CONFIGURAÇÃO DO NGINX</h4>
+<pre><code class="hljs css language-sh">sudo mv /etc/nginx/nginx.conf /etc/nginx/nginx.sample.conf
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-18---configurar-parametros-nginx"></a><a href="#passo-18---configurar-parametros-nginx" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 18 - CONFIGURAR PARAMETROS NGINX</h4>
+<h4><a class="anchor" aria-hidden="true" id="passo-16---configurar-parametros-nginx"></a><a href="#passo-16---configurar-parametros-nginx" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 16 - CONFIGURAR PARAMETROS NGINX</h4>
 <pre><code class="hljs css language-sh">sudo cat &lt;&lt; NGINX_CONFIG &gt; /etc/nginx/nginx.conf
 user www-data;
 worker_processes auto;
@@ -190,113 +171,105 @@ pid /run/nginx.pid;
 include /etc/nginx/modules-enabled/*.conf;
 
 events {
-        worker_connections 1024;
-        <span class="hljs-comment"># multi_accept on;</span>
+    worker_connections 1024;
+    <span class="hljs-comment"># multi_accept on;</span>
 }
 
 http {
 
-        <span class="hljs-comment">##</span>
-        <span class="hljs-comment"># Basic Settings</span>
-        <span class="hljs-comment">##</span>
+    <span class="hljs-comment">##</span>
+    <span class="hljs-comment"># Basic Settings</span>
+    <span class="hljs-comment">##</span>
 
-        sendfile on;
-        tcp_nopush on;
-        tcp_nodelay on;
-        keepalive_timeout 65;
-        types_hash_max_size 2048;
-        <span class="hljs-comment"># server_tokens off;</span>
+    sendfile on;
+    tcp_nopush on;
+    tcp_nodelay on;
+    keepalive_timeout 65;
+    types_hash_max_size 2048;
+    <span class="hljs-comment"># server_tokens off;</span>
 
-        <span class="hljs-comment"># server_names_hash_bucket_size 64;</span>
-        <span class="hljs-comment"># server_name_in_redirect off;</span>
+    <span class="hljs-comment"># server_names_hash_bucket_size 64;</span>
+    <span class="hljs-comment"># server_name_in_redirect off;</span>
 
-        client_body_buffer_size 64;
-        client_max_body_size 100m;
-        client_body_in_single_buffer on;
-        client_header_buffer_size  1m;
-        large_client_header_buffers 4 8k;
+    client_body_buffer_size 64;
+    client_max_body_size 100m;
+    client_body_in_single_buffer on;
+    client_header_buffer_size  1m;
+    large_client_header_buffers 4 8k;
 
-        include /etc/nginx/mime.types;
-        default_type application/octet-stream;
+    include /etc/nginx/mime.types;
+    default_type application/octet-stream;
 
-        <span class="hljs-comment">##</span>
-        <span class="hljs-comment"># SSL Settings</span>
-        <span class="hljs-comment">##</span>
+    <span class="hljs-comment">##</span>
+    <span class="hljs-comment"># SSL Settings</span>
+    <span class="hljs-comment">##</span>
 
-        ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; <span class="hljs-comment"># Dropping SSLv3, ref: POODLE</span>
-        ssl_prefer_server_ciphers on;
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; <span class="hljs-comment"># Dropping SSLv3, ref: POODLE</span>
+    ssl_prefer_server_ciphers on;
 
-        <span class="hljs-comment">##</span>
-        <span class="hljs-comment"># Logging Settings</span>
-        <span class="hljs-comment">##</span>
+    <span class="hljs-comment">##</span>
+    <span class="hljs-comment"># Logging Settings</span>
+    <span class="hljs-comment">##</span>
 
-        access_log /var/<span class="hljs-built_in">log</span>/nginx/access.log;
-        error_log /var/<span class="hljs-built_in">log</span>/nginx/error.log;
+    access_log /var/<span class="hljs-built_in">log</span>/nginx/access.log;
+    error_log /var/<span class="hljs-built_in">log</span>/nginx/error.log;
 
-        <span class="hljs-comment">##</span>
-        <span class="hljs-comment"># Gzip Settings</span>
-        <span class="hljs-comment">##</span>
+    <span class="hljs-comment">##</span>
+    <span class="hljs-comment"># Gzip Settings</span>
+    <span class="hljs-comment">##</span>
 
-        gzip on;
+    gzip on;
 
-        <span class="hljs-comment"># gzip_vary on;</span>
-        <span class="hljs-comment"># gzip_proxied any;</span>
-        <span class="hljs-comment"># gzip_comp_level 6;</span>
-        <span class="hljs-comment"># gzip_buffers 16 8k;</span>
-        <span class="hljs-comment"># gzip_http_version 1.1;</span>
-        <span class="hljs-comment"># gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;</span>
+    <span class="hljs-comment"># gzip_vary on;</span>
+    <span class="hljs-comment"># gzip_proxied any;</span>
+    <span class="hljs-comment"># gzip_comp_level 6;</span>
+    <span class="hljs-comment"># gzip_buffers 16 8k;</span>
+    <span class="hljs-comment"># gzip_http_version 1.1;</span>
+    <span class="hljs-comment"># gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;</span>
 
-        <span class="hljs-comment">##</span>
-        <span class="hljs-comment"># Virtual Host Configs</span>
-        <span class="hljs-comment">##</span>
+    <span class="hljs-comment">##</span>
+    <span class="hljs-comment"># Virtual Host Configs</span>
+    <span class="hljs-comment">##</span>
 
-        include /etc/nginx/conf.d/*.conf;
-        include /etc/nginx/sites-enabled/*;
+    include /etc/nginx/conf.d/*.conf;
+    include /etc/nginx/sites-enabled/*;
 }
 NGINX_CONFIG
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-19---reiniciar-o-nginx"></a><a href="#passo-19---reiniciar-o-nginx" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 19 - REINICIAR O NGINX</h4>
+<h4><a class="anchor" aria-hidden="true" id="passo-17---reiniciar-o-nginx"></a><a href="#passo-17---reiniciar-o-nginx" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 17 - REINICIAR O NGINX</h4>
 <pre><code class="hljs css language-sh">sudo service nginx restart
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-20---adicionar-repositório-ppa-do-php"></a><a href="#passo-20---adicionar-repositório-ppa-do-php" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 20 - ADICIONAR REPOSITÓRIO PPA DO PHP</h4>
+<h4><a class="anchor" aria-hidden="true" id="passo-18---adicionar-repositório-ppa-do-php"></a><a href="#passo-18---adicionar-repositório-ppa-do-php" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 18 - ADICIONAR REPOSITÓRIO PPA DO PHP</h4>
 <pre><code class="hljs css language-sh">sudo add-apt-repository -y ppa:ondrej/php
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-21---atualizar-source-list-para-obter-o-repositório-do-php"></a><a href="#passo-21---atualizar-source-list-para-obter-o-repositório-do-php" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 21 - ATUALIZAR SOURCE LIST PARA OBTER O REPOSITÓRIO DO PHP</h4>
+<h4><a class="anchor" aria-hidden="true" id="passo-19---atualizar-source-list-para-obter-o-repositório-do-php"></a><a href="#passo-19---atualizar-source-list-para-obter-o-repositório-do-php" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 19 - ATUALIZAR SOURCE LIST PARA OBTER O REPOSITÓRIO DO PHP</h4>
 <pre><code class="hljs css language-sh">sudo apt update -y
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-22---instalar-o-php"></a><a href="#passo-22---instalar-o-php" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 22 - INSTALAR O PHP</h4>
-<pre><code class="hljs css language-sh">sudo apt install -y php7.4-fpm php7.4-common php7.4-zip php7.4-pgsql php7.4-curl php7.4-xml php7.4-xmlrpc php7.4-json php7.4-pdo php7.4-gd php7.4-imagick php7.4-ldap php7.4-imap php7.4-mbstring php7.4-intl php7.4-cli php7.4-tidy php7.4-bcmath php7.4-opcache php7.4-ctype php7.4-dom php7.4-fileinfo php7.4-iconv  php7.4-Phar php7.4-SimpleXML php7.4-tokenizer php7.4-xmlreader php7.4-xmlwriter
+<h4><a class="anchor" aria-hidden="true" id="passo-20---instalar-o-php"></a><a href="#passo-20---instalar-o-php" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 20 - INSTALAR O PHP</h4>
+<pre><code class="hljs css language-sh">sudo DEBIAN_FRONTEND=noninteractive apt install -y php<span class="hljs-variable">$PHP_VERSAO</span> php<span class="hljs-variable">$PHP_VERSAO</span>-fpm php<span class="hljs-variable">$PHP_VERSAO</span>-common php<span class="hljs-variable">$PHP_VERSAO</span>-zip php<span class="hljs-variable">$PHP_VERSAO</span>-pgsql php<span class="hljs-variable">$PHP_VERSAO</span>-curl php<span class="hljs-variable">$PHP_VERSAO</span>-xml php<span class="hljs-variable">$PHP_VERSAO</span>-xmlrpc php<span class="hljs-variable">$PHP_VERSAO</span>-gd php<span class="hljs-variable">$PHP_VERSAO</span>-imagick php<span class="hljs-variable">$PHP_VERSAO</span>-ldap php<span class="hljs-variable">$PHP_VERSAO</span>-imap php<span class="hljs-variable">$PHP_VERSAO</span>-mbstring php<span class="hljs-variable">$PHP_VERSAO</span>-intl php<span class="hljs-variable">$PHP_VERSAO</span>-cli php<span class="hljs-variable">$PHP_VERSAO</span>-tidy php<span class="hljs-variable">$PHP_VERSAO</span>-bcmath php<span class="hljs-variable">$PHP_VERSAO</span>-tokenizer
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-23---configurar-o-php"></a><a href="#passo-23---configurar-o-php" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 23 - CONFIGURAR O PHP</h4>
+<h4><a class="anchor" aria-hidden="true" id="passo-21---configurar-o-php"></a><a href="#passo-21---configurar-o-php" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 21 - CONFIGURAR O PHP</h4>
 <blockquote>
-<p>Para configurar o PHP, deve ser ajustado alguns valores para os arquivos <code>php.ini</code> e <code>www.conf</code></p>
+<p>Para configurar o PHP, deve ser ajustado alguns valores para PHP e PHP Pool, arquivos <code>php.ini</code> e <code>www.conf</code> respectivamente, no entanto, não iremos alterar esses arquivos diretamente, iremos criar novos arquivos dentro da estrutura já existente para ambos.</p>
 </blockquote>
-<blockquote>
-<p>Caso algumas das propriedades abaixo esteja comentadas, será necessário descomentar.</p>
-</blockquote>
-<ul>
-<li><p>/etc/php/7.4/fpm/php.ini</p>
-<ul>
-<li>memory_limit = 2048M</li>
-<li>upload_max_filesize = 1024M</li>
-<li>post_max_size = 1024M</li>
-<li>max_execution_time = 1800</li>
-</ul></li>
-<li><p>/etc/php/7.4/fpm/pool.d/<a href="http://www.conf">www.conf</a></p>
-<ul>
-<li>request_terminate_timeout = 1800</li>
-</ul></li>
-</ul>
-<h4><a class="anchor" aria-hidden="true" id="passo-24---reiniciar-o-php"></a><a href="#passo-24---reiniciar-o-php" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 24 - REINICIAR O PHP</h4>
-<pre><code class="hljs css language-sh">sudo service php7.4-fpm restart
+<pre><code class="hljs css language-sh">sudo cat &lt;&lt; PHP_FPM_INI &gt; /etc/php/<span class="hljs-variable">$PHP_VERSAO</span>/fpm/conf.d/999-php.ini
+memory_limit = 2048M
+upload_max_filesize = 1024M
+post_max_size = 1024M
+max_execution_time = 1800
+PHP_FPM_INI
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-25---realizar-o-download-do-pacote-do-i-educar"></a><a href="#passo-25---realizar-o-download-do-pacote-do-i-educar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 25 - REALIZAR O DOWNLOAD DO PACOTE DO i-Educar</h4>
-<pre><code class="hljs css language-sh">sudo wget https://github.com/portabilis/i-educar/releases/download/<span class="hljs-variable">$VERSAO_IEDUCAR</span>/ieducar-<span class="hljs-variable">$VERSAO_IEDUCAR</span>.tar.gz -O /tmp/ieducar-<span class="hljs-variable">$VERSAO_IEDUCAR</span>.tar.gz
+<pre><code class="hljs css language-sh">sudo cat &lt;&lt; PHP_FPM_POOL_CONFIG &gt; /etc/php/<span class="hljs-variable">$PHP_VERSAO</span>/fpm/pool.d/zzz.conf
+request_terminate_timeout = 1800
+PHP_FPM_POOL_CONFIG
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-26---configurar-virtual-host-i-educar"></a><a href="#passo-26---configurar-virtual-host-i-educar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 26 - CONFIGURAR VIRTUAL HOST i-Educar</h4>
-<pre><code class="hljs css language-sh">sudo cat &lt;&lt; NGINX_IEDUCAR &gt; /etc/nginx/conf.d/ieducar.conf
+<h4><a class="anchor" aria-hidden="true" id="passo-22---reiniciar-o-php"></a><a href="#passo-22---reiniciar-o-php" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 22 - REINICIAR O PHP</h4>
+<pre><code class="hljs css language-sh">sudo service php<span class="hljs-variable">$PHP_VERSAO</span>-fpm restart
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="passo-23---configurar-virtual-host-i-educar"></a><a href="#passo-23---configurar-virtual-host-i-educar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 23 - CONFIGURAR VIRTUAL HOST i-Educar</h4>
+<pre><code class="hljs css language-sh">sudo cat &lt;&lt; NGINX_IEDUCAR &gt; /etc/nginx/sites-available/ieducar
 upstream php-fpm {
-    server unix:/run/php/php7.4-fpm.sock;
+    server unix:/run/php/php<span class="hljs-variable">$PHP_VERSAO</span>-fpm.sock;
 }
 server {
     listen 80;
@@ -348,29 +321,30 @@ server {
 }
 NGINX_IEDUCAR
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-27---reiniciar-o-nginx"></a><a href="#passo-27---reiniciar-o-nginx" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 27 - REINICIAR O NGINX</h4>
+<h4><a class="anchor" aria-hidden="true" id="passo-24---habilita-virtual-host-i-educar-e-remover-o-apache2-se-instalado"></a><a href="#passo-24---habilita-virtual-host-i-educar-e-remover-o-apache2-se-instalado" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 24 - HABILITA VIRTUAL HOST i-Educar e REMOVER O APACHE2 SE INSTALADO</h4>
+<pre><code class="hljs css language-sh">sudo ln -sf /etc/nginx/sites-available/ieducar /etc/nginx/sites-enabled/ieducar
+sudo apt remove --purge apache2
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="passo-25---reiniciar-o-nginx"></a><a href="#passo-25---reiniciar-o-nginx" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 25 - REINICIAR O NGINX</h4>
 <pre><code class="hljs css language-sh">sudo service nginx restart
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-28---conferir-path-onde-o-i-educar-será-disponibilizado-se-não-exitir-será-criado"></a><a href="#passo-28---conferir-path-onde-o-i-educar-será-disponibilizado-se-não-exitir-será-criado" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 28 - CONFERIR PATH ONDE O i-Educar SERÁ DISPONIBILIZADO, SE NÃO EXITIR, SERÁ CRIADO</h4>
+<h4><a class="anchor" aria-hidden="true" id="passo-26---conferir-path-onde-o-i-educar-será-disponibilizado-se-não-exitir-será-criado"></a><a href="#passo-26---conferir-path-onde-o-i-educar-será-disponibilizado-se-não-exitir-será-criado" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 26 - CONFERIR PATH ONDE O i-Educar SERÁ DISPONIBILIZADO, SE NÃO EXITIR, SERÁ CRIADO</h4>
 <pre><code class="hljs css language-sh">[ -d /var/www ] || sudo mkdir -p /var/www
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-29---extrair-pacote-do-i-educar"></a><a href="#passo-29---extrair-pacote-do-i-educar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 29 - EXTRAIR PACOTE DO i-Educar</h4>
-<pre><code class="hljs css language-sh">sudo tar -zxf /tmp/ieducar-<span class="hljs-variable">$VERSAO_IEDUCAR</span>.tar.gz -C /var/www/
+<h4><a class="anchor" aria-hidden="true" id="passo-27---realizar-o-download-do-pacote-do-i-educar"></a><a href="#passo-27---realizar-o-download-do-pacote-do-i-educar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 27 - REALIZAR O DOWNLOAD DO PACOTE DO i-Educar</h4>
+<pre><code class="hljs css language-sh">sudo git <span class="hljs-built_in">clone</span> --branch=<span class="hljs-variable">$VERSAO_IEDUCAR</span> https://github.com/portabilis/i-educar.git /var/www/ieducar
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-30---mover-pacote-do-i-educar-para-diretório-da-web-sem-o-sufixo-da-versão"></a><a href="#passo-30---mover-pacote-do-i-educar-para-diretório-da-web-sem-o-sufixo-da-versão" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 30 - MOVER PACOTE DO i-Educar PARA DIRETÓRIO DA WEB SEM O SUFIXO DA VERSÃO</h4>
-<pre><code class="hljs css language-sh">sudo mv /var/www/ieducar-<span class="hljs-variable">$VERSAO_IEDUCAR</span> /var/www/ieducar
-</code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-31---ajustar-permissões-do-i-educar"></a><a href="#passo-31---ajustar-permissões-do-i-educar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 31 - AJUSTAR PERMISSÕES DO i-Educar</h4>
+<h4><a class="anchor" aria-hidden="true" id="passo-28---ajustar-permissões-do-i-educar"></a><a href="#passo-28---ajustar-permissões-do-i-educar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 28 - AJUSTAR PERMISSÕES DO i-Educar</h4>
 <pre><code class="hljs css language-sh">sudo chown -R <span class="hljs-variable">$USER</span>:www-data /var/www/ieducar
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-32---instalar-o-composer"></a><a href="#passo-32---instalar-o-composer" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 32 - INSTALAR O COMPOSER</h4>
+<h4><a class="anchor" aria-hidden="true" id="passo-29---instalar-o-composer"></a><a href="#passo-29---instalar-o-composer" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 29 - INSTALAR O COMPOSER</h4>
 <pre><code class="hljs css language-sh"><span class="hljs-built_in">cd</span> /tmp
 sudo curl -sS https://getcomposer.org/installer -o composer-setup.php
 HASH=`curl -sS https://composer.github.io/installer.sig`
 sudo php -r <span class="hljs-string">"if (hash_file('SHA384', 'composer-setup.php') === '<span class="hljs-variable">$HASH</span>') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"</span>
-sudo php composer-setup.php --install-dir=/usr/<span class="hljs-built_in">local</span>/bin --filename=composer --version=<span class="hljs-string">"2.1.5"</span>
+sudo php composer-setup.php --install-dir=/usr/<span class="hljs-built_in">local</span>/bin --filename=composer --version=<span class="hljs-string">"<span class="hljs-variable">$VERSAO_COMPOSER</span>"</span>
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-33---configurar-o-arquivo-de-enviroment-do-i-educar"></a><a href="#passo-33---configurar-o-arquivo-de-enviroment-do-i-educar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 33 - CONFIGURAR O ARQUIVO DE ENVIROMENT DO i-Educar</h4>
+<h4><a class="anchor" aria-hidden="true" id="passo-30---configurar-o-arquivo-de-enviroment-do-i-educar"></a><a href="#passo-30---configurar-o-arquivo-de-enviroment-do-i-educar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 30 - CONFIGURAR O ARQUIVO DE ENVIROMENT DO i-Educar</h4>
 <pre><code class="hljs css language-sh">sudo cat &lt;&lt; ENV &gt; /var/www/ieducar/.env
 APP_NAME=i-Educar
 APP_ENV=<span class="hljs-built_in">local</span>
@@ -380,6 +354,11 @@ APP_URL=http://`<span class="hljs-built_in">echo</span> <span class="hljs-variab
 APP_TIMEZONE=America/Sao_Paulo
 APP_TRACK_ERROR=<span class="hljs-literal">true</span>
 APP_DEFAULT_HOST=`<span class="hljs-built_in">echo</span> <span class="hljs-variable">$IP</span>`
+
+<span class="hljs-comment">#</span>
+<span class="hljs-comment"># Se o i-Educar estiver utilizando o procotolo HTTP com SSL, deve-se trocar o valor de false para true</span>
+<span class="hljs-comment">#</span>
+ASSETS_SECURE=<span class="hljs-literal">false</span>
 
 <span class="hljs-comment">#</span>
 <span class="hljs-comment"># Logo que fica presente nos relatórios</span>
@@ -393,7 +372,6 @@ API_SECRET_KEY=
 LEGACY_CODE=<span class="hljs-literal">true</span>
 LEGACY_DISPLAY_ERRORS=<span class="hljs-literal">false</span>
 LEGACY_PATH=ieducar
-
 LOG_CHANNEL=stack
 
 TELESCOPE_ENABLED=<span class="hljs-literal">false</span>
@@ -405,15 +383,19 @@ DB_DATABASE=`<span class="hljs-built_in">echo</span> <span class="hljs-variable"
 DB_USERNAME=`<span class="hljs-built_in">echo</span> <span class="hljs-variable">$DB_USUARIO_IEDUCAR</span>`
 DB_PASSWORD=`<span class="hljs-built_in">echo</span> <span class="hljs-variable">$DB_PASSWORD_IEDUCAR</span>`
 
-BROADCAST_DRIVER=<span class="hljs-built_in">log</span>
-CACHE_DRIVER=file
+BROADCAST_DRIVER=null
+CACHE_DRIVER=redis
+CACHE_TTL=604800
 QUEUE_CONNECTION=sync
 SESSION_DRIVER=file
 SESSION_LIFETIME=120
 
-REDIS_HOST=redis
+REDIS_HOST=localhost
 REDIS_PASSWORD=null
 REDIS_PORT=6379
+
+SENTINEL_HOSTS=localhost
+SENTINEL_PORT=26379
 
 MAIL_MAILER=smtp
 MAIL_HOST=smtp.mailtrap.io
@@ -444,28 +426,55 @@ AWS_BUCKET=
 MIX_SOCKET_SERVER=127.0.0.1
 MIX_SOCKET_PORT=6001
 ENV
+
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-34---criar-database-do-i-educar"></a><a href="#passo-34---criar-database-do-i-educar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 34 - CRIAR DATABASE DO i-Educar</h4>
+<h4><a class="anchor" aria-hidden="true" id="passo-31---desabilitar-autenticação-no-postgresql-será-ajustado-no-final-do-processo"></a><a href="#passo-31---desabilitar-autenticação-no-postgresql-será-ajustado-no-final-do-processo" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 31 - DESABILITAR AUTENTICAÇÃO NO POSTGRESQL (SERÁ AJUSTADO NO FINAL DO PROCESSO)</h4>
+<blockquote>
+<p>A desabilitação é necessários para executar comandos SQL sem a necessidade de informar a senha.</p>
+</blockquote>
+<blockquote>
+<p>No final do processo será habilitado a autenticação.</p>
+</blockquote>
+<pre><code class="hljs css language-sh">sudo cp /etc/postgresql/<span class="hljs-variable">$POSTGRES_VERSAO</span>/main/pg_hba.conf /etc/postgresql/<span class="hljs-variable">$POSTGRES_VERSAO</span>/main/pg_hba.sample.conf
+</code></pre>
+<pre><code class="hljs css language-sh">sudo cat &lt;&lt; PG_HBA &gt; /etc/postgresql/<span class="hljs-variable">$POSTGRES_VERSAO</span>/main/pg_hba.conf
+<span class="hljs-comment"># TYPE  DATABASE        USER            CIDR-ADDRESS            METHOD</span>
+<span class="hljs-built_in">local</span>   all             postgres                                trust
+<span class="hljs-built_in">local</span>   all             all                                     trust
+host    all             all             all                     trust
+host    all             all             ::1/128                 trust
+
+<span class="hljs-built_in">local</span>   replication     all                                     trust
+host    replication     all             127.0.0.1/32            trust
+host    replication     all             ::1/128                 trust
+PG_HBA
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="passo-32---definir-senha-para-o-usuário-postgres"></a><a href="#passo-32---definir-senha-para-o-usuário-postgres" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 32 - DEFINIR SENHA PARA O USUÁRIO <code>postgres</code></h4>
+<pre><code class="hljs css language-sh">DB_PASSWORD_POSTGRES=$(openssl passwd -crypt postgres)
+psql -U postgres -c <span class="hljs-string">"ALTER USER postgres WITH PASSWORD '<span class="hljs-variable">$DB_PASSWORD_POSTGRES</span>';"</span>
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="passo-33---criar-database-do-i-educar"></a><a href="#passo-33---criar-database-do-i-educar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 33 - CRIAR DATABASE DO i-Educar</h4>
 <pre><code class="hljs css language-sh">psql -U postgres -c <span class="hljs-string">"CREATE ROLE <span class="hljs-variable">$DB_USUARIO_IEDUCAR</span> WITH LOGIN PASSWORD '<span class="hljs-variable">$DB_PASSWORD_IEDUCAR</span>';"</span>
 psql -U postgres -c <span class="hljs-string">"CREATE DATABASE <span class="hljs-variable">$DB_DATABASE_IEDUCAR</span> OWNER <span class="hljs-variable">$DB_USUARIO_IEDUCAR</span>"</span>
 psql -U postgres -c <span class="hljs-string">"ALTER USER <span class="hljs-variable">$DB_USUARIO_IEDUCAR</span> WITH SUPERUSER;"</span>
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-35---instalar-o-i-educar"></a><a href="#passo-35---instalar-o-i-educar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 35 - INSTALAR O i-Educar</h4>
+<h4><a class="anchor" aria-hidden="true" id="passo-34---instalar-o-i-educar"></a><a href="#passo-34---instalar-o-i-educar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 34 - INSTALAR O i-Educar</h4>
 <pre><code class="hljs css language-sh"><span class="hljs-built_in">cd</span> /var/www/ieducar
 sudo yes | composer new-install
-sudo php artisan storage:link
+php artisan vendor:publish --tag=reports-assets --ansi
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-36---instalar-o-pacote-de-relatórios-no-i-educar"></a><a href="#passo-36---instalar-o-pacote-de-relatórios-no-i-educar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 36 - INSTALAR O PACOTE DE RELATÓRIOS NO i-Educar</h4>
+<h4><a class="anchor" aria-hidden="true" id="passo-35---instalar-o-pacote-de-relatórios-no-i-educar"></a><a href="#passo-35---instalar-o-pacote-de-relatórios-no-i-educar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 35 - INSTALAR O PACOTE DE RELATÓRIOS NO i-Educar</h4>
 <pre><code class="hljs css language-sh"><span class="hljs-built_in">cd</span> /var/www/ieducar &amp;&amp; sudo rm -rf packages/portabilis/i-educar-reports-package
-sudo git <span class="hljs-built_in">clone</span> https://github.com/portabilis/i-educar-reports-package.git packages/portabilis/i-educar-reports-package
+sudo git <span class="hljs-built_in">clone</span> --branch <span class="hljs-variable">$VERSAO_IEDUCAR_REPORTS_PACKAGE</span> https://github.com/portabilis/i-educar-reports-package.git packages/portabilis/i-educar-reports-package
 sudo yes | composer update-install
 sudo php artisan community:reports:link
-sudo php artisan reports:install
+sudo php artisan community:reports:install
+php artisan vendor:publish --tag=reports-assets --ansi
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-37---ajustar-permissões-do-i-educar"></a><a href="#passo-37---ajustar-permissões-do-i-educar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 37 - AJUSTAR PERMISSÕES DO i-Educar</h4>
+<h4><a class="anchor" aria-hidden="true" id="passo-36---ajustar-permissões-do-i-educar"></a><a href="#passo-36---ajustar-permissões-do-i-educar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 36 - AJUSTAR PERMISSÕES DO i-Educar</h4>
 <pre><code class="hljs css language-sh">sudo chown -R <span class="hljs-variable">$USER</span>:www-data /var/www/ieducar
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-38---habilitar-autenticação-no-postgresql"></a><a href="#passo-38---habilitar-autenticação-no-postgresql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 38 - HABILITAR AUTENTICAÇÃO NO POSTGRESQL</h4>
+<h4><a class="anchor" aria-hidden="true" id="passo-37---habilitar-autenticação-no-postgresql"></a><a href="#passo-37---habilitar-autenticação-no-postgresql" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 37 - HABILITAR AUTENTICAÇÃO NO POSTGRESQL</h4>
 <pre><code class="hljs css language-sh">sudo cat &lt;&lt; PG_HBA &gt; /etc/postgresql/<span class="hljs-variable">$POSTGRES_VERSAO</span>/main/pg_hba.conf
 <span class="hljs-comment"># TYPE  DATABASE        USER            CIDR-ADDRESS            METHOD</span>
 <span class="hljs-built_in">local</span>   all             postgres                                peer
@@ -478,10 +487,10 @@ host    replication     all             127.0.0.1/32            md5
 host    replication     all             ::1/128                 md5
 PG_HBA
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-39---reiniciar-o-postgres"></a><a href="#passo-39---reiniciar-o-postgres" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 39 - REINICIAR O POSTGRES</h4>
+<h4><a class="anchor" aria-hidden="true" id="passo-38---reiniciar-o-postgres"></a><a href="#passo-38---reiniciar-o-postgres" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 38 - REINICIAR O POSTGRES</h4>
 <pre><code class="hljs css language-sh">sudo systemctl restart postgresql
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="passo-40---consultar-valores-de-variáreis-utilizadas-durante-o-processo-de-instalação"></a><a href="#passo-40---consultar-valores-de-variáreis-utilizadas-durante-o-processo-de-instalação" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 40 - CONSULTAR VALORES DE VARIÁREIS UTILIZADAS DURANTE O PROCESSO DE INSTALAÇÃO</h4>
+<h4><a class="anchor" aria-hidden="true" id="passo-39---consultar-valores-de-variáreis-utilizadas-durante-o-processo-de-instalação"></a><a href="#passo-39---consultar-valores-de-variáreis-utilizadas-durante-o-processo-de-instalação" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PASSO 39 - CONSULTAR VALORES DE VARIÁREIS UTILIZADAS DURANTE O PROCESSO DE INSTALAÇÃO</h4>
 <blockquote>
 <p>OBS. GUARDE OS VALORES APRESENTADOS POR ESSE COMANDO!</p>
 </blockquote>
@@ -509,4 +518,4 @@ clear &amp;&amp; sudo chmod +x /tmp/info.sh
 
 sudo sh /tmp/info.sh &amp;&amp; sudo rm -f /tmp/info.sh
 </code></pre>
-</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/infra-intro.html"><span class="arrow-prev">← </span><span>Home</span></a><a class="docs-next button" href="/docs/infra-dev-manual-instalacao-only-instance-postgresql-desenvolvimento.html"><span>DEV - Manual de Instalação - Only Instance - Postgres do i-Educar</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer id="footer" class="nav-footer"><section class="sitemap"><a href="/" class="nav-home"><img class="footerLogo" src="/img/logo_ieducar_horizontal_footer.svg" alt="i-Educar" width="108"/></a><div class="footerNav"><nav><ul><li><a href="index">Home</a></li><li><a href="index.html#quemusa">Quem Usa?</a></li><li><a href="/blog">Blog</a></li><li><a href="https://forum.ieducar.org">Fórum</a></li><li><a href="docs">Documentação</a></li><li><a href="https://github.com/portabilis/i-educar">Github</a></li></ul></nav></div></section><section class="subfooter"><div class="subfooteritens"><div class="footerDescription"><p>Mantido pela <img src="/img/logo-portabilis.svg"/> e Comunidade i-Educar para educação do Brasil <img src="/img/coracao.svg"/> </p></div><div class="footerVersion"><p>v. i-Educar</p></div></div></section></footer></div></body></html>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/infra-intro.html"><span class="arrow-prev">← </span><span>Home</span></a><a class="docs-next button" href="/docs/infra-dev-manual-instalacao-only-instance-postgresql-desenvolvimento.html"><span>Next</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer id="footer" class="nav-footer"><section class="sitemap"><a href="/" class="nav-home"><img class="footerLogo" src="/img/logo_ieducar_horizontal_footer.svg" alt="i-Educar" width="108"/></a><div class="footerNav"><nav><ul><li><a href="index">Home</a></li><li><a href="index.html#quemusa">Quem Usa?</a></li><li><a href="/blog">Blog</a></li><li><a href="https://forum.ieducar.org">Fórum</a></li><li><a href="docs">Documentação</a></li><li><a href="https://github.com/portabilis/i-educar">Github</a></li></ul></nav></div></section><section class="subfooter"><div class="subfooteritens"><div class="footerDescription"><p>Mantido pela <img src="/img/logo-portabilis.svg"/> e Comunidade i-Educar para educação do Brasil <img src="/img/coracao.svg"/> </p></div><div class="footerVersion"><p>v. i-Educar</p></div></div></section></footer></div></body></html>
