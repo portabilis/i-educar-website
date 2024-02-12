@@ -19,12 +19,12 @@ Esse manual aborda a instalação do i-Educar e seu banco de dados PostgreSQL no
 
 #### PASSO 01 - ATUALIZAR LIBS BASE DO SISTEMA OPERACIONAL
 ``` sh
-sudo apt update -y && sudo apt upgrade -y
+sudo find /var/lib/apt/lists -type f -exec rm -f {} \; && sudo apt update -y && sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y
 ```
 
 #### PASSO 02 - INSTALAR LIBS BASE DO SISTEMA OPERACIONAL E LIBS BASE UTILIZADAS PELO i-Educar
 ``` sh
-sudo apt install -y git wget curl zip npm sudo unzip openssl net-tools software-properties-common bash-completion openjdk-8-jre
+sudo DEBIAN_FRONTEND=noninteractive apt install -y jq git wget curl zip unzip net-tools software-properties-common bash-completion openjdk-8-jre libpq-dev redis-server nodejs
 ```
 
 #### PASSO 03 - AJUSTAR LOCALE DO SERVIDOR
@@ -43,10 +43,19 @@ Obs. Não é necessário copiar os comentários. Comentários são as linhas ini
 export IP=$(hostname -I | awk '{print $1}')
 
 # Aqui é obrigatório informar a versão do PostgreSQL
-export POSTGRES_VERSAO=13
+export POSTGRES_VERSAO=14
+
+# Aqui é obrigatório informar a versão do PHP
+export PHP_VERSAO=8.2
+
+# Aqui é obrigatório informar a versão do Composer
+export VERSAO_COMPOSER=2.3.5
 
 # Aqui é obrigatório informar a versão do i-Educar.
-export VERSAO_IEDUCAR=2.6.5
+export VERSAO_IEDUCAR=2.8
+
+# Aqui deve ser informado a versão do Pacote de Relatórios do i-Educar.
+export VERSAO_IEDUCAR_REPORTS_PACKAGE=2.8
 
 # Aqui a variável DB_HOST obtem o valor do IP do banco de dados da variável $IP informada anteriormente.
 export DB_HOST=$IP
@@ -85,7 +94,7 @@ sudo apt update -y
 
 #### PASSO 08 - INSTALAR O POSTGRESQL
 ``` sh
-sudo apt install -y postgresql-$POSTGRES_VERSAO postgresql-client-$POSTGRES_VERSAO
+sudo DEBIAN_FRONTEND=noninteractive apt install -y postgresql-$POSTGRES_VERSAO postgresql-client-$POSTGRES_VERSAO
 ```
 
 #### PASSO 09 - REMOVER O CLUSTER DEFAULT DO POSTGRESQL
@@ -98,59 +107,36 @@ sudo pg_dropcluster --stop $POSTGRES_VERSAO main
 sudo pg_createcluster -u postgres -g postgres "$POSTGRES_VERSAO" -e UTF8 --locale="pt_BR.UTF-8" --lc-collate="pt_BR.UTF-8" main
 ```
 
-#### PASSO 11 - DESABILITAR AUTENTICAÇÃO NO POSTGRESQL (SERÁ AJUSTADO NO FINAL DO PROCESSO)
-> A desabilitação é necessários para executar comandos SQL sem a necessidade de informar a senha.
+#### PASSO 11 - CONFIGURAR O POSTGRESQL
+> Para configurar o PostgreSQL, deve ser ajustado alguns valores para PostgreSQL
 
-> No final do processo será habilitado a autenticação.
 ```sh
-sudo cat << PG_HBA > /etc/postgresql/$POSTGRES_VERSAO/main/pg_hba.conf
-# TYPE  DATABASE        USER            CIDR-ADDRESS            METHOD
-local   all             postgres                                trust
-local   all             all                                     trust
-host    all             all             all                     trust
-host    all             all             ::1/128                 trust
-
-local   replication     all                                     trust
-host    replication     all             127.0.0.1/32            trust
-host    replication     all             ::1/128                 trust
-PG_HBA
+sudo cat << PG_CONFIG > /etc/postgresql/$POSTGRES_VERSAO/main/conf.d/postgresql.conf
+listen_addresses = '*'
+PG_CONFIG
 ```
 
-#### PASSO 12 - CONFIGURAR O POSTGRESQL
-> Para configurar o PostgreSQL, deve ser ajustado alguns valores para `postgresql.conf`
-
-> Caso algumas das propriedades abaixo esteja comentadas, será necessário descomentar.
-
-- /etc/postgresql/$POSTGRES_VERSAO/main/postgresql.conf
-    - listen_addresses = '*'
-
-#### PASSO 13 - REINICIAR O POSTGRESQL
+#### PASSO 12 - REINICIAR O POSTGRESQL
 ``` sh
 sudo systemctl restart postgresql
 ```
 
-#### PASSO 14 - DEFINIR SENHA PARA O USUÁRIO `postgres`
+#### PASSO 13 - INSTALAR NGINX
 ```sh
-DB_PASSWORD_POSTGRES=$(openssl passwd -crypt postgres)
-psql -U postgres -c "ALTER USER postgres WITH PASSWORD '$DB_PASSWORD_POSTGRES';"
+sudo DEBIAN_FRONTEND=noninteractive apt install -y nginx
 ```
 
-#### PASSO 15 - INSTALAR NGINX
-```sh
-sudo apt install -y nginx
-```
-
-#### PASSO 16 - REMOVER SITE DEFAULT DO NGINX
+#### PASSO 14 - REMOVER SITE DEFAULT DO NGINX
 ```sh
 sudo rm -v /etc/nginx/sites-enabled/default
 ```
 
-#### PASSO 17 - FAZER BACKUP DO ARQUIVO DE CONFIGURAÇÃO DO NGINX
+#### PASSO 15 - FAZER BACKUP DO ARQUIVO DE CONFIGURAÇÃO DO NGINX
 ```sh
-sudo mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.ori
+sudo mv /etc/nginx/nginx.conf /etc/nginx/nginx.sample.conf
 ```
 
-#### PASSO 18 - CONFIGURAR PARAMETROS NGINX
+#### PASSO 16 - CONFIGURAR PARAMETROS NGINX
 ```sh
 sudo cat << NGINX_CONFIG > /etc/nginx/nginx.conf
 user www-data;
@@ -159,121 +145,120 @@ pid /run/nginx.pid;
 include /etc/nginx/modules-enabled/*.conf;
 
 events {
-        worker_connections 1024;
-        # multi_accept on;
+    worker_connections 1024;
+    # multi_accept on;
 }
 
 http {
 
-        ##
-        # Basic Settings
-        ##
+    ##
+    # Basic Settings
+    ##
 
-        sendfile on;
-        tcp_nopush on;
-        tcp_nodelay on;
-        keepalive_timeout 65;
-        types_hash_max_size 2048;
-        # server_tokens off;
+    sendfile on;
+    tcp_nopush on;
+    tcp_nodelay on;
+    keepalive_timeout 65;
+    types_hash_max_size 2048;
+    # server_tokens off;
 
-        # server_names_hash_bucket_size 64;
-        # server_name_in_redirect off;
+    # server_names_hash_bucket_size 64;
+    # server_name_in_redirect off;
 
-        client_body_buffer_size 64;
-        client_max_body_size 100m;
-        client_body_in_single_buffer on;
-        client_header_buffer_size  1m;
-        large_client_header_buffers 4 8k;
+    client_body_buffer_size 64;
+    client_max_body_size 100m;
+    client_body_in_single_buffer on;
+    client_header_buffer_size  1m;
+    large_client_header_buffers 4 8k;
 
-        include /etc/nginx/mime.types;
-        default_type application/octet-stream;
+    include /etc/nginx/mime.types;
+    default_type application/octet-stream;
 
-        ##
-        # SSL Settings
-        ##
+    ##
+    # SSL Settings
+    ##
 
-        ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; # Dropping SSLv3, ref: POODLE
-        ssl_prefer_server_ciphers on;
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; # Dropping SSLv3, ref: POODLE
+    ssl_prefer_server_ciphers on;
 
-        ##
-        # Logging Settings
-        ##
+    ##
+    # Logging Settings
+    ##
 
-        access_log /var/log/nginx/access.log;
-        error_log /var/log/nginx/error.log;
+    access_log /var/log/nginx/access.log;
+    error_log /var/log/nginx/error.log;
 
-        ##
-        # Gzip Settings
-        ##
+    ##
+    # Gzip Settings
+    ##
 
-        gzip on;
+    gzip on;
 
-        # gzip_vary on;
-        # gzip_proxied any;
-        # gzip_comp_level 6;
-        # gzip_buffers 16 8k;
-        # gzip_http_version 1.1;
-        # gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
+    # gzip_vary on;
+    # gzip_proxied any;
+    # gzip_comp_level 6;
+    # gzip_buffers 16 8k;
+    # gzip_http_version 1.1;
+    # gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
 
-        ##
-        # Virtual Host Configs
-        ##
+    ##
+    # Virtual Host Configs
+    ##
 
-        include /etc/nginx/conf.d/*.conf;
-        include /etc/nginx/sites-enabled/*;
+    include /etc/nginx/conf.d/*.conf;
+    include /etc/nginx/sites-enabled/*;
 }
 NGINX_CONFIG
 ```
 
-#### PASSO 19 - REINICIAR O NGINX
+#### PASSO 17 - REINICIAR O NGINX
 ```sh
 sudo service nginx restart
 ```
 
-#### PASSO 20 - ADICIONAR REPOSITÓRIO PPA DO PHP
+#### PASSO 18 - ADICIONAR REPOSITÓRIO PPA DO PHP
 ```sh
 sudo add-apt-repository -y ppa:ondrej/php
 ```
 
-#### PASSO 21 - ATUALIZAR SOURCE LIST PARA OBTER O REPOSITÓRIO DO PHP
+#### PASSO 19 - ATUALIZAR SOURCE LIST PARA OBTER O REPOSITÓRIO DO PHP
 ```sh
 sudo apt update -y
 ```
 
-#### PASSO 22 - INSTALAR O PHP
+#### PASSO 20 - INSTALAR O PHP
 ```sh
-sudo apt install -y php7.4-fpm php7.4-common php7.4-zip php7.4-pgsql php7.4-curl php7.4-xml php7.4-xmlrpc php7.4-json php7.4-pdo php7.4-gd php7.4-imagick php7.4-ldap php7.4-imap php7.4-mbstring php7.4-intl php7.4-cli php7.4-tidy php7.4-bcmath php7.4-opcache php7.4-ctype php7.4-dom php7.4-fileinfo php7.4-iconv  php7.4-Phar php7.4-SimpleXML php7.4-tokenizer php7.4-xmlreader php7.4-xmlwriter
+sudo DEBIAN_FRONTEND=noninteractive apt install -y php$PHP_VERSAO php$PHP_VERSAO-fpm php$PHP_VERSAO-common php$PHP_VERSAO-zip php$PHP_VERSAO-pgsql php$PHP_VERSAO-curl php$PHP_VERSAO-xml php$PHP_VERSAO-xmlrpc php$PHP_VERSAO-gd php$PHP_VERSAO-imagick php$PHP_VERSAO-ldap php$PHP_VERSAO-imap php$PHP_VERSAO-mbstring php$PHP_VERSAO-intl php$PHP_VERSAO-cli php$PHP_VERSAO-tidy php$PHP_VERSAO-bcmath php$PHP_VERSAO-tokenizer
 ```
 
-#### PASSO 23 - CONFIGURAR O PHP
-> Para configurar o PHP, deve ser ajustado alguns valores para os arquivos `php.ini` e `www.conf`
+#### PASSO 21 - CONFIGURAR O PHP
+> Para configurar o PHP, deve ser ajustado alguns valores para PHP e PHP Pool, arquivos `php.ini` e `www.conf` respectivamente, no entanto, não iremos alterar esses arquivos diretamente, iremos criar novos arquivos dentro da estrutura já existente para ambos.
 
-> Caso algumas das propriedades abaixo esteja comentadas, será necessário descomentar.
-
-- /etc/php/7.4/fpm/php.ini
-    - memory_limit = 2048M
-    - upload_max_filesize = 1024M
-    - post_max_size = 1024M
-    - max_execution_time = 1800
-
-- /etc/php/7.4/fpm/pool.d/www.conf
-    - request_terminate_timeout = 1800
-
-#### PASSO 24 - REINICIAR O PHP
 ```sh
-sudo service php7.4-fpm restart
+sudo cat << PHP_FPM_INI > /etc/php/$PHP_VERSAO/fpm/conf.d/999-php.ini
+memory_limit = 2048M
+upload_max_filesize = 1024M
+post_max_size = 1024M
+max_execution_time = 1800
+PHP_FPM_INI
 ```
 
-#### PASSO 25 - REALIZAR O DOWNLOAD DO PACOTE DO i-Educar
 ```sh
-sudo wget https://github.com/portabilis/i-educar/releases/download/$VERSAO_IEDUCAR/ieducar-$VERSAO_IEDUCAR.tar.gz -O /tmp/ieducar-$VERSAO_IEDUCAR.tar.gz
+sudo cat << PHP_FPM_POOL_CONFIG > /etc/php/$PHP_VERSAO/fpm/pool.d/zzz.conf
+request_terminate_timeout = 1800
+PHP_FPM_POOL_CONFIG
 ```
 
-#### PASSO 26 - CONFIGURAR VIRTUAL HOST i-Educar
+#### PASSO 22 - REINICIAR O PHP
 ```sh
-sudo cat << NGINX_IEDUCAR > /etc/nginx/conf.d/ieducar.conf
+sudo service php$PHP_VERSAO-fpm restart
+```
+
+#### PASSO 23 - CONFIGURAR VIRTUAL HOST i-Educar
+```sh
+sudo cat << NGINX_IEDUCAR > /etc/nginx/sites-available/ieducar
 upstream php-fpm {
-    server unix:/run/php/php7.4-fpm.sock;
+    server unix:/run/php/php$PHP_VERSAO-fpm.sock;
 }
 server {
     listen 80;
@@ -326,41 +311,42 @@ server {
 NGINX_IEDUCAR
 ```
 
-#### PASSO 27 - REINICIAR O NGINX
+#### PASSO 24 - HABILITA VIRTUAL HOST i-Educar e REMOVER O APACHE2 SE INSTALADO
+```sh
+sudo ln -sf /etc/nginx/sites-available/ieducar /etc/nginx/sites-enabled/ieducar
+sudo apt remove --purge apache2
+```
+
+#### PASSO 25 - REINICIAR O NGINX
 ```sh
 sudo service nginx restart
 ```
 
-#### PASSO 28 - CONFERIR PATH ONDE O i-Educar SERÁ DISPONIBILIZADO, SE NÃO EXITIR, SERÁ CRIADO
+#### PASSO 26 - CONFERIR PATH ONDE O i-Educar SERÁ DISPONIBILIZADO, SE NÃO EXITIR, SERÁ CRIADO
 ```sh
 [ -d /var/www ] || sudo mkdir -p /var/www
 ```
 
-#### PASSO 29 - EXTRAIR PACOTE DO i-Educar
+#### PASSO 27 - REALIZAR O DOWNLOAD DO PACOTE DO i-Educar
 ```sh
-sudo tar -zxf /tmp/ieducar-$VERSAO_IEDUCAR.tar.gz -C /var/www/
+sudo git clone --branch=$VERSAO_IEDUCAR https://github.com/portabilis/i-educar.git /var/www/ieducar
 ```
 
-#### PASSO 30 - MOVER PACOTE DO i-Educar PARA DIRETÓRIO DA WEB SEM O SUFIXO DA VERSÃO
-```sh
-sudo mv /var/www/ieducar-$VERSAO_IEDUCAR /var/www/ieducar
-```
-
-#### PASSO 31 - AJUSTAR PERMISSÕES DO i-Educar
+#### PASSO 28 - AJUSTAR PERMISSÕES DO i-Educar
 ```sh
 sudo chown -R $USER:www-data /var/www/ieducar
 ```
 
-#### PASSO 32 - INSTALAR O COMPOSER
+#### PASSO 29 - INSTALAR O COMPOSER
 ```sh
 cd /tmp
 sudo curl -sS https://getcomposer.org/installer -o composer-setup.php
 HASH=`curl -sS https://composer.github.io/installer.sig`
 sudo php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer --version="2.1.5"
+sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer --version="$VERSAO_COMPOSER"
 ```
 
-#### PASSO 33 - CONFIGURAR O ARQUIVO DE ENVIROMENT DO i-Educar
+#### PASSO 30 - CONFIGURAR O ARQUIVO DE ENVIROMENT DO i-Educar
 ```sh
 sudo cat << ENV > /var/www/ieducar/.env
 APP_NAME=i-Educar
@@ -371,6 +357,11 @@ APP_URL=http://`echo $IP`
 APP_TIMEZONE=America/Sao_Paulo
 APP_TRACK_ERROR=true
 APP_DEFAULT_HOST=`echo $IP`
+
+#
+# Se o i-Educar estiver utilizando o procotolo HTTP com SSL, deve-se trocar o valor de false para true
+#
+ASSETS_SECURE=false
 
 #
 # Logo que fica presente nos relatórios
@@ -384,7 +375,6 @@ API_SECRET_KEY=
 LEGACY_CODE=true
 LEGACY_DISPLAY_ERRORS=false
 LEGACY_PATH=ieducar
-
 LOG_CHANNEL=stack
 
 TELESCOPE_ENABLED=false
@@ -396,15 +386,19 @@ DB_DATABASE=`echo $DB_DATABASE_IEDUCAR`
 DB_USERNAME=`echo $DB_USUARIO_IEDUCAR`
 DB_PASSWORD=`echo $DB_PASSWORD_IEDUCAR`
 
-BROADCAST_DRIVER=log
-CACHE_DRIVER=file
+BROADCAST_DRIVER=null
+CACHE_DRIVER=redis
+CACHE_TTL=604800
 QUEUE_CONNECTION=sync
 SESSION_DRIVER=file
 SESSION_LIFETIME=120
 
-REDIS_HOST=redis
+REDIS_HOST=localhost
 REDIS_PASSWORD=null
 REDIS_PORT=6379
+
+SENTINEL_HOSTS=localhost
+SENTINEL_PORT=26379
 
 MAIL_MAILER=smtp
 MAIL_HOST=smtp.mailtrap.io
@@ -435,37 +429,67 @@ AWS_BUCKET=
 MIX_SOCKET_SERVER=127.0.0.1
 MIX_SOCKET_PORT=6001
 ENV
+
+```
+#### PASSO 31 - DESABILITAR AUTENTICAÇÃO NO POSTGRESQL (SERÁ AJUSTADO NO FINAL DO PROCESSO)
+> A desabilitação é necessários para executar comandos SQL sem a necessidade de informar a senha.
+
+> No final do processo será habilitado a autenticação.
+
+```sh
+sudo cp /etc/postgresql/$POSTGRES_VERSAO/main/pg_hba.conf /etc/postgresql/$POSTGRES_VERSAO/main/pg_hba.sample.conf
 ```
 
-#### PASSO 34 - CRIAR DATABASE DO i-Educar
+```sh
+sudo cat << PG_HBA > /etc/postgresql/$POSTGRES_VERSAO/main/pg_hba.conf
+# TYPE  DATABASE        USER            CIDR-ADDRESS            METHOD
+local   all             postgres                                trust
+local   all             all                                     trust
+host    all             all             all                     trust
+host    all             all             ::1/128                 trust
+
+local   replication     all                                     trust
+host    replication     all             127.0.0.1/32            trust
+host    replication     all             ::1/128                 trust
+PG_HBA
+```
+
+#### PASSO 32 - DEFINIR SENHA PARA O USUÁRIO `postgres`
+```sh
+DB_PASSWORD_POSTGRES=$(openssl passwd -crypt postgres)
+psql -U postgres -c "ALTER USER postgres WITH PASSWORD '$DB_PASSWORD_POSTGRES';"
+```
+
+#### PASSO 33 - CRIAR DATABASE DO i-Educar
 ```sh
 psql -U postgres -c "CREATE ROLE $DB_USUARIO_IEDUCAR WITH LOGIN PASSWORD '$DB_PASSWORD_IEDUCAR';"
 psql -U postgres -c "CREATE DATABASE $DB_DATABASE_IEDUCAR OWNER $DB_USUARIO_IEDUCAR"
 psql -U postgres -c "ALTER USER $DB_USUARIO_IEDUCAR WITH SUPERUSER;"
 ```
 
-#### PASSO 35 - INSTALAR O i-Educar
+#### PASSO 34 - INSTALAR O i-Educar
 ```sh
 cd /var/www/ieducar
 sudo yes | composer new-install
-sudo php artisan storage:link
+php artisan vendor:publish --tag=reports-assets --ansi
 ```
 
-#### PASSO 36 - INSTALAR O PACOTE DE RELATÓRIOS NO i-Educar
+#### PASSO 35 - INSTALAR O PACOTE DE RELATÓRIOS NO i-Educar
 ```sh
 cd /var/www/ieducar && sudo rm -rf packages/portabilis/i-educar-reports-package
-sudo git clone https://github.com/portabilis/i-educar-reports-package.git packages/portabilis/i-educar-reports-package
+sudo git clone --branch $VERSAO_IEDUCAR_REPORTS_PACKAGE https://github.com/portabilis/i-educar-reports-package.git packages/portabilis/i-educar-reports-package
 sudo yes | composer update-install
 sudo php artisan community:reports:link
-sudo php artisan reports:install
+sudo php artisan community:reports:install
+php artisan vendor:publish --tag=reports-assets --ansi
 ```
 
-#### PASSO 37 - AJUSTAR PERMISSÕES DO i-Educar
+#### PASSO 36 - AJUSTAR PERMISSÕES DO i-Educar
 ```sh
 sudo chown -R $USER:www-data /var/www/ieducar
 ```
 
-#### PASSO 38 - HABILITAR AUTENTICAÇÃO NO POSTGRESQL
+#### PASSO 37 - HABILITAR AUTENTICAÇÃO NO POSTGRESQL
 ```sh
 sudo cat << PG_HBA > /etc/postgresql/$POSTGRES_VERSAO/main/pg_hba.conf
 # TYPE  DATABASE        USER            CIDR-ADDRESS            METHOD
@@ -480,12 +504,12 @@ host    replication     all             ::1/128                 md5
 PG_HBA
 ```
 
-#### PASSO 39 - REINICIAR O POSTGRES
+#### PASSO 38 - REINICIAR O POSTGRES
 ``` sh
 sudo systemctl restart postgresql
 ```
 
-#### PASSO 40 - CONSULTAR VALORES DE VARIÁREIS UTILIZADAS DURANTE O PROCESSO DE INSTALAÇÃO
+#### PASSO 39 - CONSULTAR VALORES DE VARIÁREIS UTILIZADAS DURANTE O PROCESSO DE INSTALAÇÃO
 
 > OBS. GUARDE OS VALORES APRESENTADOS POR ESSE COMANDO!
 
