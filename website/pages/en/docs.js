@@ -60,19 +60,23 @@ const Block = props => (
     id={props.id}
     background={props.background}
     className={props.className}>
-    <DocsBlock className={props.classNameGrid} align="left" contents={props.children} layout={props.layout} />
-    <span className='docsText'>
-      <p>Veja algo que precisa ser corrigido? Propor uma mudança na <a href="https://github.com/portabilis/i-educar/issues" >fonte</a></p>
-      <p>Precisa de uma versão diferente dos documentos?<a> Veja as versões disponíveis.</a></p>
-    </span>
+    <DocsBlock className={props.classNameGrid} align="left" contents={props.children} layout={props.layout}/>
+    <div className="docs-video">
+      <p>Assista ao vídeo e veja passo a passo como instalar o i-Educar versão comunidade</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/KKmvJtD3Mw8?si=RQNwqMuRlWch8pGW"
+              title="YouTube video player" frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+    </div>
+    <div>
+      <span className='docsText'>
+        <p>Veja algo que precisa ser corrigido? Propor uma mudança na <a
+          href="https://github.com/portabilis/i-educar/issues">fonte</a></p>
+        <p>Precisa de uma versão diferente dos documentos?<a> Veja as versões disponíveis.</a></p>
+      </span>
+    </div>
   </Container>
 );
-
-
-
-
-
-
 
 
 class Docs extends React.Component {
@@ -82,10 +86,10 @@ class Docs extends React.Component {
     return (
       <div>
         <BlockHeader class="docsContainerHeader" classNameGrid="docsGridHeader">
-        {[
-          {
-            title: 'Documentação',
-            content: 'Guias com foco no usuário final. É preciso criar um corpo organizado de documentos para consulta de professores, secretários de escola e administradores do i-educar. Importante ter guias distintos para cada tipo de usuário. Conteúdo dos guias pode conter webcasts.',
+          {[
+            {
+              title: 'Documentação',
+              content: 'Guias com foco no usuário final. É preciso criar um corpo organizado de documentos para consulta de professores, secretários de escola e administradores do i-educar. Importante ter guias distintos para cada tipo de usuário. Conteúdo dos guias pode conter webcasts.',
             textAlign: 'left',
           }
         ]}
