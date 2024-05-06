@@ -4,9 +4,9 @@ authorURL: https://www.linkedin.com/in/sara-pires-siqueira/
 title: Coordenador de Tecnologia da Educação destaca avanços na área em Piaçabuçu-AL
 ---
 
-![](https://raw.githubusercontent.com/portabilis/i-educar-website/main/images/Piac%CC%A7uba%20em%20ac%CC%A7a%CC%83o.jpeg)
+![](https://raw.githubusercontent.com/portabilis/i-educar-website/main/images/piacuba-em-acao.jpeg)
 
-No dia 14 de março (quinta-feira), o programa “Piaçabuçu em Ação” apresentou um episódio, promovido pela Assessoria de Comunicação da Prefeitura de Piaçabuçu-AL (ASCOM), apresentado pela entrevistadora Paula Dantas e transmitido pelas redes sociais e também pela rádio Melodia FM. O entrevistado foi o Coordenador de Tecnologia da Educação, Hugo Dantas Carozo. 
+No dia 14 de março (quinta-feira), o programa “Piaçabuçu em Ação” apresentou um episódio, promovido pela Assessoria de Comunicação da Prefeitura de Piaçabuçu-AL (ASCOM), apresentado pela entrevistadora Paula Dantas e transmitido pelas redes sociais e também pela rádio Melodia FM. O entrevistado foi o Coordenador de Tecnologia da Educação, Hugo Dantas Carozo.
 
 Durante a entrevista, Hugo destacou a importância do núcleo de tecnologia, órgão vinculado ao Ministério da Educação (MEC), para o desenvolvimento da cidade. Ele enfatizou a relevância da equipe formada por profissionais de tecnologia da informação e professores de informática, que trabalham tanto na parte pedagógica quanto na técnica, com foco na tecnologia da educação.
 
