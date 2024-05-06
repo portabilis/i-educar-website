@@ -1,7 +1,7 @@
 ---
 author: Sara Pires
 authorURL: https://www.linkedin.com/in/sara-pires-siqueira/
-title: Sistemas públicos de educação: da Gestão à aprendizagem com qualidade
+title: Sistemas públicos de educação:: da Gestão à aprendizagem com qualidade
 ---
 
 ![](https://raw.githubusercontent.com/portabilis/i-educar-website/main/images/banner_blog_21.02.png)
@@ -14,7 +14,7 @@ Exitem muitas vantagens oferecidas com essa aproximação técnica, tanto na ges
 
 Vamos conhecer um pouco mais das soluções:
 
-
+<!--truncate-->
 
 ## Software Público i-Educar
 
@@ -24,7 +24,7 @@ Pode ser adaptada e configurada de acordo com a realidade de cada município. E 
 
 Como a base de um software de código aberto é a “participação Colaborativa”, dúvidas técnicas ou de implantação do sistema, aperfeiçoamento de funcionalidades e inovações podem ser obtidas e compartilhadas na Comunidade e fórum dedicados ao software
 
-### Funcionalidades do I-Educar:
+### Funcionalidades do i-Educar:
 
 * Cadastro único do aluno totalmente online e disponível para toda a rede de ensino;
 
