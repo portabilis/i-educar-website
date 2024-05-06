@@ -111,9 +111,9 @@ class Docs extends React.Component {
                   <p>
                     <strong>Login de acesso</strong>
                     <br/>
-                    Matrícula: admin
+                    Matrícula: comunidade
                     <br/>
-                    Senha: 123456789
+                    Senha: Comunidade@1
                   </p>
                   <div className="demo-link">
                     <a href="https://comunidade.ieducar.com.br" target="_blank">Acessar</a>
@@ -133,9 +133,9 @@ class Docs extends React.Component {
                   <p>
                     <strong>Login de acesso</strong>
                     <br/>
-                    Matrícula: admin
+                    Usuário: comunidade
                     <br/>
-                    Senha: 123456789
+                    Senha: Comunidade@1
                   </p>
                   <div className="demo-link">
                     <a href="https://idiario.ieducar.com.br" target="_blank">Acessar</a>
