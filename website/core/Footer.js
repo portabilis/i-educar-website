@@ -40,19 +40,22 @@ class Footer extends React.Component {
                   <a href="index">Home</a>
                 </li>
                 <li>
-                  <a href="index.html#quemusa" >Quem Usa?</a>
+                  <a href="/#quemusa">Quem Usa?</a>
                 </li>
                 <li>
-                  <a href ={this.pageUrl('blog')}>Blog</a>
+                  <a href={this.pageUrl('blog')}>Blog</a>
                 </li>
                 <li>
                   <a href="https://forum.ieducar.org">Fórum</a>
                 </li>
                 <li>
-                  <a href="docs" >Documentação</a>
+                  <a href="docs">Documentação</a>
                 </li>
                 <li>
-                  <a href="https://github.com/portabilis/i-educar" >Github</a>
+                  <a href="/demo">Demonstração</a>
+                </li>
+                <li>
+                  <a href="https://github.com/portabilis/i-educar">Github</a>
                 </li>
               </ul>
             </nav>

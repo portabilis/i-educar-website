@@ -104,10 +104,7 @@
 }
 
 .docsText {
-  display: flex;
-  text-align: justify;
   flex-direction: column;
-  margin-top: -143px;
   margin-bottom: 80px;
 }
 
@@ -150,6 +147,72 @@ font-family: $titleFont;
   letter-spacing: normal;
   color: #ffffff;
   text-align: justify;
+}
+
+.demo .wrapper {
+  width: 70%;
+}
+
+.demo .docsGridTitle h2 {
+  margin-left: 0;
+}
+
+.demo.docsContainerHeader {
+  background: linear-gradient(75.17deg, #2696FF 0%, #8007F8 100.41%);
+}
+
+.demo .i-educar,
+.demo .i-diario {
+  color: #2696FF;
+  text-align: center;
+  font-size: 32px;
+  font-family: Muli, sans-serif;
+  display: block;
+}
+
+.demo .i-diario {
+  color: #8007F8;
+}
+
+.demo .docsGridTitle {
+  border-bottom: none;
+  padding: 50px 50px 10px;
+  display: block;
+}
+
+.demo .gridBlock {
+  padding: 0 50px 50px;
+}
+.demo .blockContent {
+  padding: 0 50px 50px;
+}
+.demo-link {
+  text-align: center;
+  padding-top: 25px;
+}
+.demo-link a {
+  border: 1px solid #2696FF;
+  border-radius: 3px;
+  padding: 14px 60px;
+  margin: 10px auto;
+}
+.demo-link a:hover {
+  background: rgba(38, 150, 255, 0.1);
+}
+
+.docs-video {
+  margin-top: -143px;
+  padding-bottom: 50px;
+}
+
+.docs-video p {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.docs-video p,
+.docs-video iframe {
+  display: block;
+  margin: 0 auto;
 }
 
 @media only screen and ( max-width: 745px ) {
