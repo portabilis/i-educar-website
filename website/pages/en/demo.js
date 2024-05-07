@@ -106,7 +106,7 @@ class Docs extends React.Component {
                 </div>
                 <div className="blockContent">
                   <p>
-                    Um software livre que facilita a gestão das unidades escolares de ensino, assim como da própria Secretaria de Educação por meio dos dados, transparência e tecnologia, garantindo a eficiência dos processos.
+                    Facilita a gestão das unidades escolares de ensino, assim como da própria Secretaria de Educação por meio dos dados, transparência e tecnologia, garantindo a eficiência dos processos.
                   </p>
                   <p>
                     <strong>Login de acesso</strong>
