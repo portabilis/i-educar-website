@@ -1,3 +1,9 @@
+---
+author: Sara Pires
+authorURL: https://www.linkedin.com/in/sara-pires-siqueira/
+title: Prefeitura de Tarauacá-AC lança Sistema i-Educar para aprimorar a gestão educacional no município
+---
+
 ![](https://raw.githubusercontent.com/portabilis/i-educar-website/main/images/banner_blog_08.05.jpeg)
 
 Foi realizado na manhã desta segunda-feira, 6, no auditório do Sinteac/Tarauacá, a cerimônia de lançamento do Sistema i-Educar pela Prefeitura Municipal de Tarauacá, por meio da Secretaria Municipal de Educação. O evento marcou um importante passo rumo à modernização e eficiência na gestão educacional do município.
