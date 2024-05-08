@@ -2,12 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://ieducar.org/blog</id>
     <title>i-Educar Blog</title>
-    <updated>2024-03-19T06:00:00.000Z</updated>
+    <updated>2024-05-24T06:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://ieducar.org/blog"/>
     <subtitle>The best place to stay up-to-date with the latest i-Educar news and events.</subtitle>
     <logo>http://ieducar.org/img/logo_horizontal.svg</logo>
     <rights>Copyright © 2024 Your Name or Your Company Name</rights>
+    <entry>
+        <title type="html"><![CDATA[Prefeitura de Tarauacá-AC lança Sistema i-Educar para aprimorar a gestão educacional no município]]></title>
+        <id>http://ieducar.org/blog/2024/05/24/prefeitura-de-tarauaca-AC-lanca-sistema-i-educar-para-aprimorar-gestao-educacional-no-municipio.html</id>
+        <link href="http://ieducar.org/blog/2024/05/24/prefeitura-de-tarauaca-AC-lanca-sistema-i-educar-para-aprimorar-gestao-educacional-no-municipio.html"/>
+        <updated>2024-05-24T06:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/portabilis/i-educar-website/main/images/banner_blog_08.05.jpeg" alt=""></p> <p>Foi realizado na manhã desta segunda-feira, 6, no auditório do Sinteac/Tarauacá, a cerimônia de lançamento do Sistema i-Educar pela Prefeitura Municipal de Tarauacá, por meio da Secretaria Municipal de Educação. O evento marcou um importante passo r...</p>]]></summary>
+        <author>
+            <name>Sara Pires</name>
+            <uri>https://www.linkedin.com/in/sara-pires-siqueira/</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Coordenador de Tecnologia da Educação destaca avanços na área em Piaçabuçu-AL]]></title>
         <id>http://ieducar.org/blog/2024/03/19/coordenador-de-tecnologia-da-educacao-destaca-avancos-na-area-em-piacabucu.html</id>
