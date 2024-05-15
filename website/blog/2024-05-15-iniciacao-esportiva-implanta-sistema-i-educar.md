@@ -7,7 +7,7 @@ title: Iniciação Esportiva implanta sistema i-Educar em Gaspar-SC
 ---
 
 
-![](https://raw.githubusercontent.com/portabilis/i-educar-website/main/images/Piac%CC%A7uba%20em%20ac%CC%A7a%CC%83o.jpeg)
+![](https://raw.githubusercontent.com/portabilis/i-educar-website/main/images/banner_blog_15.05.png)
 
 Sistema facilita o controle de participação em cada núcleo e modalidade
 ‌
