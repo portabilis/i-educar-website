@@ -4,7 +4,7 @@
         <title>i-Educar Blog</title>
         <link>http://ieducar.org/blog</link>
         <description>The best place to stay up-to-date with the latest i-Educar news and events.</description>
-        <lastBuildDate>Tue, 21 May 2024 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 14 Jun 2024 06:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -13,6 +13,13 @@
             <link>http://ieducar.org/blog</link>
         </image>
         <copyright>Copyright © 2024 Your Name or Your Company Name</copyright>
+        <item>
+            <title><![CDATA[Município de São João Nepomuceno inova na educação com parceria para gestão tecnológica]]></title>
+            <link>http://ieducar.org/blog/2024/06/14/municipio-inova-na-educacao-com-parceria-para-gestao-tecnologica.html</link>
+            <guid>http://ieducar.org/blog/2024/06/14/municipio-inova-na-educacao-com-parceria-para-gestao-tecnologica.html</guid>
+            <pubDate>Fri, 14 Jun 2024 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="https://raw.githubusercontent.com/portabilis/i-educar-website/main/images/banner_blog_06_14.jpeg" alt=""></p> <p>A cidade de São João Nepomuceno está transformando a educação por meio do uso inteligente da tecnologia. Com uma abordagem inovadora na gestão educacional, as autoridades municipais lançaram um edital na busca por uma solução para desburocratizar e ...</p>]]></description>
+        </item>
         <item>
             <title><![CDATA[Prefeitura de Epitaciolândia-AC é a primeira a investir em informatização na educação, sistema I-educar colocará todas as escolas urbanas on-line]]></title>
             <link>http://ieducar.org/blog/2024/05/21/prefeitura-de-epitaciolandia-ac-investi-no-i-educar.html</link>
