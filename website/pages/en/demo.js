@@ -146,7 +146,7 @@ class Docs extends React.Component {
             <div className="roteiro">
               <h2>Roteiro para auxiliar na navegação dos ambientes</h2>
               <div className="demo-link">
-                <a href="https://github.com/portabilis/i-educar-website/files/15490426/uso.pdf">Baixar</a>
+                <a href="https://github.com/user-attachments/files/16394418/manual.pdf">Baixar</a>
               </div>
             </div>
             <span className="docsText"><p>Veja algo que precisa ser corrigido? Propor uma mudança na <a
