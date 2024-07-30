@@ -153,8 +153,8 @@ class Docs extends React.Component {
               href="https://github.com/portabilis/i-educar/issues">fonte</a></p><p>Precisa de uma versão diferente dos documentos?<a> Veja as versões disponíveis.</a></p></span>
           </div>
         </div>
-      </div>*/
+      </div>
   }
 }
 
-module.exports = Docs;
+module.exports = Docs;*/
