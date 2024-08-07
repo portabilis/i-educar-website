@@ -147,7 +147,7 @@ class Docs extends React.Component {
       <div className="roteiro">
              <h2>Roteiro para auxiliar na navegação dos ambientes</h2>
             <div className="demo-link">
-                <a href="https://github.com/user-attachments/files/16533010/Manual.do.usuario.i-Educar.2024.pdf">Baixar</a>
+                <a href="/user-attachments/files/16533010/Manual.do.usuario.i-Educar.2024.pdf">Baixar</a>
               </div>
             </div>
             
