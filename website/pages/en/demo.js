@@ -143,6 +143,12 @@ class Docs extends React.Component {
                 </div>
               </div>
             </div>
+      <div className="roteiro">
+             <h2>Roteiro para auxiliar na navegação dos ambientes</h2>
+            <div className="demo-link">
+                <a href=“’”>Baixar</a>
+              </div>
+            </div>
             
             <span className="docsText"><p>Veja algo que precisa ser corrigido? Propor uma mudança na <a
               href="https://github.com/portabilis/i-educar/issues">fonte</a></p><p>Precisa de uma versão diferente dos documentos?<a> Veja as versões disponíveis.</a></p></span>
