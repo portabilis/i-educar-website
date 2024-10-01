@@ -1,5 +1,4 @@
 ---
-
 author: Sara Pires
 authorURL: https://www.linkedin.com/in/sara-pires-siqueira/
 title: Transformação digital na educação: Barra De São Miguel (AL) adota sistema de gestão escolar
