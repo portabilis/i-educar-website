@@ -2,12 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://ieducar.org/blog</id>
     <title>i-Educar Blog</title>
-    <updated>2024-06-14T06:00:00.000Z</updated>
+    <updated>2024-11-19T06:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://ieducar.org/blog"/>
     <subtitle>The best place to stay up-to-date with the latest i-Educar news and events.</subtitle>
     <logo>http://ieducar.org/img/logo_horizontal.svg</logo>
     <rights>Copyright © 2024 Your Name or Your Company Name</rights>
+    <entry>
+        <title type="html"><![CDATA[CanoasTec investe R$ 790 mil para modernizar escolas municipais]]></title>
+        <id>http://ieducar.org/blog/2024/11/19/canoastec-investe-para-modernizar-escolas-municipais.html</id>
+        <link href="http://ieducar.org/blog/2024/11/19/canoastec-investe-para-modernizar-escolas-municipais.html"/>
+        <updated>2024-11-19T06:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/portabilis/i-educar-website/refs/heads/main/images/Banner_blog_19.11.jpg" alt=""></p> <p>Modernizar a gestão de recursos e dar mais transparência no acompanhamento da jornada escolar. Esses são os objetivos do programa i-Educar, adquirido pela Fundação Municipal de Tecnologia da Informação e Comunicação (CanoasTec) e já implantado em to...</p>]]></summary>
+        <author>
+            <name>Sara Pires</name>
+            <uri>https://www.linkedin.com/in/sara-pires-siqueira/</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Transformação digital na educação, Barra De São Miguel (AL) adota sistema de gestão escolar]]></title>
+        <id>http://ieducar.org/blog/2024/10/01/transformacao-digital-na-educacao-em-barra-de-sao-miguel-al.html</id>
+        <link href="http://ieducar.org/blog/2024/10/01/transformacao-digital-na-educacao-em-barra-de-sao-miguel-al.html"/>
+        <updated>2024-10-01T06:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/portabilis/i-educar-website/refs/heads/main/images/banner-24-10-01.jpg" alt=""></p> <p>Ação representa mais uma etapa na incorporação qualificada da tecnologia na rede de ensino</p> <p>O município de Barra de São Miguel (AL) comemorou um marco significativo na transformação digital da sua rede de ensino ao formalizar a adoção de um sistema d...</p>]]></summary>
+        <author>
+            <name>Sara Pires</name>
+            <uri>https://www.linkedin.com/in/sara-pires-siqueira</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Município de São João Nepomuceno inova na educação com parceria para gestão tecnológica]]></title>
         <id>http://ieducar.org/blog/2024/06/14/municipio-inova-na-educacao-com-parceria-para-gestao-tecnologica.html</id>
