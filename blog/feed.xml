@@ -4,7 +4,7 @@
         <title>i-Educar Blog</title>
         <link>http://ieducar.org/blog</link>
         <description>The best place to stay up-to-date with the latest i-Educar news and events.</description>
-        <lastBuildDate>Tue, 19 Nov 2024 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 11 Dec 2024 06:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -13,6 +13,13 @@
             <link>http://ieducar.org/blog</link>
         </image>
         <copyright>Copyright © 2024 Your Name or Your Company Name</copyright>
+        <item>
+            <title><![CDATA[CanoasTec participa da 21ª edição do Latinoware, em Foz do Iguaçu]]></title>
+            <link>http://ieducar.org/blog/2024/12/11/canoastec-participa-do-latinoware.html</link>
+            <guid>http://ieducar.org/blog/2024/12/11/canoastec-participa-do-latinoware.html</guid>
+            <pubDate>Wed, 11 Dec 2024 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="https://raw.githubusercontent.com/portabilis/i-educar-website/refs/heads/main/images/banner_blog_11.12.jpeg" alt=""></p> <p>A Fundação Municipal de Tecnologia da Informação e Comunicação de Canoas (CanoasTec) foi convidada para apresentar na 21ª edição do Latinoware, em Foz do Iguaçu (PR), sua experiência com o sistema de gestão escolar i-Educar. O diretor-presidente da ...</p>]]></description>
+        </item>
         <item>
             <title><![CDATA[CanoasTec investe R$ 790 mil para modernizar escolas municipais]]></title>
             <link>http://ieducar.org/blog/2024/11/19/canoastec-investe-para-modernizar-escolas-municipais.html</link>

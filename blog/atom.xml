@@ -2,12 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://ieducar.org/blog</id>
     <title>i-Educar Blog</title>
-    <updated>2024-11-19T06:00:00.000Z</updated>
+    <updated>2024-12-11T06:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://ieducar.org/blog"/>
     <subtitle>The best place to stay up-to-date with the latest i-Educar news and events.</subtitle>
     <logo>http://ieducar.org/img/logo_horizontal.svg</logo>
     <rights>Copyright © 2024 Your Name or Your Company Name</rights>
+    <entry>
+        <title type="html"><![CDATA[CanoasTec participa da 21ª edição do Latinoware, em Foz do Iguaçu]]></title>
+        <id>http://ieducar.org/blog/2024/12/11/canoastec-participa-do-latinoware.html</id>
+        <link href="http://ieducar.org/blog/2024/12/11/canoastec-participa-do-latinoware.html"/>
+        <updated>2024-12-11T06:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/portabilis/i-educar-website/refs/heads/main/images/banner_blog_11.12.jpeg" alt=""></p> <p>A Fundação Municipal de Tecnologia da Informação e Comunicação de Canoas (CanoasTec) foi convidada para apresentar na 21ª edição do Latinoware, em Foz do Iguaçu (PR), sua experiência com o sistema de gestão escolar i-Educar. O diretor-presidente da ...</p>]]></summary>
+        <author>
+            <name>Sara Pires</name>
+            <uri>https://www.linkedin.com/in/sara-pires-siqueira/</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[CanoasTec investe R$ 790 mil para modernizar escolas municipais]]></title>
         <id>http://ieducar.org/blog/2024/11/19/canoastec-investe-para-modernizar-escolas-municipais.html</id>
