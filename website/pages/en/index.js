@@ -183,22 +183,22 @@ const Features = props => (
   <Block layout="threeColumn" className="featureContainer" classNameGrid="featureBlock">
     {[
       {
-        content: 'Acessivel de qualquer lugar e com cadastro único do aluno disponível para toda a rede de ensino. Economia de tempo para todos!',
+        content: 'Acessível de qualquer lugar e com cadastro único do aluno disponível para toda a rede de ensino. Economia de tempo para todos!',
         image: imgUrl('funcionalidades/wifi.png'),
         imageAlign: 'top',
         title: 'Totalmente Online',
       },
       {
-        content: 'Obtenha dados quantitativos, financeiros e estatisticos sempre atuais de todos os processos, na hora e lugar que você deseja!',
+        content: 'Obtenha dados quantitativos, financeiros e estatísticos sempre atuais de todos os processos, na hora e lugar que você deseja!',
         image: imgUrl('funcionalidades/page-clock.png'),
         imageAlign: 'top',
         title: 'Informações em tempo real',
       },
       {
-        content: 'Sistema de avaliação e relatórios adaptados para as dferentes realidades do pais, com notas numéricas, conceituais ou avaliação descritiva.',
+        content: 'Sistema de avaliação e relatórios adaptados para as diferentes realidades do pais, com notas numéricas, conceituais ou avaliação descritiva.',
         image: imgUrl('funcionalidades/page.png'),
         imageAlign: 'top',
-        title: 'Sistema de avaliação flexivel',
+        title: 'Sistema de avaliação flexível',
       }
     ]}
   </Block>
@@ -211,13 +211,13 @@ const Features = props => (
         title: 'Gestão de servidores',
       },
       {
-        content: 'Gereção de quadro de horário para análise das demandas e disponibilidades de profissionais na rede de ensino em cada periodo letivo.',
+        content: 'Geração de quadro de horário para análise das demandas e disponibilidades de profissionais na rede de ensino em cada período letivo.',
         image: imgUrl('funcionalidades/calendar-clock.png'),
         imageAlign: 'top',
         title: 'Quadro de horário',
       },
       {
-        content: 'Controle de veiculos, motoristas, rotas, itinerários, emissão de carteirinha e controle de usuários do tranporte.',
+        content: 'Controle de veículos, motoristas, rotas, itinerários, emissão de carteirinha e controle de usuários do transporte.',
         image: imgUrl('funcionalidades/bus.png'),
         imageAlign: 'top',
         title: 'Transporte escolar',
@@ -227,19 +227,19 @@ const Features = props => (
   <Block layout="threeColumn" className="featureContainerLast" classNameGrid="featureBlock">
     {[
       {
-        content: 'Gestão completa de acervo com controle de reservas, emprestimos e devolução .Recibos de controle disponiveis para cada fase do processo.',
+        content: 'Gestão completa de acervo com controle de reservas, empréstimos e devolução .Recibos de controle disponíveis para cada fase do processo.',
         image: imgUrl('funcionalidades/book.png'),
         imageAlign: 'top',
         title: 'Biblioteca',
       },
       {
-        content: 'Usufrua de uma  coleção  de mais 150 modelos de relatórios e documentos Boletins, historia, ficha, atestados e gráficos.',
+        content: 'Usufrua de uma  coleção  de mais 150 modelos de relatórios e documentos boletins, história, ficha, atestados e gráficos.',
         image: imgUrl('funcionalidades/graph.png'),
         imageAlign: 'top',
         title: 'Relatórios e indicadores ',
       },
       {
-        content: 'Controle de todas as informaçoes para o Censo Escolar com recursos para importação e exportação automatizada dos dados.',
+        content: 'Controle de todas as informações para o Censo Escolar com recursos para importação e exportação automatizada dos dados.',
         image: imgUrl('funcionalidades/e-clip.png'),
         imageAlign: 'top',
         title: 'Educacenso/INEP',
