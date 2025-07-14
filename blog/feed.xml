@@ -4,7 +4,7 @@
         <title>i-Educar Blog</title>
         <link>http://ieducar.org/blog</link>
         <description>The best place to stay up-to-date with the latest i-Educar news and events.</description>
-        <lastBuildDate>Wed, 11 Dec 2024 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 11 Jul 2025 06:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -13,6 +13,13 @@
             <link>http://ieducar.org/blog</link>
         </image>
         <copyright>Copyright © 2025 Your Name or Your Company Name</copyright>
+        <item>
+            <title><![CDATA[Portábilis reúne MEC, Fundação Lemann e especialistas para debater inovação e justiça social na educação]]></title>
+            <link>http://ieducar.org/blog/2025/07/11/live-mec-lancamento-pmd.html</link>
+            <guid>http://ieducar.org/blog/2025/07/11/live-mec-lancamento-pmd.html</guid>
+            <pubDate>Fri, 11 Jul 2025 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><img src="https://raw.githubusercontent.com/portabilis/i-educar-website/refs/heads/main/images/banner_blog_07_11.png" alt=""></p> <p>A Portábilis, GovTech especializada em educação, anunciou oficialmente a abertura do código-fonte do <b>Pré-Matrícula Digital (PMD)</b>, solução que permite aos municípios brasileiros gerenciar de forma transparente e eficiente o acesso às vagas escolares....</p>]]></description>
+        </item>
         <item>
             <title><![CDATA[CanoasTec participa da 21ª edição do Latinoware, em Foz do Iguaçu]]></title>
             <link>http://ieducar.org/blog/2024/12/11/canoastec-participa-do-latinoware.html</link>
