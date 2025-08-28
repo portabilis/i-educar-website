@@ -2,12 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://ieducar.org/blog</id>
     <title>i-Educar Blog</title>
-    <updated>2025-07-11T06:00:00.000Z</updated>
+    <updated>2025-08-28T06:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://ieducar.org/blog"/>
     <subtitle>The best place to stay up-to-date with the latest i-Educar news and events.</subtitle>
     <logo>http://ieducar.org/img/logo_horizontal.svg</logo>
     <rights>Copyright © 2025 Your Name or Your Company Name</rights>
+    <entry>
+        <title type="html"><![CDATA[Autazes Implementa Sistema i-Educar para transformar a Educação no Município]]></title>
+        <id>http://ieducar.org/blog/2025/08/28/autazes-implementa-i-educar-para-transformar-a-educacao-no-municipio.html</id>
+        <link href="http://ieducar.org/blog/2025/08/28/autazes-implementa-i-educar-para-transformar-a-educacao-no-municipio.html"/>
+        <updated>2025-08-28T06:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>A Prefeitura de Autazes, em parceria com a Portábilis e Educa Rios, anunciou a implementação do sistema i-Educar, uma plataforma tecnológica que promete revolucionar a gestão educacional no município. A iniciativa tem como objetivo principal garantir...</p>]]></summary>
+        <author>
+            <name>Sara Pires</name>
+            <uri>https://www.linkedin.com/in/sara-pires-siqueira/</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Portábilis reúne MEC, Fundação Lemann e especialistas para debater inovação e justiça social na educação]]></title>
         <id>http://ieducar.org/blog/2025/07/11/live-mec-lancamento-pmd.html</id>

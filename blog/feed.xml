@@ -4,7 +4,7 @@
         <title>i-Educar Blog</title>
         <link>http://ieducar.org/blog</link>
         <description>The best place to stay up-to-date with the latest i-Educar news and events.</description>
-        <lastBuildDate>Fri, 11 Jul 2025 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 28 Aug 2025 06:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -13,6 +13,13 @@
             <link>http://ieducar.org/blog</link>
         </image>
         <copyright>Copyright © 2025 Your Name or Your Company Name</copyright>
+        <item>
+            <title><![CDATA[Autazes Implementa Sistema i-Educar para transformar a Educação no Município]]></title>
+            <link>http://ieducar.org/blog/2025/08/28/autazes-implementa-i-educar-para-transformar-a-educacao-no-municipio.html</link>
+            <guid>http://ieducar.org/blog/2025/08/28/autazes-implementa-i-educar-para-transformar-a-educacao-no-municipio.html</guid>
+            <pubDate>Thu, 28 Aug 2025 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>A Prefeitura de Autazes, em parceria com a Portábilis e Educa Rios, anunciou a implementação do sistema i-Educar, uma plataforma tecnológica que promete revolucionar a gestão educacional no município. A iniciativa tem como objetivo principal garantir...</p>]]></description>
+        </item>
         <item>
             <title><![CDATA[Portábilis reúne MEC, Fundação Lemann e especialistas para debater inovação e justiça social na educação]]></title>
             <link>http://ieducar.org/blog/2025/07/11/live-mec-lancamento-pmd.html</link>
