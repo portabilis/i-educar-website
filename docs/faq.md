@@ -12,8 +12,6 @@ Apesar do i-Educar já existir como código aberto a muitos anos, sua estrutura�
 
 Recentemente a Portabilis se dispôs a trabalhar diretamente com o i-Educar em comunidade. Por causa disto foi feita uma contribuição imensa de melhorias e recursos ao projeto dando origem à versão 2.0 do sistema. Melhorias estas que antes vinham sendo desenvolvidas em um fork interno. Sendo assim, a própria mantenedora ainda está em processo de se adequar a esta nova forma de trabalho e o fluxo ainda precisa de ajustes.
 
-Foi proposto um [roadmap](https://github.com/portabilis/i-educar/projects/3) e nosso foco tem sido em executá-lo, de forma que o melhor jeito de ajudar é se engajando de forma mais incisiva naquilo que é prioritário de acordo com o próprio roadmap. Aos poucos vamos ajustando nossos fluxos de trabalho para que sejam totalmente transparentes e contamos com o auxílio e paciência de todos os membros da comunidade durante este processo.
-
 ### Seria possivel incluir algum membro de comunidade na administração do projeto?
 
 Antes de tudo é importante deixar claro que a Portabilis, na forma de pessoas que trabalham ativamente no i-Educar, é um membro da comunidade como qualquer outro. Um membro que contribuiu com mais de 10.000 commits em melhorias e bug fixes, incluindo o censo escolar que é revolucionário para gestão escolar. Acreditamos que com este trabalho a Portabilis mereceu seu posicionamento como mantenedora do projeto.
